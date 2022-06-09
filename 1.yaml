@@ -1,223 +1,183 @@
-﻿port: 7890
+port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_🇨🇳CN-🇹🇼TW_213, server: 116.129.254.29, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: 日本 020, server: 175.41.237.24, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
+  - {name: 美国 120, server: 20.205.63.134, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
+  - {name: 日本 021, server: 54.199.133.35, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
   - {name: Relay_-🇹🇼TW_1128, server: 116.129.254.47, port: 3389, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
-  - {name: Relay_-🇹🇼TW_1133, server: 116.129.254.29, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: _1597 |56.13Mb, server: 116.129.254.47, port: 3389, type: trojan, password: 711aabc21e45ae31, skip-cert-verify: true, udp: true}
-  - {name: _1615 |23.76Mb, server: 116.129.253.130, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_210, server: 116.129.254.47, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_151🇨🇳CN_171, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _853_815_832_747_850_773, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_1930 |50.13Mb, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _470 |37.24Mb, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_1926 |85.93Mb, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_187, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _1620 |12.13Mb, server: 116.129.253.130, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _1042 | 5.93Mb, server: 14.29.124.168, port: 25280, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _1598 |47.72Mb, server: 116.129.254.47, port: 3389, type: trojan, password: ffec9f6ea19e1dd1, skip-cert-verify: true, udp: true}
-  - {name: CN_1933 |17.35Mb, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _1337 |35.32Mb, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_1945 |31.97Mb, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_155🇨🇳CN_155, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_166🇨🇳CN_159, server: 14.29.124.168, port: 25268, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_185🇨🇳CN_163, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_181🇨🇳CN_166, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_1942 |100.32Mb, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_154🇨🇳CN_154, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_-🇹🇼TW_1134, server: 116.129.254.29, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: _861_823_840_858_781, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: US_3481, server: bai-piao-wang-zhe-iplc12.98848.xyz, port: 25265, type: trojan, password: 4c9fa489-d576-47a6-8f42-a4664e454061, sni: bai-piao-wang-zhe-iplc12.98848.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_207, server: 116.129.254.29, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: _1591 |32.90Mb, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: _469 |51.49Mb, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_214, server: 116.129.253.130, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇩🇪DE-🇬🇧GB_263, server: 212.81.47.15, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: _709, server: tj-hk01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-hk01.yiyodns.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_212, server: 116.129.254.29, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _1039 |75.52Mb, server: 14.29.124.168, port: 25229, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_194🇨🇳CN_146, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_204, server: 116.129.254.47, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: _1040 |15.93Mb, server: 14.29.124.168, port: 25226, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_🇨🇳_CN_中国->🇸🇬_SG_新加坡_6-🇹🇼TW_1420, server: 116.129.253.130, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_208, server: 116.129.253.130, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: CN_1947 |41.03Mb, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _1336 |10.00Mb, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _1335 |20.69Mb, server: 14.29.124.168, port: 25293, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: Relay_🇨🇳CN-🇹🇼TW_216, server: 116.129.254.47, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: Relay_Relay_🇩🇪DE-🇬🇧GB_260🇩🇪DE-🇬🇧GB_253, server: au2-1.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-1.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: _1036 |34.68Mb, server: 14.29.124.168, port: 25254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _1338 |29.23Mb, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _456 |100.18Mb, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _1043 |12.47Mb, server: 14.29.124.168, port: 25207, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: NONE, server: 116.129.254.47, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: 法国 003, server: 141.11.170.21, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_207, server: 116.129.254.29, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: 英国 005, server: 144.24.90.94, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
+  - {name: 美国 122, server: 20.247.112.174, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
+  - {name: US_972 |29.03Mb, server: 20.210.229.72, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: 亚太地区 001, server: 103.173.255.228, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
+  - {name: _1597 |56.13Mb, server: 116.129.254.47, port: 3389, type: trojan, password: 711aabc21e45ae31, skip-cert-verify: true, udp: true}
+  - {name: _1598 |47.72Mb, server: 116.129.254.47, port: 3389, type: trojan, password: ffec9f6ea19e1dd1, skip-cert-verify: true, udp: true}
+  - {name: _1591 |32.90Mb, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: 亚太地区 004, server: 103.173.255.234, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
+  - {name: 英国 003, server: 144.24.87.99, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
+  - {name: 美国 114, server: taobao.babazhuji.com, port: 443, type: vmess, uuid: 36712be8-f2ff-4875-8c67-95efd66ac994, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /didi, ws-headers: {Host: taobao.babazhuji.com}, udp: true}
+  - {name: 美国 124, server: 23.225.77.187, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳_CN_中国->🇸🇬_SG_新加坡_6-🇹🇼TW_1420, server: 116.129.253.130, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: US_973 |19.90Mb, server: 20.210.229.72, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: US_975 |29.91Mb, server: 20.210.229.72, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: 14.29.124.168:25279, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 美国 123, server: 23.225.77.192, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
+  - {name: 亚太地区 003, server: 103.173.155.72, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_204, server: 116.129.254.47, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: NONE 2, server: 116.129.253.130, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: 美国 127, server: 23.225.77.222, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
+  - {name: 美国 121, server: 35.78.118.63, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
+  - {name: NONE 3, server: 193.178.210.29, port: 443, type: trojan, password: iKR3Ft, skip-cert-verify: true, udp: true}
+  - {name: 英国 006, server: 144.24.77.154, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
+  - {name: 亚太地区 005, server: 103.173.255.21, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇹🇼TW_1134, server: 116.129.254.29, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: 美国 126, server: 23.225.77.226, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
+  - {name: NONE 4, server: 116.129.254.29, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_212, server: 116.129.254.29, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: NONE 5, server: 116.129.254.47, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: 亚太地区 002, server: 103.173.255.127, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
+  - {name: 德国 002, server: 212.81.47.11, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇹🇼TW_213
+      - 日本 020
+      - 美国 120
+      - 日本 021
       - Relay_-🇹🇼TW_1128
-      - Relay_-🇹🇼TW_1133
-      - _1597 |56.13Mb
-      - _1615 |23.76Mb
-      - Relay_🇨🇳CN-🇹🇼TW_210
-      - CN_151🇨🇳CN_171
-      - _853_815_832_747_850_773
-      - CN_1930 |50.13Mb
-      - _470 |37.24Mb
-      - CN_1926 |85.93Mb
-      - CN_187
-      - _1620 |12.13Mb
-      - _1042 | 5.93Mb
-      - _1598 |47.72Mb
-      - CN_1933 |17.35Mb
-      - _1337 |35.32Mb
-      - CN_1945 |31.97Mb
-      - CN_155🇨🇳CN_155
-      - CN_166🇨🇳CN_159
-      - CN_185🇨🇳CN_163
-      - CN_181🇨🇳CN_166
-      - CN_1942 |100.32Mb
-      - CN_154🇨🇳CN_154
-      - Relay_-🇹🇼TW_1134
-      - _861_823_840_858_781
-      - US_3481
-      - Relay_🇨🇳CN-🇹🇼TW_207
-      - _1591 |32.90Mb
-      - _469 |51.49Mb
-      - Relay_🇨🇳CN-🇹🇼TW_214
-      - Relay_🇩🇪DE-🇬🇧GB_263
-      - _709
-      - Relay_🇨🇳CN-🇹🇼TW_212
-      - _1039 |75.52Mb
-      - CN_194🇨🇳CN_146
-      - Relay_🇨🇳CN-🇹🇼TW_204
-      - _1040 |15.93Mb
-      - Relay_🇨🇳_CN_中国->🇸🇬_SG_新加坡_6-🇹🇼TW_1420
-      - Relay_🇨🇳CN-🇹🇼TW_208
-      - CN_1947 |41.03Mb
-      - _1336 |10.00Mb
-      - _1335 |20.69Mb
       - Relay_🇨🇳CN-🇹🇼TW_216
-      - Relay_Relay_🇩🇪DE-🇬🇧GB_260🇩🇪DE-🇬🇧GB_253
-      - _1036 |34.68Mb
-      - _1338 |29.23Mb
-      - _456 |100.18Mb
-      - _1043 |12.47Mb
+      - NONE
+      - 法国 003
+      - Relay_🇨🇳CN-🇹🇼TW_207
+      - 英国 005
+      - 美国 122
+      - US_972 |29.03Mb
+      - 亚太地区 001
+      - _1597 |56.13Mb
+      - _1598 |47.72Mb
+      - _1591 |32.90Mb
+      - 亚太地区 004
+      - 英国 003
+      - 美国 114
+      - 美国 124
+      - Relay_🇨🇳_CN_中国->🇸🇬_SG_新加坡_6-🇹🇼TW_1420
+      - US_973 |19.90Mb
+      - US_975 |29.91Mb
+      - 14.29.124.168:25279
+      - 美国 123
+      - 亚太地区 003
+      - Relay_🇨🇳CN-🇹🇼TW_204
+      - NONE 2
+      - 美国 127
+      - 美国 121
+      - NONE 3
+      - 英国 006
+      - 亚太地区 005
+      - Relay_-🇹🇼TW_1134
+      - 美国 126
+      - NONE 4
+      - Relay_🇨🇳CN-🇹🇼TW_212
+      - NONE 5
+      - 亚太地区 002
+      - 德国 002
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇨🇳CN-🇹🇼TW_213
+      - 日本 020
+      - 美国 120
+      - 日本 021
       - Relay_-🇹🇼TW_1128
-      - Relay_-🇹🇼TW_1133
-      - _1597 |56.13Mb
-      - _1615 |23.76Mb
-      - Relay_🇨🇳CN-🇹🇼TW_210
-      - CN_151🇨🇳CN_171
-      - _853_815_832_747_850_773
-      - CN_1930 |50.13Mb
-      - _470 |37.24Mb
-      - CN_1926 |85.93Mb
-      - CN_187
-      - _1620 |12.13Mb
-      - _1042 | 5.93Mb
-      - _1598 |47.72Mb
-      - CN_1933 |17.35Mb
-      - _1337 |35.32Mb
-      - CN_1945 |31.97Mb
-      - CN_155🇨🇳CN_155
-      - CN_166🇨🇳CN_159
-      - CN_185🇨🇳CN_163
-      - CN_181🇨🇳CN_166
-      - CN_1942 |100.32Mb
-      - CN_154🇨🇳CN_154
-      - Relay_-🇹🇼TW_1134
-      - _861_823_840_858_781
-      - US_3481
-      - Relay_🇨🇳CN-🇹🇼TW_207
-      - _1591 |32.90Mb
-      - _469 |51.49Mb
-      - Relay_🇨🇳CN-🇹🇼TW_214
-      - Relay_🇩🇪DE-🇬🇧GB_263
-      - _709
-      - Relay_🇨🇳CN-🇹🇼TW_212
-      - _1039 |75.52Mb
-      - CN_194🇨🇳CN_146
-      - Relay_🇨🇳CN-🇹🇼TW_204
-      - _1040 |15.93Mb
-      - Relay_🇨🇳_CN_中国->🇸🇬_SG_新加坡_6-🇹🇼TW_1420
-      - Relay_🇨🇳CN-🇹🇼TW_208
-      - CN_1947 |41.03Mb
-      - _1336 |10.00Mb
-      - _1335 |20.69Mb
       - Relay_🇨🇳CN-🇹🇼TW_216
-      - Relay_Relay_🇩🇪DE-🇬🇧GB_260🇩🇪DE-🇬🇧GB_253
-      - _1036 |34.68Mb
-      - _1338 |29.23Mb
-      - _456 |100.18Mb
-      - _1043 |12.47Mb
+      - NONE
+      - 法国 003
+      - Relay_🇨🇳CN-🇹🇼TW_207
+      - 英国 005
+      - 美国 122
+      - US_972 |29.03Mb
+      - 亚太地区 001
+      - _1597 |56.13Mb
+      - _1598 |47.72Mb
+      - _1591 |32.90Mb
+      - 亚太地区 004
+      - 英国 003
+      - 美国 114
+      - 美国 124
+      - Relay_🇨🇳_CN_中国->🇸🇬_SG_新加坡_6-🇹🇼TW_1420
+      - US_973 |19.90Mb
+      - US_975 |29.91Mb
+      - 14.29.124.168:25279
+      - 美国 123
+      - 亚太地区 003
+      - Relay_🇨🇳CN-🇹🇼TW_204
+      - NONE 2
+      - 美国 127
+      - 美国 121
+      - NONE 3
+      - 英国 006
+      - 亚太地区 005
+      - Relay_-🇹🇼TW_1134
+      - 美国 126
+      - NONE 4
+      - Relay_🇨🇳CN-🇹🇼TW_212
+      - NONE 5
+      - 亚太地区 002
+      - 德国 002
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇹🇼TW_213
+      - 日本 020
+      - 美国 120
+      - 日本 021
       - Relay_-🇹🇼TW_1128
-      - Relay_-🇹🇼TW_1133
-      - _1597 |56.13Mb
-      - _1615 |23.76Mb
-      - Relay_🇨🇳CN-🇹🇼TW_210
-      - CN_151🇨🇳CN_171
-      - _853_815_832_747_850_773
-      - CN_1930 |50.13Mb
-      - _470 |37.24Mb
-      - CN_1926 |85.93Mb
-      - CN_187
-      - _1620 |12.13Mb
-      - _1042 | 5.93Mb
-      - _1598 |47.72Mb
-      - CN_1933 |17.35Mb
-      - _1337 |35.32Mb
-      - CN_1945 |31.97Mb
-      - CN_155🇨🇳CN_155
-      - CN_166🇨🇳CN_159
-      - CN_185🇨🇳CN_163
-      - CN_181🇨🇳CN_166
-      - CN_1942 |100.32Mb
-      - CN_154🇨🇳CN_154
-      - Relay_-🇹🇼TW_1134
-      - _861_823_840_858_781
-      - US_3481
-      - Relay_🇨🇳CN-🇹🇼TW_207
-      - _1591 |32.90Mb
-      - _469 |51.49Mb
-      - Relay_🇨🇳CN-🇹🇼TW_214
-      - Relay_🇩🇪DE-🇬🇧GB_263
-      - _709
-      - Relay_🇨🇳CN-🇹🇼TW_212
-      - _1039 |75.52Mb
-      - CN_194🇨🇳CN_146
-      - Relay_🇨🇳CN-🇹🇼TW_204
-      - _1040 |15.93Mb
-      - Relay_🇨🇳_CN_中国->🇸🇬_SG_新加坡_6-🇹🇼TW_1420
-      - Relay_🇨🇳CN-🇹🇼TW_208
-      - CN_1947 |41.03Mb
-      - _1336 |10.00Mb
-      - _1335 |20.69Mb
       - Relay_🇨🇳CN-🇹🇼TW_216
-      - Relay_Relay_🇩🇪DE-🇬🇧GB_260🇩🇪DE-🇬🇧GB_253
-      - _1036 |34.68Mb
-      - _1338 |29.23Mb
-      - _456 |100.18Mb
-      - _1043 |12.47Mb
+      - NONE
+      - 法国 003
+      - Relay_🇨🇳CN-🇹🇼TW_207
+      - 英国 005
+      - 美国 122
+      - US_972 |29.03Mb
+      - 亚太地区 001
+      - _1597 |56.13Mb
+      - _1598 |47.72Mb
+      - _1591 |32.90Mb
+      - 亚太地区 004
+      - 英国 003
+      - 美国 114
+      - 美国 124
+      - Relay_🇨🇳_CN_中国->🇸🇬_SG_新加坡_6-🇹🇼TW_1420
+      - US_973 |19.90Mb
+      - US_975 |29.91Mb
+      - 14.29.124.168:25279
+      - 美国 123
+      - 亚太地区 003
+      - Relay_🇨🇳CN-🇹🇼TW_204
+      - NONE 2
+      - 美国 127
+      - 美国 121
+      - NONE 3
+      - 英国 006
+      - 亚太地区 005
+      - Relay_-🇹🇼TW_1134
+      - 美国 126
+      - NONE 4
+      - Relay_🇨🇳CN-🇹🇼TW_212
+      - NONE 5
+      - 亚太地区 002
+      - 德国 002
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -236,55 +196,45 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇹🇼TW_213
+      - 日本 020
+      - 美国 120
+      - 日本 021
       - Relay_-🇹🇼TW_1128
-      - Relay_-🇹🇼TW_1133
-      - _1597 |56.13Mb
-      - _1615 |23.76Mb
-      - Relay_🇨🇳CN-🇹🇼TW_210
-      - CN_151🇨🇳CN_171
-      - _853_815_832_747_850_773
-      - CN_1930 |50.13Mb
-      - _470 |37.24Mb
-      - CN_1926 |85.93Mb
-      - CN_187
-      - _1620 |12.13Mb
-      - _1042 | 5.93Mb
-      - _1598 |47.72Mb
-      - CN_1933 |17.35Mb
-      - _1337 |35.32Mb
-      - CN_1945 |31.97Mb
-      - CN_155🇨🇳CN_155
-      - CN_166🇨🇳CN_159
-      - CN_185🇨🇳CN_163
-      - CN_181🇨🇳CN_166
-      - CN_1942 |100.32Mb
-      - CN_154🇨🇳CN_154
-      - Relay_-🇹🇼TW_1134
-      - _861_823_840_858_781
-      - US_3481
-      - Relay_🇨🇳CN-🇹🇼TW_207
-      - _1591 |32.90Mb
-      - _469 |51.49Mb
-      - Relay_🇨🇳CN-🇹🇼TW_214
-      - Relay_🇩🇪DE-🇬🇧GB_263
-      - _709
-      - Relay_🇨🇳CN-🇹🇼TW_212
-      - _1039 |75.52Mb
-      - CN_194🇨🇳CN_146
-      - Relay_🇨🇳CN-🇹🇼TW_204
-      - _1040 |15.93Mb
-      - Relay_🇨🇳_CN_中国->🇸🇬_SG_新加坡_6-🇹🇼TW_1420
-      - Relay_🇨🇳CN-🇹🇼TW_208
-      - CN_1947 |41.03Mb
-      - _1336 |10.00Mb
-      - _1335 |20.69Mb
       - Relay_🇨🇳CN-🇹🇼TW_216
-      - Relay_Relay_🇩🇪DE-🇬🇧GB_260🇩🇪DE-🇬🇧GB_253
-      - _1036 |34.68Mb
-      - _1338 |29.23Mb
-      - _456 |100.18Mb
-      - _1043 |12.47Mb
+      - NONE
+      - 法国 003
+      - Relay_🇨🇳CN-🇹🇼TW_207
+      - 英国 005
+      - 美国 122
+      - US_972 |29.03Mb
+      - 亚太地区 001
+      - _1597 |56.13Mb
+      - _1598 |47.72Mb
+      - _1591 |32.90Mb
+      - 亚太地区 004
+      - 英国 003
+      - 美国 114
+      - 美国 124
+      - Relay_🇨🇳_CN_中国->🇸🇬_SG_新加坡_6-🇹🇼TW_1420
+      - US_973 |19.90Mb
+      - US_975 |29.91Mb
+      - 14.29.124.168:25279
+      - 美国 123
+      - 亚太地区 003
+      - Relay_🇨🇳CN-🇹🇼TW_204
+      - NONE 2
+      - 美国 127
+      - 美国 121
+      - NONE 3
+      - 英国 006
+      - 亚太地区 005
+      - Relay_-🇹🇼TW_1134
+      - 美国 126
+      - NONE 4
+      - Relay_🇨🇳CN-🇹🇼TW_212
+      - NONE 5
+      - 亚太地区 002
+      - 德国 002
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -295,164 +245,134 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇨🇳CN-🇹🇼TW_213
+      - 日本 020
+      - 美国 120
+      - 日本 021
       - Relay_-🇹🇼TW_1128
-      - Relay_-🇹🇼TW_1133
-      - _1597 |56.13Mb
-      - _1615 |23.76Mb
-      - Relay_🇨🇳CN-🇹🇼TW_210
-      - CN_151🇨🇳CN_171
-      - _853_815_832_747_850_773
-      - CN_1930 |50.13Mb
-      - _470 |37.24Mb
-      - CN_1926 |85.93Mb
-      - CN_187
-      - _1620 |12.13Mb
-      - _1042 | 5.93Mb
-      - _1598 |47.72Mb
-      - CN_1933 |17.35Mb
-      - _1337 |35.32Mb
-      - CN_1945 |31.97Mb
-      - CN_155🇨🇳CN_155
-      - CN_166🇨🇳CN_159
-      - CN_185🇨🇳CN_163
-      - CN_181🇨🇳CN_166
-      - CN_1942 |100.32Mb
-      - CN_154🇨🇳CN_154
-      - Relay_-🇹🇼TW_1134
-      - _861_823_840_858_781
-      - US_3481
-      - Relay_🇨🇳CN-🇹🇼TW_207
-      - _1591 |32.90Mb
-      - _469 |51.49Mb
-      - Relay_🇨🇳CN-🇹🇼TW_214
-      - Relay_🇩🇪DE-🇬🇧GB_263
-      - _709
-      - Relay_🇨🇳CN-🇹🇼TW_212
-      - _1039 |75.52Mb
-      - CN_194🇨🇳CN_146
-      - Relay_🇨🇳CN-🇹🇼TW_204
-      - _1040 |15.93Mb
-      - Relay_🇨🇳_CN_中国->🇸🇬_SG_新加坡_6-🇹🇼TW_1420
-      - Relay_🇨🇳CN-🇹🇼TW_208
-      - CN_1947 |41.03Mb
-      - _1336 |10.00Mb
-      - _1335 |20.69Mb
       - Relay_🇨🇳CN-🇹🇼TW_216
-      - Relay_Relay_🇩🇪DE-🇬🇧GB_260🇩🇪DE-🇬🇧GB_253
-      - _1036 |34.68Mb
-      - _1338 |29.23Mb
-      - _456 |100.18Mb
-      - _1043 |12.47Mb
+      - NONE
+      - 法国 003
+      - Relay_🇨🇳CN-🇹🇼TW_207
+      - 英国 005
+      - 美国 122
+      - US_972 |29.03Mb
+      - 亚太地区 001
+      - _1597 |56.13Mb
+      - _1598 |47.72Mb
+      - _1591 |32.90Mb
+      - 亚太地区 004
+      - 英国 003
+      - 美国 114
+      - 美国 124
+      - Relay_🇨🇳_CN_中国->🇸🇬_SG_新加坡_6-🇹🇼TW_1420
+      - US_973 |19.90Mb
+      - US_975 |29.91Mb
+      - 14.29.124.168:25279
+      - 美国 123
+      - 亚太地区 003
+      - Relay_🇨🇳CN-🇹🇼TW_204
+      - NONE 2
+      - 美国 127
+      - 美国 121
+      - NONE 3
+      - 英国 006
+      - 亚太地区 005
+      - Relay_-🇹🇼TW_1134
+      - 美国 126
+      - NONE 4
+      - Relay_🇨🇳CN-🇹🇼TW_212
+      - NONE 5
+      - 亚太地区 002
+      - 德国 002
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇹🇼TW_213
+      - 日本 020
+      - 美国 120
+      - 日本 021
       - Relay_-🇹🇼TW_1128
-      - Relay_-🇹🇼TW_1133
-      - _1597 |56.13Mb
-      - _1615 |23.76Mb
-      - Relay_🇨🇳CN-🇹🇼TW_210
-      - CN_151🇨🇳CN_171
-      - _853_815_832_747_850_773
-      - CN_1930 |50.13Mb
-      - _470 |37.24Mb
-      - CN_1926 |85.93Mb
-      - CN_187
-      - _1620 |12.13Mb
-      - _1042 | 5.93Mb
-      - _1598 |47.72Mb
-      - CN_1933 |17.35Mb
-      - _1337 |35.32Mb
-      - CN_1945 |31.97Mb
-      - CN_155🇨🇳CN_155
-      - CN_166🇨🇳CN_159
-      - CN_185🇨🇳CN_163
-      - CN_181🇨🇳CN_166
-      - CN_1942 |100.32Mb
-      - CN_154🇨🇳CN_154
-      - Relay_-🇹🇼TW_1134
-      - _861_823_840_858_781
-      - US_3481
-      - Relay_🇨🇳CN-🇹🇼TW_207
-      - _1591 |32.90Mb
-      - _469 |51.49Mb
-      - Relay_🇨🇳CN-🇹🇼TW_214
-      - Relay_🇩🇪DE-🇬🇧GB_263
-      - _709
-      - Relay_🇨🇳CN-🇹🇼TW_212
-      - _1039 |75.52Mb
-      - CN_194🇨🇳CN_146
-      - Relay_🇨🇳CN-🇹🇼TW_204
-      - _1040 |15.93Mb
-      - Relay_🇨🇳_CN_中国->🇸🇬_SG_新加坡_6-🇹🇼TW_1420
-      - Relay_🇨🇳CN-🇹🇼TW_208
-      - CN_1947 |41.03Mb
-      - _1336 |10.00Mb
-      - _1335 |20.69Mb
       - Relay_🇨🇳CN-🇹🇼TW_216
-      - Relay_Relay_🇩🇪DE-🇬🇧GB_260🇩🇪DE-🇬🇧GB_253
-      - _1036 |34.68Mb
-      - _1338 |29.23Mb
-      - _456 |100.18Mb
-      - _1043 |12.47Mb
+      - NONE
+      - 法国 003
+      - Relay_🇨🇳CN-🇹🇼TW_207
+      - 英国 005
+      - 美国 122
+      - US_972 |29.03Mb
+      - 亚太地区 001
+      - _1597 |56.13Mb
+      - _1598 |47.72Mb
+      - _1591 |32.90Mb
+      - 亚太地区 004
+      - 英国 003
+      - 美国 114
+      - 美国 124
+      - Relay_🇨🇳_CN_中国->🇸🇬_SG_新加坡_6-🇹🇼TW_1420
+      - US_973 |19.90Mb
+      - US_975 |29.91Mb
+      - 14.29.124.168:25279
+      - 美国 123
+      - 亚太地区 003
+      - Relay_🇨🇳CN-🇹🇼TW_204
+      - NONE 2
+      - 美国 127
+      - 美国 121
+      - NONE 3
+      - 英国 006
+      - 亚太地区 005
+      - Relay_-🇹🇼TW_1134
+      - 美国 126
+      - NONE 4
+      - Relay_🇨🇳CN-🇹🇼TW_212
+      - NONE 5
+      - 亚太地区 002
+      - 德国 002
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇹🇼TW_213
+      - 日本 020
+      - 美国 120
+      - 日本 021
       - Relay_-🇹🇼TW_1128
-      - Relay_-🇹🇼TW_1133
-      - _1597 |56.13Mb
-      - _1615 |23.76Mb
-      - Relay_🇨🇳CN-🇹🇼TW_210
-      - CN_151🇨🇳CN_171
-      - _853_815_832_747_850_773
-      - CN_1930 |50.13Mb
-      - _470 |37.24Mb
-      - CN_1926 |85.93Mb
-      - CN_187
-      - _1620 |12.13Mb
-      - _1042 | 5.93Mb
-      - _1598 |47.72Mb
-      - CN_1933 |17.35Mb
-      - _1337 |35.32Mb
-      - CN_1945 |31.97Mb
-      - CN_155🇨🇳CN_155
-      - CN_166🇨🇳CN_159
-      - CN_185🇨🇳CN_163
-      - CN_181🇨🇳CN_166
-      - CN_1942 |100.32Mb
-      - CN_154🇨🇳CN_154
-      - Relay_-🇹🇼TW_1134
-      - _861_823_840_858_781
-      - US_3481
-      - Relay_🇨🇳CN-🇹🇼TW_207
-      - _1591 |32.90Mb
-      - _469 |51.49Mb
-      - Relay_🇨🇳CN-🇹🇼TW_214
-      - Relay_🇩🇪DE-🇬🇧GB_263
-      - _709
-      - Relay_🇨🇳CN-🇹🇼TW_212
-      - _1039 |75.52Mb
-      - CN_194🇨🇳CN_146
-      - Relay_🇨🇳CN-🇹🇼TW_204
-      - _1040 |15.93Mb
-      - Relay_🇨🇳_CN_中国->🇸🇬_SG_新加坡_6-🇹🇼TW_1420
-      - Relay_🇨🇳CN-🇹🇼TW_208
-      - CN_1947 |41.03Mb
-      - _1336 |10.00Mb
-      - _1335 |20.69Mb
       - Relay_🇨🇳CN-🇹🇼TW_216
-      - Relay_Relay_🇩🇪DE-🇬🇧GB_260🇩🇪DE-🇬🇧GB_253
-      - _1036 |34.68Mb
-      - _1338 |29.23Mb
-      - _456 |100.18Mb
-      - _1043 |12.47Mb
+      - NONE
+      - 法国 003
+      - Relay_🇨🇳CN-🇹🇼TW_207
+      - 英国 005
+      - 美国 122
+      - US_972 |29.03Mb
+      - 亚太地区 001
+      - _1597 |56.13Mb
+      - _1598 |47.72Mb
+      - _1591 |32.90Mb
+      - 亚太地区 004
+      - 英国 003
+      - 美国 114
+      - 美国 124
+      - Relay_🇨🇳_CN_中国->🇸🇬_SG_新加坡_6-🇹🇼TW_1420
+      - US_973 |19.90Mb
+      - US_975 |29.91Mb
+      - 14.29.124.168:25279
+      - 美国 123
+      - 亚太地区 003
+      - Relay_🇨🇳CN-🇹🇼TW_204
+      - NONE 2
+      - 美国 127
+      - 美国 121
+      - NONE 3
+      - 英国 006
+      - 亚太地区 005
+      - Relay_-🇹🇼TW_1134
+      - 美国 126
+      - NONE 4
+      - Relay_🇨🇳CN-🇹🇼TW_212
+      - NONE 5
+      - 亚太地区 002
+      - 德国 002
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -468,55 +388,45 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇹🇼TW_213
+      - 日本 020
+      - 美国 120
+      - 日本 021
       - Relay_-🇹🇼TW_1128
-      - Relay_-🇹🇼TW_1133
-      - _1597 |56.13Mb
-      - _1615 |23.76Mb
-      - Relay_🇨🇳CN-🇹🇼TW_210
-      - CN_151🇨🇳CN_171
-      - _853_815_832_747_850_773
-      - CN_1930 |50.13Mb
-      - _470 |37.24Mb
-      - CN_1926 |85.93Mb
-      - CN_187
-      - _1620 |12.13Mb
-      - _1042 | 5.93Mb
-      - _1598 |47.72Mb
-      - CN_1933 |17.35Mb
-      - _1337 |35.32Mb
-      - CN_1945 |31.97Mb
-      - CN_155🇨🇳CN_155
-      - CN_166🇨🇳CN_159
-      - CN_185🇨🇳CN_163
-      - CN_181🇨🇳CN_166
-      - CN_1942 |100.32Mb
-      - CN_154🇨🇳CN_154
-      - Relay_-🇹🇼TW_1134
-      - _861_823_840_858_781
-      - US_3481
-      - Relay_🇨🇳CN-🇹🇼TW_207
-      - _1591 |32.90Mb
-      - _469 |51.49Mb
-      - Relay_🇨🇳CN-🇹🇼TW_214
-      - Relay_🇩🇪DE-🇬🇧GB_263
-      - _709
-      - Relay_🇨🇳CN-🇹🇼TW_212
-      - _1039 |75.52Mb
-      - CN_194🇨🇳CN_146
-      - Relay_🇨🇳CN-🇹🇼TW_204
-      - _1040 |15.93Mb
-      - Relay_🇨🇳_CN_中国->🇸🇬_SG_新加坡_6-🇹🇼TW_1420
-      - Relay_🇨🇳CN-🇹🇼TW_208
-      - CN_1947 |41.03Mb
-      - _1336 |10.00Mb
-      - _1335 |20.69Mb
       - Relay_🇨🇳CN-🇹🇼TW_216
-      - Relay_Relay_🇩🇪DE-🇬🇧GB_260🇩🇪DE-🇬🇧GB_253
-      - _1036 |34.68Mb
-      - _1338 |29.23Mb
-      - _456 |100.18Mb
-      - _1043 |12.47Mb
+      - NONE
+      - 法国 003
+      - Relay_🇨🇳CN-🇹🇼TW_207
+      - 英国 005
+      - 美国 122
+      - US_972 |29.03Mb
+      - 亚太地区 001
+      - _1597 |56.13Mb
+      - _1598 |47.72Mb
+      - _1591 |32.90Mb
+      - 亚太地区 004
+      - 英国 003
+      - 美国 114
+      - 美国 124
+      - Relay_🇨🇳_CN_中国->🇸🇬_SG_新加坡_6-🇹🇼TW_1420
+      - US_973 |19.90Mb
+      - US_975 |29.91Mb
+      - 14.29.124.168:25279
+      - 美国 123
+      - 亚太地区 003
+      - Relay_🇨🇳CN-🇹🇼TW_204
+      - NONE 2
+      - 美国 127
+      - 美国 121
+      - NONE 3
+      - 英国 006
+      - 亚太地区 005
+      - Relay_-🇹🇼TW_1134
+      - 美国 126
+      - NONE 4
+      - Relay_🇨🇳CN-🇹🇼TW_212
+      - NONE 5
+      - 亚太地区 002
+      - 德国 002
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
