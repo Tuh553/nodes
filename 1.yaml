@@ -5,79 +5,651 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK_2053, server: ppy-cmcc.0098dns02in.work, port: 26014, type: vmess, uuid: 708310bf-b4b2-3826-8071-956a85b1fe4b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 004, server: 212.81.47.16, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: HK_2054, server: ppy-giacn2.0098dns02in.work, port: 26020, type: vmess, uuid: 708310bf-b4b2-3826-8071-956a85b1fe4b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _1420 | 8.46Mb, server: shcm.pdjc.cc, port: 42000, type: trojan, password: b7dcc148-c8a3-4173-931f-8ecf9413eb58, sni: shcm.pdjc.cc, skip-cert-verify: true, udp: true}
-  - {name: HK_2073, server: ppy-giacn2.0098dns02in.work, port: 26022, type: vmess, uuid: 708310bf-b4b2-3826-8071-956a85b1fe4b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK_2068, server: ppy-cmcc.0098dns02in.work, port: 26008, type: vmess, uuid: 708310bf-b4b2-3826-8071-956a85b1fe4b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK_2063, server: ppy-cmcc.0098dns02in.work, port: 26013, type: vmess, uuid: 708310bf-b4b2-3826-8071-956a85b1fe4b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 006, server: s4.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s4.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: HK_2051, server: ppy-cmcc.0098dns02in.work, port: 26015, type: vmess, uuid: 708310bf-b4b2-3826-8071-956a85b1fe4b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK_2067, server: ppy-cmcc.0098dns02in.work, port: 26007, type: vmess, uuid: 708310bf-b4b2-3826-8071-956a85b1fe4b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 31, server: azhk.r.optage.moe, port: 44605, type: trojan, password: e9561799-2eee-47c5-a384-fc369f0eb792, sni: azhk.r.optage.moe, skip-cert-verify: true, udp: true}
-  - {name: HK_2062, server: ppy-giacn2.0098dns02in.work, port: 26003, type: vmess, uuid: 708310bf-b4b2-3826-8071-956a85b1fe4b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _690, server: tj-hk01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-hk01.yiyodns.xyz, skip-cert-verify: true, udp: true}
-  - {name: _1402 | 4.14Mb, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: _1760, server: sghe.tjvpn.org, port: 443, type: trojan, password: 363b95c0-e9ec-11ec-b631-225401db9d57, sni: sghe.tjvpn.org, skip-cert-verify: true, udp: true}
+  - {name: NONE, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, sni: jgwhdlb2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: _1797 |71.75Mb, server: cu-cs.okvpn.xyz, port: 20003, type: trojan, password: e10b7aab-3498-472a-9a3f-f15800163aa7, sni: cu-cs.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 297, server: cu-cs.okvpn.xyz, port: 20004, type: trojan, password: e10b7aab-3498-472a-9a3f-f15800163aa7, sni: cu-cs.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: NONE 2, server: s4.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s4.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: 14.29.124.168:25287, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25294, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25289, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25217, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _466 | 2.39Mb, server: 213.183.59.218, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: _439 | 0.59Mb, server: 213.183.59.218, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: 14.29.124.168:25226, server: 14.29.124.168, port: 25226, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25210, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 213.183.53.177:9084, server: 213.183.53.177, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: 167.88.61.50:3306, server: 167.88.61.50, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _689, server: 38.143.66.99, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 167.88.61.50:7307, server: 167.88.61.50, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 213.183.53.177:9000, server: 213.183.53.177, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: 167.88.61.50:7306, server: 167.88.61.50, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_3299, server: 167.88.61.14, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _540 | 2.62Mb, server: 213.183.51.172, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: 167.88.61.50:8091, server: 167.88.61.50, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _1403 |19.06Mb, server: 185.246.155.29, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: _572, server: 169.197.141.187, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _492 | 6.18Mb, server: 213.183.59.218, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: 14.29.124.168:25267, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _955 |10.91Mb, server: 213.183.53.207, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: 14.29.124.168:25220, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _489 | 4.35Mb, server: 213.183.59.218, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: 217.30.10.63:9037, server: 217.30.10.63, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: _511 | 3.68Mb, server: 213.183.59.218, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: 167.88.61.50:5004, server: 167.88.61.50, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _528 | 0.18Mb, server: 213.183.59.218, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: _570, server: 169.197.141.187, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _347, server: 185.167.116.24, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: _486 |13.24Mb, server: 213.183.59.218, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: _499 | 2.68Mb, server: 213.183.59.218, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: _492, server: 217.30.10.67, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: 198.57.27.225:9102, server: 198.57.27.225, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _835 | 3.22Mb, server: 217.30.10.67, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: _1387 |10.60Mb, server: 185.246.155.29, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: 14.29.124.168:25283, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25252, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _1640 | 8.90Mb, server: 213.183.53.207, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
+  - {name: 217.30.10.63:9084, server: 217.30.10.63, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: 14.29.124.168:25231, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 217.30.10.63:9057, server: 217.30.10.63, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: _556, server: 169.197.141.187, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _950, server: 185.126.116.119, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: _354, server: 185.167.116.24, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: _875 | 2.27Mb, server: 185.167.116.253, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: _916 | 3.52Mb, server: 217.30.10.67, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: _1627 | 8.41Mb, server: 185.246.155.46, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: 14.29.124.168:25296, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 167.88.61.2:802, server: 167.88.61.2, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: _602 | 3.90Mb, server: 213.183.59.206, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: _1030, server: 213.183.53.208, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: _512 |14.57Mb, server: 213.183.59.218, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: 185.167.116.252:9011, server: 185.167.116.252, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: 217.30.10.67:9026, server: 217.30.10.67, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: 198.57.27.225:7001, server: 198.57.27.225, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_3575 |15.85Mb, server: 38.143.66.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 167.88.61.14:8090, server: 167.88.61.14, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 167.88.61.14:7306, server: 167.88.61.14, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 217.30.10.67:9032, server: 217.30.10.67, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: _951, server: 185.126.116.119, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: _915 | 4.32Mb, server: 217.30.10.67, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: _1047 | 0.48Mb, server: 213.183.53.177, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: _1635 | 6.26Mb, server: 185.167.116.24, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: 198.57.27.225:8118, server: 198.57.27.225, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _404, server: 213.183.59.218, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: US_3745 | 9.19Mb, server: 167.88.61.50, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _1105, server: 213.183.53.208, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: 217.30.10.63:9018, server: 217.30.10.63, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: _823 | 1.53Mb, server: 217.30.10.67, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: 185.167.116.38:9038, server: 185.167.116.38, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: _694, server: 185.126.116.119, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: 198.57.27.225:5500, server: 198.57.27.225, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_3196 | 7.90Mb, server: 167.88.61.14, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _524 |11.62Mb, server: 213.183.59.218, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: _1354 |12.85Mb, server: 213.183.53.208, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
+  - {name: 198.57.27.225:8881, server: 198.57.27.225, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _563, server: 213.183.51.172, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: 217.30.10.63:9043, server: 217.30.10.63, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: 167.88.61.2:803, server: 167.88.61.2, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: _302, server: 185.167.116.24, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: _532 | 3.55Mb, server: 213.183.59.218, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: _554, server: 169.197.141.187, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _552, server: 169.197.141.187, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _1035 | 7.02Mb, server: 217.30.10.67, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: _1414 |11.20Mb, server: 185.246.155.29, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: _1660 |10.17Mb, server: 185.246.155.29, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: 217.30.10.67:9025, server: 217.30.10.67, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: _296, server: 185.167.116.24, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: 5.188.0.226:809, server: 5.188.0.226, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: _1269 | 2.73Mb, server: 213.183.53.207, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: _1364 | 2.41Mb, server: 185.246.155.35, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: _299, server: 185.167.116.24, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: 5.188.0.226:807, server: 5.188.0.226, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: _582, server: 169.197.141.187, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _731 | 4.90Mb, server: 213.183.59.218, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: _905 | 2.15Mb, server: 217.30.10.67, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: _914 | 3.35Mb, server: 217.30.10.67, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: _297, server: 185.167.116.24, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: _1695 | 5.90Mb, server: 213.183.53.207, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: _468, server: 213.183.59.218, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: _523, server: 213.183.51.172, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: _361, server: 185.167.116.24, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: _303, server: 185.167.116.24, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: _566, server: 169.197.141.187, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _892 | 3.83Mb, server: 217.30.10.67, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
+  - {name: 217.30.10.63:9015, server: 217.30.10.63, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: 14.29.124.168:25268, server: 14.29.124.168, port: 25268, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _1092, server: 38.143.66.99, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 172.255.248.35:989, server: 172.255.248.35, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: _1496 |14.49Mb, server: 213.183.53.207, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: 217.30.10.63:9027, server: 217.30.10.63, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: _776 |10.32Mb, server: 213.183.59.206, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
+  - {name: 5.188.0.226:808, server: 5.188.0.226, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: _697 | 2.20Mb, server: 185.126.116.119, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: _523 | 7.91Mb, server: 213.183.59.218, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: _844, server: 185.167.116.253, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: 217.30.10.63:9033, server: 217.30.10.63, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: _307, server: 185.167.116.24, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: AU_1978 | 6.32Mb, server: 185.167.116.38, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: 14.29.124.168:25270, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 185.167.116.38:9084, server: 185.167.116.38, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: 213.183.51.172:9070, server: 213.183.51.172, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: _929 | 0.14Mb, server: 185.167.116.252, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: AU_1990 | 4.48Mb, server: 185.167.116.38, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: 198.57.27.225:6379, server: 198.57.27.225, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 217.30.10.63:9011, server: 217.30.10.63, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: 213.183.51.172:9033, server: 213.183.51.172, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: 217.30.10.67:9020, server: 217.30.10.67, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: _1276 |62.99Mb, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _1348 | 6.89Mb, server: 213.183.53.221, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: _1419 |18.12Mb, server: 185.246.155.29, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: 213.183.51.172:9073, server: 213.183.51.172, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: 217.30.10.63:9041, server: 217.30.10.63, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: 217.30.10.63:9079, server: 217.30.10.63, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: 217.30.10.67:9015, server: 217.30.10.67, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: 217.30.10.63:9094, server: 217.30.10.63, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: _1180 | 7.28Mb, server: 213.183.53.177, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: PL_2804 | 4.89Mb, server: 217.30.10.63, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: 198.57.27.225:443, server: 198.57.27.225, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _1422 |15.85Mb, server: 185.246.155.46, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: US_3350 |10.91Mb, server: 167.88.61.50, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _469, server: 213.183.59.218, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: _567, server: 169.197.141.187, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 185.167.116.253:9019, server: 185.167.116.253, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: 5.188.0.226:806, server: 5.188.0.226, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: _1343 | 5.56Mb, server: 185.246.155.35, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: 185.167.116.38:9037, server: 185.167.116.38, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: 14.29.124.168:25235, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 217.30.10.67:9079, server: 217.30.10.67, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: _699, server: 185.126.116.119, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: _1460 | 4.77Mb, server: 185.246.155.35, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK_2053
-      - 德国 004
-      - HK_2054
-      - _1420 | 8.46Mb
-      - HK_2073
-      - HK_2068
-      - HK_2063
-      - 德国 006
-      - HK_2051
-      - HK_2067
-      - US 31
-      - HK_2062
-      - _690
-      - _1402 | 4.14Mb
+      - _1760
+      - NONE
+      - _1797 |71.75Mb
+      - CN 297
+      - NONE 2
+      - 14.29.124.168:25287
+      - 14.29.124.168:25294
+      - 14.29.124.168:25289
+      - 14.29.124.168:25217
+      - _466 | 2.39Mb
+      - _439 | 0.59Mb
+      - 14.29.124.168:25226
+      - 14.29.124.168:25210
+      - 213.183.53.177:9084
+      - 167.88.61.50:3306
+      - _689
+      - 167.88.61.50:7307
+      - 213.183.53.177:9000
+      - 167.88.61.50:7306
+      - US_3299
+      - _540 | 2.62Mb
+      - 167.88.61.50:8091
+      - _1403 |19.06Mb
+      - _572
+      - _492 | 6.18Mb
+      - 14.29.124.168:25267
+      - _955 |10.91Mb
+      - 14.29.124.168:25220
+      - _489 | 4.35Mb
+      - 217.30.10.63:9037
+      - _511 | 3.68Mb
+      - 167.88.61.50:5004
+      - _528 | 0.18Mb
+      - _570
+      - _347
+      - _486 |13.24Mb
+      - _499 | 2.68Mb
+      - _492
+      - 198.57.27.225:9102
+      - _835 | 3.22Mb
+      - _1387 |10.60Mb
+      - 14.29.124.168:25283
+      - 14.29.124.168:25252
+      - _1640 | 8.90Mb
+      - 217.30.10.63:9084
+      - 14.29.124.168:25231
+      - 217.30.10.63:9057
+      - _556
+      - _950
+      - _354
+      - _875 | 2.27Mb
+      - _916 | 3.52Mb
+      - _1627 | 8.41Mb
+      - 14.29.124.168:25296
+      - 167.88.61.2:802
+      - _602 | 3.90Mb
+      - _1030
+      - _512 |14.57Mb
+      - 185.167.116.252:9011
+      - 217.30.10.67:9026
+      - 198.57.27.225:7001
+      - US_3575 |15.85Mb
+      - 167.88.61.14:8090
+      - 167.88.61.14:7306
+      - 217.30.10.67:9032
+      - _951
+      - _915 | 4.32Mb
+      - _1047 | 0.48Mb
+      - _1635 | 6.26Mb
+      - 198.57.27.225:8118
+      - _404
+      - US_3745 | 9.19Mb
+      - _1105
+      - 217.30.10.63:9018
+      - _823 | 1.53Mb
+      - 185.167.116.38:9038
+      - _694
+      - 198.57.27.225:5500
+      - US_3196 | 7.90Mb
+      - _524 |11.62Mb
+      - _1354 |12.85Mb
+      - 198.57.27.225:8881
+      - _563
+      - 217.30.10.63:9043
+      - 167.88.61.2:803
+      - _302
+      - _532 | 3.55Mb
+      - _554
+      - _552
+      - _1035 | 7.02Mb
+      - _1414 |11.20Mb
+      - _1660 |10.17Mb
+      - 217.30.10.67:9025
+      - _296
+      - 5.188.0.226:809
+      - _1269 | 2.73Mb
+      - _1364 | 2.41Mb
+      - _299
+      - 5.188.0.226:807
+      - _582
+      - _731 | 4.90Mb
+      - _905 | 2.15Mb
+      - _914 | 3.35Mb
+      - _297
+      - _1695 | 5.90Mb
+      - _468
+      - _523
+      - _361
+      - _303
+      - _566
+      - _892 | 3.83Mb
+      - 217.30.10.63:9015
+      - 14.29.124.168:25268
+      - _1092
+      - 172.255.248.35:989
+      - _1496 |14.49Mb
+      - 217.30.10.63:9027
+      - _776 |10.32Mb
+      - 5.188.0.226:808
+      - _697 | 2.20Mb
+      - _523 | 7.91Mb
+      - _844
+      - 217.30.10.63:9033
+      - _307
+      - AU_1978 | 6.32Mb
+      - 14.29.124.168:25270
+      - 185.167.116.38:9084
+      - 213.183.51.172:9070
+      - _929 | 0.14Mb
+      - AU_1990 | 4.48Mb
+      - 198.57.27.225:6379
+      - 217.30.10.63:9011
+      - 213.183.51.172:9033
+      - 217.30.10.67:9020
+      - _1276 |62.99Mb
+      - _1348 | 6.89Mb
+      - _1419 |18.12Mb
+      - 213.183.51.172:9073
+      - 217.30.10.63:9041
+      - 217.30.10.63:9079
+      - 217.30.10.67:9015
+      - 217.30.10.63:9094
+      - _1180 | 7.28Mb
+      - PL_2804 | 4.89Mb
+      - 198.57.27.225:443
+      - _1422 |15.85Mb
+      - US_3350 |10.91Mb
+      - _469
+      - _567
+      - 185.167.116.253:9019
+      - 5.188.0.226:806
+      - _1343 | 5.56Mb
+      - 185.167.116.38:9037
+      - 14.29.124.168:25235
+      - 217.30.10.67:9079
+      - _699
+      - _1460 | 4.77Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HK_2053
-      - 德国 004
-      - HK_2054
-      - _1420 | 8.46Mb
-      - HK_2073
-      - HK_2068
-      - HK_2063
-      - 德国 006
-      - HK_2051
-      - HK_2067
-      - US 31
-      - HK_2062
-      - _690
-      - _1402 | 4.14Mb
+      - _1760
+      - NONE
+      - _1797 |71.75Mb
+      - CN 297
+      - NONE 2
+      - 14.29.124.168:25287
+      - 14.29.124.168:25294
+      - 14.29.124.168:25289
+      - 14.29.124.168:25217
+      - _466 | 2.39Mb
+      - _439 | 0.59Mb
+      - 14.29.124.168:25226
+      - 14.29.124.168:25210
+      - 213.183.53.177:9084
+      - 167.88.61.50:3306
+      - _689
+      - 167.88.61.50:7307
+      - 213.183.53.177:9000
+      - 167.88.61.50:7306
+      - US_3299
+      - _540 | 2.62Mb
+      - 167.88.61.50:8091
+      - _1403 |19.06Mb
+      - _572
+      - _492 | 6.18Mb
+      - 14.29.124.168:25267
+      - _955 |10.91Mb
+      - 14.29.124.168:25220
+      - _489 | 4.35Mb
+      - 217.30.10.63:9037
+      - _511 | 3.68Mb
+      - 167.88.61.50:5004
+      - _528 | 0.18Mb
+      - _570
+      - _347
+      - _486 |13.24Mb
+      - _499 | 2.68Mb
+      - _492
+      - 198.57.27.225:9102
+      - _835 | 3.22Mb
+      - _1387 |10.60Mb
+      - 14.29.124.168:25283
+      - 14.29.124.168:25252
+      - _1640 | 8.90Mb
+      - 217.30.10.63:9084
+      - 14.29.124.168:25231
+      - 217.30.10.63:9057
+      - _556
+      - _950
+      - _354
+      - _875 | 2.27Mb
+      - _916 | 3.52Mb
+      - _1627 | 8.41Mb
+      - 14.29.124.168:25296
+      - 167.88.61.2:802
+      - _602 | 3.90Mb
+      - _1030
+      - _512 |14.57Mb
+      - 185.167.116.252:9011
+      - 217.30.10.67:9026
+      - 198.57.27.225:7001
+      - US_3575 |15.85Mb
+      - 167.88.61.14:8090
+      - 167.88.61.14:7306
+      - 217.30.10.67:9032
+      - _951
+      - _915 | 4.32Mb
+      - _1047 | 0.48Mb
+      - _1635 | 6.26Mb
+      - 198.57.27.225:8118
+      - _404
+      - US_3745 | 9.19Mb
+      - _1105
+      - 217.30.10.63:9018
+      - _823 | 1.53Mb
+      - 185.167.116.38:9038
+      - _694
+      - 198.57.27.225:5500
+      - US_3196 | 7.90Mb
+      - _524 |11.62Mb
+      - _1354 |12.85Mb
+      - 198.57.27.225:8881
+      - _563
+      - 217.30.10.63:9043
+      - 167.88.61.2:803
+      - _302
+      - _532 | 3.55Mb
+      - _554
+      - _552
+      - _1035 | 7.02Mb
+      - _1414 |11.20Mb
+      - _1660 |10.17Mb
+      - 217.30.10.67:9025
+      - _296
+      - 5.188.0.226:809
+      - _1269 | 2.73Mb
+      - _1364 | 2.41Mb
+      - _299
+      - 5.188.0.226:807
+      - _582
+      - _731 | 4.90Mb
+      - _905 | 2.15Mb
+      - _914 | 3.35Mb
+      - _297
+      - _1695 | 5.90Mb
+      - _468
+      - _523
+      - _361
+      - _303
+      - _566
+      - _892 | 3.83Mb
+      - 217.30.10.63:9015
+      - 14.29.124.168:25268
+      - _1092
+      - 172.255.248.35:989
+      - _1496 |14.49Mb
+      - 217.30.10.63:9027
+      - _776 |10.32Mb
+      - 5.188.0.226:808
+      - _697 | 2.20Mb
+      - _523 | 7.91Mb
+      - _844
+      - 217.30.10.63:9033
+      - _307
+      - AU_1978 | 6.32Mb
+      - 14.29.124.168:25270
+      - 185.167.116.38:9084
+      - 213.183.51.172:9070
+      - _929 | 0.14Mb
+      - AU_1990 | 4.48Mb
+      - 198.57.27.225:6379
+      - 217.30.10.63:9011
+      - 213.183.51.172:9033
+      - 217.30.10.67:9020
+      - _1276 |62.99Mb
+      - _1348 | 6.89Mb
+      - _1419 |18.12Mb
+      - 213.183.51.172:9073
+      - 217.30.10.63:9041
+      - 217.30.10.63:9079
+      - 217.30.10.67:9015
+      - 217.30.10.63:9094
+      - _1180 | 7.28Mb
+      - PL_2804 | 4.89Mb
+      - 198.57.27.225:443
+      - _1422 |15.85Mb
+      - US_3350 |10.91Mb
+      - _469
+      - _567
+      - 185.167.116.253:9019
+      - 5.188.0.226:806
+      - _1343 | 5.56Mb
+      - 185.167.116.38:9037
+      - 14.29.124.168:25235
+      - 217.30.10.67:9079
+      - _699
+      - _1460 | 4.77Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK_2053
-      - 德国 004
-      - HK_2054
-      - _1420 | 8.46Mb
-      - HK_2073
-      - HK_2068
-      - HK_2063
-      - 德国 006
-      - HK_2051
-      - HK_2067
-      - US 31
-      - HK_2062
-      - _690
-      - _1402 | 4.14Mb
+      - _1760
+      - NONE
+      - _1797 |71.75Mb
+      - CN 297
+      - NONE 2
+      - 14.29.124.168:25287
+      - 14.29.124.168:25294
+      - 14.29.124.168:25289
+      - 14.29.124.168:25217
+      - _466 | 2.39Mb
+      - _439 | 0.59Mb
+      - 14.29.124.168:25226
+      - 14.29.124.168:25210
+      - 213.183.53.177:9084
+      - 167.88.61.50:3306
+      - _689
+      - 167.88.61.50:7307
+      - 213.183.53.177:9000
+      - 167.88.61.50:7306
+      - US_3299
+      - _540 | 2.62Mb
+      - 167.88.61.50:8091
+      - _1403 |19.06Mb
+      - _572
+      - _492 | 6.18Mb
+      - 14.29.124.168:25267
+      - _955 |10.91Mb
+      - 14.29.124.168:25220
+      - _489 | 4.35Mb
+      - 217.30.10.63:9037
+      - _511 | 3.68Mb
+      - 167.88.61.50:5004
+      - _528 | 0.18Mb
+      - _570
+      - _347
+      - _486 |13.24Mb
+      - _499 | 2.68Mb
+      - _492
+      - 198.57.27.225:9102
+      - _835 | 3.22Mb
+      - _1387 |10.60Mb
+      - 14.29.124.168:25283
+      - 14.29.124.168:25252
+      - _1640 | 8.90Mb
+      - 217.30.10.63:9084
+      - 14.29.124.168:25231
+      - 217.30.10.63:9057
+      - _556
+      - _950
+      - _354
+      - _875 | 2.27Mb
+      - _916 | 3.52Mb
+      - _1627 | 8.41Mb
+      - 14.29.124.168:25296
+      - 167.88.61.2:802
+      - _602 | 3.90Mb
+      - _1030
+      - _512 |14.57Mb
+      - 185.167.116.252:9011
+      - 217.30.10.67:9026
+      - 198.57.27.225:7001
+      - US_3575 |15.85Mb
+      - 167.88.61.14:8090
+      - 167.88.61.14:7306
+      - 217.30.10.67:9032
+      - _951
+      - _915 | 4.32Mb
+      - _1047 | 0.48Mb
+      - _1635 | 6.26Mb
+      - 198.57.27.225:8118
+      - _404
+      - US_3745 | 9.19Mb
+      - _1105
+      - 217.30.10.63:9018
+      - _823 | 1.53Mb
+      - 185.167.116.38:9038
+      - _694
+      - 198.57.27.225:5500
+      - US_3196 | 7.90Mb
+      - _524 |11.62Mb
+      - _1354 |12.85Mb
+      - 198.57.27.225:8881
+      - _563
+      - 217.30.10.63:9043
+      - 167.88.61.2:803
+      - _302
+      - _532 | 3.55Mb
+      - _554
+      - _552
+      - _1035 | 7.02Mb
+      - _1414 |11.20Mb
+      - _1660 |10.17Mb
+      - 217.30.10.67:9025
+      - _296
+      - 5.188.0.226:809
+      - _1269 | 2.73Mb
+      - _1364 | 2.41Mb
+      - _299
+      - 5.188.0.226:807
+      - _582
+      - _731 | 4.90Mb
+      - _905 | 2.15Mb
+      - _914 | 3.35Mb
+      - _297
+      - _1695 | 5.90Mb
+      - _468
+      - _523
+      - _361
+      - _303
+      - _566
+      - _892 | 3.83Mb
+      - 217.30.10.63:9015
+      - 14.29.124.168:25268
+      - _1092
+      - 172.255.248.35:989
+      - _1496 |14.49Mb
+      - 217.30.10.63:9027
+      - _776 |10.32Mb
+      - 5.188.0.226:808
+      - _697 | 2.20Mb
+      - _523 | 7.91Mb
+      - _844
+      - 217.30.10.63:9033
+      - _307
+      - AU_1978 | 6.32Mb
+      - 14.29.124.168:25270
+      - 185.167.116.38:9084
+      - 213.183.51.172:9070
+      - _929 | 0.14Mb
+      - AU_1990 | 4.48Mb
+      - 198.57.27.225:6379
+      - 217.30.10.63:9011
+      - 213.183.51.172:9033
+      - 217.30.10.67:9020
+      - _1276 |62.99Mb
+      - _1348 | 6.89Mb
+      - _1419 |18.12Mb
+      - 213.183.51.172:9073
+      - 217.30.10.63:9041
+      - 217.30.10.63:9079
+      - 217.30.10.67:9015
+      - 217.30.10.63:9094
+      - _1180 | 7.28Mb
+      - PL_2804 | 4.89Mb
+      - 198.57.27.225:443
+      - _1422 |15.85Mb
+      - US_3350 |10.91Mb
+      - _469
+      - _567
+      - 185.167.116.253:9019
+      - 5.188.0.226:806
+      - _1343 | 5.56Mb
+      - 185.167.116.38:9037
+      - 14.29.124.168:25235
+      - 217.30.10.67:9079
+      - _699
+      - _1460 | 4.77Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -96,20 +668,163 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK_2053
-      - 德国 004
-      - HK_2054
-      - _1420 | 8.46Mb
-      - HK_2073
-      - HK_2068
-      - HK_2063
-      - 德国 006
-      - HK_2051
-      - HK_2067
-      - US 31
-      - HK_2062
-      - _690
-      - _1402 | 4.14Mb
+      - _1760
+      - NONE
+      - _1797 |71.75Mb
+      - CN 297
+      - NONE 2
+      - 14.29.124.168:25287
+      - 14.29.124.168:25294
+      - 14.29.124.168:25289
+      - 14.29.124.168:25217
+      - _466 | 2.39Mb
+      - _439 | 0.59Mb
+      - 14.29.124.168:25226
+      - 14.29.124.168:25210
+      - 213.183.53.177:9084
+      - 167.88.61.50:3306
+      - _689
+      - 167.88.61.50:7307
+      - 213.183.53.177:9000
+      - 167.88.61.50:7306
+      - US_3299
+      - _540 | 2.62Mb
+      - 167.88.61.50:8091
+      - _1403 |19.06Mb
+      - _572
+      - _492 | 6.18Mb
+      - 14.29.124.168:25267
+      - _955 |10.91Mb
+      - 14.29.124.168:25220
+      - _489 | 4.35Mb
+      - 217.30.10.63:9037
+      - _511 | 3.68Mb
+      - 167.88.61.50:5004
+      - _528 | 0.18Mb
+      - _570
+      - _347
+      - _486 |13.24Mb
+      - _499 | 2.68Mb
+      - _492
+      - 198.57.27.225:9102
+      - _835 | 3.22Mb
+      - _1387 |10.60Mb
+      - 14.29.124.168:25283
+      - 14.29.124.168:25252
+      - _1640 | 8.90Mb
+      - 217.30.10.63:9084
+      - 14.29.124.168:25231
+      - 217.30.10.63:9057
+      - _556
+      - _950
+      - _354
+      - _875 | 2.27Mb
+      - _916 | 3.52Mb
+      - _1627 | 8.41Mb
+      - 14.29.124.168:25296
+      - 167.88.61.2:802
+      - _602 | 3.90Mb
+      - _1030
+      - _512 |14.57Mb
+      - 185.167.116.252:9011
+      - 217.30.10.67:9026
+      - 198.57.27.225:7001
+      - US_3575 |15.85Mb
+      - 167.88.61.14:8090
+      - 167.88.61.14:7306
+      - 217.30.10.67:9032
+      - _951
+      - _915 | 4.32Mb
+      - _1047 | 0.48Mb
+      - _1635 | 6.26Mb
+      - 198.57.27.225:8118
+      - _404
+      - US_3745 | 9.19Mb
+      - _1105
+      - 217.30.10.63:9018
+      - _823 | 1.53Mb
+      - 185.167.116.38:9038
+      - _694
+      - 198.57.27.225:5500
+      - US_3196 | 7.90Mb
+      - _524 |11.62Mb
+      - _1354 |12.85Mb
+      - 198.57.27.225:8881
+      - _563
+      - 217.30.10.63:9043
+      - 167.88.61.2:803
+      - _302
+      - _532 | 3.55Mb
+      - _554
+      - _552
+      - _1035 | 7.02Mb
+      - _1414 |11.20Mb
+      - _1660 |10.17Mb
+      - 217.30.10.67:9025
+      - _296
+      - 5.188.0.226:809
+      - _1269 | 2.73Mb
+      - _1364 | 2.41Mb
+      - _299
+      - 5.188.0.226:807
+      - _582
+      - _731 | 4.90Mb
+      - _905 | 2.15Mb
+      - _914 | 3.35Mb
+      - _297
+      - _1695 | 5.90Mb
+      - _468
+      - _523
+      - _361
+      - _303
+      - _566
+      - _892 | 3.83Mb
+      - 217.30.10.63:9015
+      - 14.29.124.168:25268
+      - _1092
+      - 172.255.248.35:989
+      - _1496 |14.49Mb
+      - 217.30.10.63:9027
+      - _776 |10.32Mb
+      - 5.188.0.226:808
+      - _697 | 2.20Mb
+      - _523 | 7.91Mb
+      - _844
+      - 217.30.10.63:9033
+      - _307
+      - AU_1978 | 6.32Mb
+      - 14.29.124.168:25270
+      - 185.167.116.38:9084
+      - 213.183.51.172:9070
+      - _929 | 0.14Mb
+      - AU_1990 | 4.48Mb
+      - 198.57.27.225:6379
+      - 217.30.10.63:9011
+      - 213.183.51.172:9033
+      - 217.30.10.67:9020
+      - _1276 |62.99Mb
+      - _1348 | 6.89Mb
+      - _1419 |18.12Mb
+      - 213.183.51.172:9073
+      - 217.30.10.63:9041
+      - 217.30.10.63:9079
+      - 217.30.10.67:9015
+      - 217.30.10.63:9094
+      - _1180 | 7.28Mb
+      - PL_2804 | 4.89Mb
+      - 198.57.27.225:443
+      - _1422 |15.85Mb
+      - US_3350 |10.91Mb
+      - _469
+      - _567
+      - 185.167.116.253:9019
+      - 5.188.0.226:806
+      - _1343 | 5.56Mb
+      - 185.167.116.38:9037
+      - 14.29.124.168:25235
+      - 217.30.10.67:9079
+      - _699
+      - _1460 | 4.77Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -120,59 +835,488 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HK_2053
-      - 德国 004
-      - HK_2054
-      - _1420 | 8.46Mb
-      - HK_2073
-      - HK_2068
-      - HK_2063
-      - 德国 006
-      - HK_2051
-      - HK_2067
-      - US 31
-      - HK_2062
-      - _690
-      - _1402 | 4.14Mb
+      - _1760
+      - NONE
+      - _1797 |71.75Mb
+      - CN 297
+      - NONE 2
+      - 14.29.124.168:25287
+      - 14.29.124.168:25294
+      - 14.29.124.168:25289
+      - 14.29.124.168:25217
+      - _466 | 2.39Mb
+      - _439 | 0.59Mb
+      - 14.29.124.168:25226
+      - 14.29.124.168:25210
+      - 213.183.53.177:9084
+      - 167.88.61.50:3306
+      - _689
+      - 167.88.61.50:7307
+      - 213.183.53.177:9000
+      - 167.88.61.50:7306
+      - US_3299
+      - _540 | 2.62Mb
+      - 167.88.61.50:8091
+      - _1403 |19.06Mb
+      - _572
+      - _492 | 6.18Mb
+      - 14.29.124.168:25267
+      - _955 |10.91Mb
+      - 14.29.124.168:25220
+      - _489 | 4.35Mb
+      - 217.30.10.63:9037
+      - _511 | 3.68Mb
+      - 167.88.61.50:5004
+      - _528 | 0.18Mb
+      - _570
+      - _347
+      - _486 |13.24Mb
+      - _499 | 2.68Mb
+      - _492
+      - 198.57.27.225:9102
+      - _835 | 3.22Mb
+      - _1387 |10.60Mb
+      - 14.29.124.168:25283
+      - 14.29.124.168:25252
+      - _1640 | 8.90Mb
+      - 217.30.10.63:9084
+      - 14.29.124.168:25231
+      - 217.30.10.63:9057
+      - _556
+      - _950
+      - _354
+      - _875 | 2.27Mb
+      - _916 | 3.52Mb
+      - _1627 | 8.41Mb
+      - 14.29.124.168:25296
+      - 167.88.61.2:802
+      - _602 | 3.90Mb
+      - _1030
+      - _512 |14.57Mb
+      - 185.167.116.252:9011
+      - 217.30.10.67:9026
+      - 198.57.27.225:7001
+      - US_3575 |15.85Mb
+      - 167.88.61.14:8090
+      - 167.88.61.14:7306
+      - 217.30.10.67:9032
+      - _951
+      - _915 | 4.32Mb
+      - _1047 | 0.48Mb
+      - _1635 | 6.26Mb
+      - 198.57.27.225:8118
+      - _404
+      - US_3745 | 9.19Mb
+      - _1105
+      - 217.30.10.63:9018
+      - _823 | 1.53Mb
+      - 185.167.116.38:9038
+      - _694
+      - 198.57.27.225:5500
+      - US_3196 | 7.90Mb
+      - _524 |11.62Mb
+      - _1354 |12.85Mb
+      - 198.57.27.225:8881
+      - _563
+      - 217.30.10.63:9043
+      - 167.88.61.2:803
+      - _302
+      - _532 | 3.55Mb
+      - _554
+      - _552
+      - _1035 | 7.02Mb
+      - _1414 |11.20Mb
+      - _1660 |10.17Mb
+      - 217.30.10.67:9025
+      - _296
+      - 5.188.0.226:809
+      - _1269 | 2.73Mb
+      - _1364 | 2.41Mb
+      - _299
+      - 5.188.0.226:807
+      - _582
+      - _731 | 4.90Mb
+      - _905 | 2.15Mb
+      - _914 | 3.35Mb
+      - _297
+      - _1695 | 5.90Mb
+      - _468
+      - _523
+      - _361
+      - _303
+      - _566
+      - _892 | 3.83Mb
+      - 217.30.10.63:9015
+      - 14.29.124.168:25268
+      - _1092
+      - 172.255.248.35:989
+      - _1496 |14.49Mb
+      - 217.30.10.63:9027
+      - _776 |10.32Mb
+      - 5.188.0.226:808
+      - _697 | 2.20Mb
+      - _523 | 7.91Mb
+      - _844
+      - 217.30.10.63:9033
+      - _307
+      - AU_1978 | 6.32Mb
+      - 14.29.124.168:25270
+      - 185.167.116.38:9084
+      - 213.183.51.172:9070
+      - _929 | 0.14Mb
+      - AU_1990 | 4.48Mb
+      - 198.57.27.225:6379
+      - 217.30.10.63:9011
+      - 213.183.51.172:9033
+      - 217.30.10.67:9020
+      - _1276 |62.99Mb
+      - _1348 | 6.89Mb
+      - _1419 |18.12Mb
+      - 213.183.51.172:9073
+      - 217.30.10.63:9041
+      - 217.30.10.63:9079
+      - 217.30.10.67:9015
+      - 217.30.10.63:9094
+      - _1180 | 7.28Mb
+      - PL_2804 | 4.89Mb
+      - 198.57.27.225:443
+      - _1422 |15.85Mb
+      - US_3350 |10.91Mb
+      - _469
+      - _567
+      - 185.167.116.253:9019
+      - 5.188.0.226:806
+      - _1343 | 5.56Mb
+      - 185.167.116.38:9037
+      - 14.29.124.168:25235
+      - 217.30.10.67:9079
+      - _699
+      - _1460 | 4.77Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HK_2053
-      - 德国 004
-      - HK_2054
-      - _1420 | 8.46Mb
-      - HK_2073
-      - HK_2068
-      - HK_2063
-      - 德国 006
-      - HK_2051
-      - HK_2067
-      - US 31
-      - HK_2062
-      - _690
-      - _1402 | 4.14Mb
+      - _1760
+      - NONE
+      - _1797 |71.75Mb
+      - CN 297
+      - NONE 2
+      - 14.29.124.168:25287
+      - 14.29.124.168:25294
+      - 14.29.124.168:25289
+      - 14.29.124.168:25217
+      - _466 | 2.39Mb
+      - _439 | 0.59Mb
+      - 14.29.124.168:25226
+      - 14.29.124.168:25210
+      - 213.183.53.177:9084
+      - 167.88.61.50:3306
+      - _689
+      - 167.88.61.50:7307
+      - 213.183.53.177:9000
+      - 167.88.61.50:7306
+      - US_3299
+      - _540 | 2.62Mb
+      - 167.88.61.50:8091
+      - _1403 |19.06Mb
+      - _572
+      - _492 | 6.18Mb
+      - 14.29.124.168:25267
+      - _955 |10.91Mb
+      - 14.29.124.168:25220
+      - _489 | 4.35Mb
+      - 217.30.10.63:9037
+      - _511 | 3.68Mb
+      - 167.88.61.50:5004
+      - _528 | 0.18Mb
+      - _570
+      - _347
+      - _486 |13.24Mb
+      - _499 | 2.68Mb
+      - _492
+      - 198.57.27.225:9102
+      - _835 | 3.22Mb
+      - _1387 |10.60Mb
+      - 14.29.124.168:25283
+      - 14.29.124.168:25252
+      - _1640 | 8.90Mb
+      - 217.30.10.63:9084
+      - 14.29.124.168:25231
+      - 217.30.10.63:9057
+      - _556
+      - _950
+      - _354
+      - _875 | 2.27Mb
+      - _916 | 3.52Mb
+      - _1627 | 8.41Mb
+      - 14.29.124.168:25296
+      - 167.88.61.2:802
+      - _602 | 3.90Mb
+      - _1030
+      - _512 |14.57Mb
+      - 185.167.116.252:9011
+      - 217.30.10.67:9026
+      - 198.57.27.225:7001
+      - US_3575 |15.85Mb
+      - 167.88.61.14:8090
+      - 167.88.61.14:7306
+      - 217.30.10.67:9032
+      - _951
+      - _915 | 4.32Mb
+      - _1047 | 0.48Mb
+      - _1635 | 6.26Mb
+      - 198.57.27.225:8118
+      - _404
+      - US_3745 | 9.19Mb
+      - _1105
+      - 217.30.10.63:9018
+      - _823 | 1.53Mb
+      - 185.167.116.38:9038
+      - _694
+      - 198.57.27.225:5500
+      - US_3196 | 7.90Mb
+      - _524 |11.62Mb
+      - _1354 |12.85Mb
+      - 198.57.27.225:8881
+      - _563
+      - 217.30.10.63:9043
+      - 167.88.61.2:803
+      - _302
+      - _532 | 3.55Mb
+      - _554
+      - _552
+      - _1035 | 7.02Mb
+      - _1414 |11.20Mb
+      - _1660 |10.17Mb
+      - 217.30.10.67:9025
+      - _296
+      - 5.188.0.226:809
+      - _1269 | 2.73Mb
+      - _1364 | 2.41Mb
+      - _299
+      - 5.188.0.226:807
+      - _582
+      - _731 | 4.90Mb
+      - _905 | 2.15Mb
+      - _914 | 3.35Mb
+      - _297
+      - _1695 | 5.90Mb
+      - _468
+      - _523
+      - _361
+      - _303
+      - _566
+      - _892 | 3.83Mb
+      - 217.30.10.63:9015
+      - 14.29.124.168:25268
+      - _1092
+      - 172.255.248.35:989
+      - _1496 |14.49Mb
+      - 217.30.10.63:9027
+      - _776 |10.32Mb
+      - 5.188.0.226:808
+      - _697 | 2.20Mb
+      - _523 | 7.91Mb
+      - _844
+      - 217.30.10.63:9033
+      - _307
+      - AU_1978 | 6.32Mb
+      - 14.29.124.168:25270
+      - 185.167.116.38:9084
+      - 213.183.51.172:9070
+      - _929 | 0.14Mb
+      - AU_1990 | 4.48Mb
+      - 198.57.27.225:6379
+      - 217.30.10.63:9011
+      - 213.183.51.172:9033
+      - 217.30.10.67:9020
+      - _1276 |62.99Mb
+      - _1348 | 6.89Mb
+      - _1419 |18.12Mb
+      - 213.183.51.172:9073
+      - 217.30.10.63:9041
+      - 217.30.10.63:9079
+      - 217.30.10.67:9015
+      - 217.30.10.63:9094
+      - _1180 | 7.28Mb
+      - PL_2804 | 4.89Mb
+      - 198.57.27.225:443
+      - _1422 |15.85Mb
+      - US_3350 |10.91Mb
+      - _469
+      - _567
+      - 185.167.116.253:9019
+      - 5.188.0.226:806
+      - _1343 | 5.56Mb
+      - 185.167.116.38:9037
+      - 14.29.124.168:25235
+      - 217.30.10.67:9079
+      - _699
+      - _1460 | 4.77Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK_2053
-      - 德国 004
-      - HK_2054
-      - _1420 | 8.46Mb
-      - HK_2073
-      - HK_2068
-      - HK_2063
-      - 德国 006
-      - HK_2051
-      - HK_2067
-      - US 31
-      - HK_2062
-      - _690
-      - _1402 | 4.14Mb
+      - _1760
+      - NONE
+      - _1797 |71.75Mb
+      - CN 297
+      - NONE 2
+      - 14.29.124.168:25287
+      - 14.29.124.168:25294
+      - 14.29.124.168:25289
+      - 14.29.124.168:25217
+      - _466 | 2.39Mb
+      - _439 | 0.59Mb
+      - 14.29.124.168:25226
+      - 14.29.124.168:25210
+      - 213.183.53.177:9084
+      - 167.88.61.50:3306
+      - _689
+      - 167.88.61.50:7307
+      - 213.183.53.177:9000
+      - 167.88.61.50:7306
+      - US_3299
+      - _540 | 2.62Mb
+      - 167.88.61.50:8091
+      - _1403 |19.06Mb
+      - _572
+      - _492 | 6.18Mb
+      - 14.29.124.168:25267
+      - _955 |10.91Mb
+      - 14.29.124.168:25220
+      - _489 | 4.35Mb
+      - 217.30.10.63:9037
+      - _511 | 3.68Mb
+      - 167.88.61.50:5004
+      - _528 | 0.18Mb
+      - _570
+      - _347
+      - _486 |13.24Mb
+      - _499 | 2.68Mb
+      - _492
+      - 198.57.27.225:9102
+      - _835 | 3.22Mb
+      - _1387 |10.60Mb
+      - 14.29.124.168:25283
+      - 14.29.124.168:25252
+      - _1640 | 8.90Mb
+      - 217.30.10.63:9084
+      - 14.29.124.168:25231
+      - 217.30.10.63:9057
+      - _556
+      - _950
+      - _354
+      - _875 | 2.27Mb
+      - _916 | 3.52Mb
+      - _1627 | 8.41Mb
+      - 14.29.124.168:25296
+      - 167.88.61.2:802
+      - _602 | 3.90Mb
+      - _1030
+      - _512 |14.57Mb
+      - 185.167.116.252:9011
+      - 217.30.10.67:9026
+      - 198.57.27.225:7001
+      - US_3575 |15.85Mb
+      - 167.88.61.14:8090
+      - 167.88.61.14:7306
+      - 217.30.10.67:9032
+      - _951
+      - _915 | 4.32Mb
+      - _1047 | 0.48Mb
+      - _1635 | 6.26Mb
+      - 198.57.27.225:8118
+      - _404
+      - US_3745 | 9.19Mb
+      - _1105
+      - 217.30.10.63:9018
+      - _823 | 1.53Mb
+      - 185.167.116.38:9038
+      - _694
+      - 198.57.27.225:5500
+      - US_3196 | 7.90Mb
+      - _524 |11.62Mb
+      - _1354 |12.85Mb
+      - 198.57.27.225:8881
+      - _563
+      - 217.30.10.63:9043
+      - 167.88.61.2:803
+      - _302
+      - _532 | 3.55Mb
+      - _554
+      - _552
+      - _1035 | 7.02Mb
+      - _1414 |11.20Mb
+      - _1660 |10.17Mb
+      - 217.30.10.67:9025
+      - _296
+      - 5.188.0.226:809
+      - _1269 | 2.73Mb
+      - _1364 | 2.41Mb
+      - _299
+      - 5.188.0.226:807
+      - _582
+      - _731 | 4.90Mb
+      - _905 | 2.15Mb
+      - _914 | 3.35Mb
+      - _297
+      - _1695 | 5.90Mb
+      - _468
+      - _523
+      - _361
+      - _303
+      - _566
+      - _892 | 3.83Mb
+      - 217.30.10.63:9015
+      - 14.29.124.168:25268
+      - _1092
+      - 172.255.248.35:989
+      - _1496 |14.49Mb
+      - 217.30.10.63:9027
+      - _776 |10.32Mb
+      - 5.188.0.226:808
+      - _697 | 2.20Mb
+      - _523 | 7.91Mb
+      - _844
+      - 217.30.10.63:9033
+      - _307
+      - AU_1978 | 6.32Mb
+      - 14.29.124.168:25270
+      - 185.167.116.38:9084
+      - 213.183.51.172:9070
+      - _929 | 0.14Mb
+      - AU_1990 | 4.48Mb
+      - 198.57.27.225:6379
+      - 217.30.10.63:9011
+      - 213.183.51.172:9033
+      - 217.30.10.67:9020
+      - _1276 |62.99Mb
+      - _1348 | 6.89Mb
+      - _1419 |18.12Mb
+      - 213.183.51.172:9073
+      - 217.30.10.63:9041
+      - 217.30.10.63:9079
+      - 217.30.10.67:9015
+      - 217.30.10.63:9094
+      - _1180 | 7.28Mb
+      - PL_2804 | 4.89Mb
+      - 198.57.27.225:443
+      - _1422 |15.85Mb
+      - US_3350 |10.91Mb
+      - _469
+      - _567
+      - 185.167.116.253:9019
+      - 5.188.0.226:806
+      - _1343 | 5.56Mb
+      - 185.167.116.38:9037
+      - 14.29.124.168:25235
+      - 217.30.10.67:9079
+      - _699
+      - _1460 | 4.77Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -188,20 +1332,163 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK_2053
-      - 德国 004
-      - HK_2054
-      - _1420 | 8.46Mb
-      - HK_2073
-      - HK_2068
-      - HK_2063
-      - 德国 006
-      - HK_2051
-      - HK_2067
-      - US 31
-      - HK_2062
-      - _690
-      - _1402 | 4.14Mb
+      - _1760
+      - NONE
+      - _1797 |71.75Mb
+      - CN 297
+      - NONE 2
+      - 14.29.124.168:25287
+      - 14.29.124.168:25294
+      - 14.29.124.168:25289
+      - 14.29.124.168:25217
+      - _466 | 2.39Mb
+      - _439 | 0.59Mb
+      - 14.29.124.168:25226
+      - 14.29.124.168:25210
+      - 213.183.53.177:9084
+      - 167.88.61.50:3306
+      - _689
+      - 167.88.61.50:7307
+      - 213.183.53.177:9000
+      - 167.88.61.50:7306
+      - US_3299
+      - _540 | 2.62Mb
+      - 167.88.61.50:8091
+      - _1403 |19.06Mb
+      - _572
+      - _492 | 6.18Mb
+      - 14.29.124.168:25267
+      - _955 |10.91Mb
+      - 14.29.124.168:25220
+      - _489 | 4.35Mb
+      - 217.30.10.63:9037
+      - _511 | 3.68Mb
+      - 167.88.61.50:5004
+      - _528 | 0.18Mb
+      - _570
+      - _347
+      - _486 |13.24Mb
+      - _499 | 2.68Mb
+      - _492
+      - 198.57.27.225:9102
+      - _835 | 3.22Mb
+      - _1387 |10.60Mb
+      - 14.29.124.168:25283
+      - 14.29.124.168:25252
+      - _1640 | 8.90Mb
+      - 217.30.10.63:9084
+      - 14.29.124.168:25231
+      - 217.30.10.63:9057
+      - _556
+      - _950
+      - _354
+      - _875 | 2.27Mb
+      - _916 | 3.52Mb
+      - _1627 | 8.41Mb
+      - 14.29.124.168:25296
+      - 167.88.61.2:802
+      - _602 | 3.90Mb
+      - _1030
+      - _512 |14.57Mb
+      - 185.167.116.252:9011
+      - 217.30.10.67:9026
+      - 198.57.27.225:7001
+      - US_3575 |15.85Mb
+      - 167.88.61.14:8090
+      - 167.88.61.14:7306
+      - 217.30.10.67:9032
+      - _951
+      - _915 | 4.32Mb
+      - _1047 | 0.48Mb
+      - _1635 | 6.26Mb
+      - 198.57.27.225:8118
+      - _404
+      - US_3745 | 9.19Mb
+      - _1105
+      - 217.30.10.63:9018
+      - _823 | 1.53Mb
+      - 185.167.116.38:9038
+      - _694
+      - 198.57.27.225:5500
+      - US_3196 | 7.90Mb
+      - _524 |11.62Mb
+      - _1354 |12.85Mb
+      - 198.57.27.225:8881
+      - _563
+      - 217.30.10.63:9043
+      - 167.88.61.2:803
+      - _302
+      - _532 | 3.55Mb
+      - _554
+      - _552
+      - _1035 | 7.02Mb
+      - _1414 |11.20Mb
+      - _1660 |10.17Mb
+      - 217.30.10.67:9025
+      - _296
+      - 5.188.0.226:809
+      - _1269 | 2.73Mb
+      - _1364 | 2.41Mb
+      - _299
+      - 5.188.0.226:807
+      - _582
+      - _731 | 4.90Mb
+      - _905 | 2.15Mb
+      - _914 | 3.35Mb
+      - _297
+      - _1695 | 5.90Mb
+      - _468
+      - _523
+      - _361
+      - _303
+      - _566
+      - _892 | 3.83Mb
+      - 217.30.10.63:9015
+      - 14.29.124.168:25268
+      - _1092
+      - 172.255.248.35:989
+      - _1496 |14.49Mb
+      - 217.30.10.63:9027
+      - _776 |10.32Mb
+      - 5.188.0.226:808
+      - _697 | 2.20Mb
+      - _523 | 7.91Mb
+      - _844
+      - 217.30.10.63:9033
+      - _307
+      - AU_1978 | 6.32Mb
+      - 14.29.124.168:25270
+      - 185.167.116.38:9084
+      - 213.183.51.172:9070
+      - _929 | 0.14Mb
+      - AU_1990 | 4.48Mb
+      - 198.57.27.225:6379
+      - 217.30.10.63:9011
+      - 213.183.51.172:9033
+      - 217.30.10.67:9020
+      - _1276 |62.99Mb
+      - _1348 | 6.89Mb
+      - _1419 |18.12Mb
+      - 213.183.51.172:9073
+      - 217.30.10.63:9041
+      - 217.30.10.63:9079
+      - 217.30.10.67:9015
+      - 217.30.10.63:9094
+      - _1180 | 7.28Mb
+      - PL_2804 | 4.89Mb
+      - 198.57.27.225:443
+      - _1422 |15.85Mb
+      - US_3350 |10.91Mb
+      - _469
+      - _567
+      - 185.167.116.253:9019
+      - 5.188.0.226:806
+      - _1343 | 5.56Mb
+      - 185.167.116.38:9037
+      - 14.29.124.168:25235
+      - 217.30.10.67:9079
+      - _699
+      - _1460 | 4.77Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
