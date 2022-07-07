@@ -5,151 +5,103 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK 2｜openit.ml, server: hkt.52147.top, port: 28000, type: trojan, password: c35ff7bd-3596-48df-8cfc-41f8c576ab4e, sni: hkt.52147.top, skip-cert-verify: true, udp: true}
-  - {name: CN 18｜openit.ml, server: hnyd.52147.top, port: 30180, type: trojan, password: c35ff7bd-3596-48df-8cfc-41f8c576ab4e, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
-  - {name: CN 53｜openit.ml, server: hnyd.52147.top, port: 30120, type: trojan, password: c35ff7bd-3596-48df-8cfc-41f8c576ab4e, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
-  - {name: US_2589 |17.37Mb, server: 20.239.88.144, port: 80, type: vmess, uuid: e982184f-c6e0-4ba4-91cc-71eb6c702588, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /nkpvpn.site, ws-headers: {Host: 20.239.88.144}, udp: true}
-  - {name: CN 44｜openit.ml, server: hnyd.52147.top, port: 30080, type: trojan, password: c35ff7bd-3596-48df-8cfc-41f8c576ab4e, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
-  - {name: _1690 | 7.62Mb, server: 167.88.61.15, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: CN 25｜openit.ml, server: hnyd.52147.top, port: 30130, type: trojan, password: c35ff7bd-3596-48df-8cfc-41f8c576ab4e, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
-  - {name: CN 19｜openit.ml, server: hnyd.52147.top, port: 30010, type: trojan, password: c35ff7bd-3596-48df-8cfc-41f8c576ab4e, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
-  - {name: _1194, server: 213.183.53.177, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: _1712 |11.21Mb, server: 167.88.61.15, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _1428 | 6.01Mb, server: 167.88.62.68, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: JP_2268 |10.51Mb, server: 185.172.113.182, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: _1395 | 6.49Mb, server: 167.88.62.68, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _1771 | 8.32Mb, server: 167.88.61.15, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _1751 | 7.64Mb, server: 167.88.61.213, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _1768 | 9.74Mb, server: 167.88.61.213, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _1975 | 4.90Mb, server: 89.31.126.147, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: _1704 | 0.56Mb, server: 167.88.61.15, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _665, server: 167.88.62.68, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _1729 |15.40Mb, server: 167.88.61.15, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 217.30.10.66:9041, server: 217.30.10.66, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: _1779 |14.01Mb, server: 167.88.61.213, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _1785 | 9.52Mb, server: 167.88.61.213, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_2553 | 9.50Mb, server: 167.88.62.68, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: CA 1｜openit.ml, server: 625us.ok365.cyou, port: 443, type: trojan, password: ab50a15b-d263-43ad-95b4-8ec176a598c8, sni: 625us.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: _1734 |16.34Mb, server: 167.88.61.213, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _1394 | 8.97Mb, server: 167.88.62.68, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _1435 | 6.07Mb, server: 167.88.62.68, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _1497 | 5.31Mb, server: 167.88.62.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _1998 |10.11Mb, server: 89.31.126.147, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: _2035 |18.58Mb, server: gzyd1.52147.top, port: 30080, type: trojan, password: c35ff7bd-3596-48df-8cfc-41f8c576ab4e, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
-  - {name: _1728 |14.12Mb, server: 167.88.61.15, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _02, server: 111.45.32.201, port: 5988, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 6f9d8115989.microsoft.com}, udp: true}
+  - {name: CN 37｜openit.ml, server: 111.45.32.201, port: 5988, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 6f9d8115989.microsoft.com}, udp: true}
+  - {name: HK 2｜openit.ml, server: hkt.node.qchwnd.moe, port: 44609, type: trojan, password: 2971161c-46af-4ac3-b9c3-409b2750a751, sni: hkt.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: _03 |45.78Mb, server: 120.240.50.212, port: 1172, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 6f9d8115989.microsoft.com}, udp: true}
+  - {name: _2016 |25.53Mb, server: gzyd2.52147.top, port: 20120, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
+  - {name: _2057 |45.90Mb, server: gzyd1.52147.top, port: 20120, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: TW_2213 | 9.30Mb, server: hinet.52147.top, port: 28443, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, sni: hinet.52147.top, skip-cert-verify: true, udp: true}
+  - {name: _2006, server: 45.137.97.205, port: 443, type: trojan, password: 73072a23-2be5-3715-ab57-8c5e1d48d610, skip-cert-verify: true, udp: true}
+  - {name: AU 2｜openit.ml, server: 37.123.192.9, port: 443, type: trojan, password: 3fb3b8b4e9, skip-cert-verify: true, udp: true}
+  - {name: _2010 |37.68Mb, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: _2056 | 8.65Mb, server: hnyd.52147.top, port: 20060, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: CN 21｜openit.ml, server: hnyd.52147.top, port: 20120, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: US_2543 |16.76Mb, server: 138.68.248.130, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
+  - {name: _2058 |33.15Mb, server: hnyd.52147.top, port: 20110, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: CN 38｜openit.ml, server: 120.240.50.212, port: 1172, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 6f9d8115989.microsoft.com}, udp: true}
+  - {name: JP_2265 |12.27Mb, server: 85.208.108.93, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _1948 |14.63Mb, server: 194.156.231.251, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: _2097, server: gzyd1.52147.top, port: 20110, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: _2011 |40.44Mb, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: _57, server: 185.167.116.250, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - _02
+      - CN 37｜openit.ml
       - HK 2｜openit.ml
-      - CN 18｜openit.ml
-      - CN 53｜openit.ml
-      - US_2589 |17.37Mb
-      - CN 44｜openit.ml
-      - _1690 | 7.62Mb
-      - CN 25｜openit.ml
-      - CN 19｜openit.ml
-      - _1194
-      - _1712 |11.21Mb
-      - _1428 | 6.01Mb
-      - JP_2268 |10.51Mb
-      - _1395 | 6.49Mb
-      - _1771 | 8.32Mb
-      - _1751 | 7.64Mb
-      - _1768 | 9.74Mb
-      - _1975 | 4.90Mb
-      - _1704 | 0.56Mb
-      - _665
-      - _1729 |15.40Mb
-      - 217.30.10.66:9041
-      - _1779 |14.01Mb
-      - _1785 | 9.52Mb
-      - US_2553 | 9.50Mb
-      - CA 1｜openit.ml
-      - _1734 |16.34Mb
-      - _1394 | 8.97Mb
-      - _1435 | 6.07Mb
-      - _1497 | 5.31Mb
-      - _1998 |10.11Mb
-      - _2035 |18.58Mb
-      - _1728 |14.12Mb
+      - _03 |45.78Mb
+      - _2016 |25.53Mb
+      - _2057 |45.90Mb
+      - TW_2213 | 9.30Mb
+      - _2006
+      - AU 2｜openit.ml
+      - _2010 |37.68Mb
+      - _2056 | 8.65Mb
+      - CN 21｜openit.ml
+      - US_2543 |16.76Mb
+      - _2058 |33.15Mb
+      - CN 38｜openit.ml
+      - JP_2265 |12.27Mb
+      - _1948 |14.63Mb
+      - _2097
+      - _2011 |40.44Mb
+      - _57
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - _02
+      - CN 37｜openit.ml
       - HK 2｜openit.ml
-      - CN 18｜openit.ml
-      - CN 53｜openit.ml
-      - US_2589 |17.37Mb
-      - CN 44｜openit.ml
-      - _1690 | 7.62Mb
-      - CN 25｜openit.ml
-      - CN 19｜openit.ml
-      - _1194
-      - _1712 |11.21Mb
-      - _1428 | 6.01Mb
-      - JP_2268 |10.51Mb
-      - _1395 | 6.49Mb
-      - _1771 | 8.32Mb
-      - _1751 | 7.64Mb
-      - _1768 | 9.74Mb
-      - _1975 | 4.90Mb
-      - _1704 | 0.56Mb
-      - _665
-      - _1729 |15.40Mb
-      - 217.30.10.66:9041
-      - _1779 |14.01Mb
-      - _1785 | 9.52Mb
-      - US_2553 | 9.50Mb
-      - CA 1｜openit.ml
-      - _1734 |16.34Mb
-      - _1394 | 8.97Mb
-      - _1435 | 6.07Mb
-      - _1497 | 5.31Mb
-      - _1998 |10.11Mb
-      - _2035 |18.58Mb
-      - _1728 |14.12Mb
+      - _03 |45.78Mb
+      - _2016 |25.53Mb
+      - _2057 |45.90Mb
+      - TW_2213 | 9.30Mb
+      - _2006
+      - AU 2｜openit.ml
+      - _2010 |37.68Mb
+      - _2056 | 8.65Mb
+      - CN 21｜openit.ml
+      - US_2543 |16.76Mb
+      - _2058 |33.15Mb
+      - CN 38｜openit.ml
+      - JP_2265 |12.27Mb
+      - _1948 |14.63Mb
+      - _2097
+      - _2011 |40.44Mb
+      - _57
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - _02
+      - CN 37｜openit.ml
       - HK 2｜openit.ml
-      - CN 18｜openit.ml
-      - CN 53｜openit.ml
-      - US_2589 |17.37Mb
-      - CN 44｜openit.ml
-      - _1690 | 7.62Mb
-      - CN 25｜openit.ml
-      - CN 19｜openit.ml
-      - _1194
-      - _1712 |11.21Mb
-      - _1428 | 6.01Mb
-      - JP_2268 |10.51Mb
-      - _1395 | 6.49Mb
-      - _1771 | 8.32Mb
-      - _1751 | 7.64Mb
-      - _1768 | 9.74Mb
-      - _1975 | 4.90Mb
-      - _1704 | 0.56Mb
-      - _665
-      - _1729 |15.40Mb
-      - 217.30.10.66:9041
-      - _1779 |14.01Mb
-      - _1785 | 9.52Mb
-      - US_2553 | 9.50Mb
-      - CA 1｜openit.ml
-      - _1734 |16.34Mb
-      - _1394 | 8.97Mb
-      - _1435 | 6.07Mb
-      - _1497 | 5.31Mb
-      - _1998 |10.11Mb
-      - _2035 |18.58Mb
-      - _1728 |14.12Mb
+      - _03 |45.78Mb
+      - _2016 |25.53Mb
+      - _2057 |45.90Mb
+      - TW_2213 | 9.30Mb
+      - _2006
+      - AU 2｜openit.ml
+      - _2010 |37.68Mb
+      - _2056 | 8.65Mb
+      - CN 21｜openit.ml
+      - US_2543 |16.76Mb
+      - _2058 |33.15Mb
+      - CN 38｜openit.ml
+      - JP_2265 |12.27Mb
+      - _1948 |14.63Mb
+      - _2097
+      - _2011 |40.44Mb
+      - _57
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -168,38 +120,26 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - _02
+      - CN 37｜openit.ml
       - HK 2｜openit.ml
-      - CN 18｜openit.ml
-      - CN 53｜openit.ml
-      - US_2589 |17.37Mb
-      - CN 44｜openit.ml
-      - _1690 | 7.62Mb
-      - CN 25｜openit.ml
-      - CN 19｜openit.ml
-      - _1194
-      - _1712 |11.21Mb
-      - _1428 | 6.01Mb
-      - JP_2268 |10.51Mb
-      - _1395 | 6.49Mb
-      - _1771 | 8.32Mb
-      - _1751 | 7.64Mb
-      - _1768 | 9.74Mb
-      - _1975 | 4.90Mb
-      - _1704 | 0.56Mb
-      - _665
-      - _1729 |15.40Mb
-      - 217.30.10.66:9041
-      - _1779 |14.01Mb
-      - _1785 | 9.52Mb
-      - US_2553 | 9.50Mb
-      - CA 1｜openit.ml
-      - _1734 |16.34Mb
-      - _1394 | 8.97Mb
-      - _1435 | 6.07Mb
-      - _1497 | 5.31Mb
-      - _1998 |10.11Mb
-      - _2035 |18.58Mb
-      - _1728 |14.12Mb
+      - _03 |45.78Mb
+      - _2016 |25.53Mb
+      - _2057 |45.90Mb
+      - TW_2213 | 9.30Mb
+      - _2006
+      - AU 2｜openit.ml
+      - _2010 |37.68Mb
+      - _2056 | 8.65Mb
+      - CN 21｜openit.ml
+      - US_2543 |16.76Mb
+      - _2058 |33.15Mb
+      - CN 38｜openit.ml
+      - JP_2265 |12.27Mb
+      - _1948 |14.63Mb
+      - _2097
+      - _2011 |40.44Mb
+      - _57
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -210,113 +150,77 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - _02
+      - CN 37｜openit.ml
       - HK 2｜openit.ml
-      - CN 18｜openit.ml
-      - CN 53｜openit.ml
-      - US_2589 |17.37Mb
-      - CN 44｜openit.ml
-      - _1690 | 7.62Mb
-      - CN 25｜openit.ml
-      - CN 19｜openit.ml
-      - _1194
-      - _1712 |11.21Mb
-      - _1428 | 6.01Mb
-      - JP_2268 |10.51Mb
-      - _1395 | 6.49Mb
-      - _1771 | 8.32Mb
-      - _1751 | 7.64Mb
-      - _1768 | 9.74Mb
-      - _1975 | 4.90Mb
-      - _1704 | 0.56Mb
-      - _665
-      - _1729 |15.40Mb
-      - 217.30.10.66:9041
-      - _1779 |14.01Mb
-      - _1785 | 9.52Mb
-      - US_2553 | 9.50Mb
-      - CA 1｜openit.ml
-      - _1734 |16.34Mb
-      - _1394 | 8.97Mb
-      - _1435 | 6.07Mb
-      - _1497 | 5.31Mb
-      - _1998 |10.11Mb
-      - _2035 |18.58Mb
-      - _1728 |14.12Mb
+      - _03 |45.78Mb
+      - _2016 |25.53Mb
+      - _2057 |45.90Mb
+      - TW_2213 | 9.30Mb
+      - _2006
+      - AU 2｜openit.ml
+      - _2010 |37.68Mb
+      - _2056 | 8.65Mb
+      - CN 21｜openit.ml
+      - US_2543 |16.76Mb
+      - _2058 |33.15Mb
+      - CN 38｜openit.ml
+      - JP_2265 |12.27Mb
+      - _1948 |14.63Mb
+      - _2097
+      - _2011 |40.44Mb
+      - _57
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - _02
+      - CN 37｜openit.ml
       - HK 2｜openit.ml
-      - CN 18｜openit.ml
-      - CN 53｜openit.ml
-      - US_2589 |17.37Mb
-      - CN 44｜openit.ml
-      - _1690 | 7.62Mb
-      - CN 25｜openit.ml
-      - CN 19｜openit.ml
-      - _1194
-      - _1712 |11.21Mb
-      - _1428 | 6.01Mb
-      - JP_2268 |10.51Mb
-      - _1395 | 6.49Mb
-      - _1771 | 8.32Mb
-      - _1751 | 7.64Mb
-      - _1768 | 9.74Mb
-      - _1975 | 4.90Mb
-      - _1704 | 0.56Mb
-      - _665
-      - _1729 |15.40Mb
-      - 217.30.10.66:9041
-      - _1779 |14.01Mb
-      - _1785 | 9.52Mb
-      - US_2553 | 9.50Mb
-      - CA 1｜openit.ml
-      - _1734 |16.34Mb
-      - _1394 | 8.97Mb
-      - _1435 | 6.07Mb
-      - _1497 | 5.31Mb
-      - _1998 |10.11Mb
-      - _2035 |18.58Mb
-      - _1728 |14.12Mb
+      - _03 |45.78Mb
+      - _2016 |25.53Mb
+      - _2057 |45.90Mb
+      - TW_2213 | 9.30Mb
+      - _2006
+      - AU 2｜openit.ml
+      - _2010 |37.68Mb
+      - _2056 | 8.65Mb
+      - CN 21｜openit.ml
+      - US_2543 |16.76Mb
+      - _2058 |33.15Mb
+      - CN 38｜openit.ml
+      - JP_2265 |12.27Mb
+      - _1948 |14.63Mb
+      - _2097
+      - _2011 |40.44Mb
+      - _57
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - _02
+      - CN 37｜openit.ml
       - HK 2｜openit.ml
-      - CN 18｜openit.ml
-      - CN 53｜openit.ml
-      - US_2589 |17.37Mb
-      - CN 44｜openit.ml
-      - _1690 | 7.62Mb
-      - CN 25｜openit.ml
-      - CN 19｜openit.ml
-      - _1194
-      - _1712 |11.21Mb
-      - _1428 | 6.01Mb
-      - JP_2268 |10.51Mb
-      - _1395 | 6.49Mb
-      - _1771 | 8.32Mb
-      - _1751 | 7.64Mb
-      - _1768 | 9.74Mb
-      - _1975 | 4.90Mb
-      - _1704 | 0.56Mb
-      - _665
-      - _1729 |15.40Mb
-      - 217.30.10.66:9041
-      - _1779 |14.01Mb
-      - _1785 | 9.52Mb
-      - US_2553 | 9.50Mb
-      - CA 1｜openit.ml
-      - _1734 |16.34Mb
-      - _1394 | 8.97Mb
-      - _1435 | 6.07Mb
-      - _1497 | 5.31Mb
-      - _1998 |10.11Mb
-      - _2035 |18.58Mb
-      - _1728 |14.12Mb
+      - _03 |45.78Mb
+      - _2016 |25.53Mb
+      - _2057 |45.90Mb
+      - TW_2213 | 9.30Mb
+      - _2006
+      - AU 2｜openit.ml
+      - _2010 |37.68Mb
+      - _2056 | 8.65Mb
+      - CN 21｜openit.ml
+      - US_2543 |16.76Mb
+      - _2058 |33.15Mb
+      - CN 38｜openit.ml
+      - JP_2265 |12.27Mb
+      - _1948 |14.63Mb
+      - _2097
+      - _2011 |40.44Mb
+      - _57
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -332,38 +236,26 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - _02
+      - CN 37｜openit.ml
       - HK 2｜openit.ml
-      - CN 18｜openit.ml
-      - CN 53｜openit.ml
-      - US_2589 |17.37Mb
-      - CN 44｜openit.ml
-      - _1690 | 7.62Mb
-      - CN 25｜openit.ml
-      - CN 19｜openit.ml
-      - _1194
-      - _1712 |11.21Mb
-      - _1428 | 6.01Mb
-      - JP_2268 |10.51Mb
-      - _1395 | 6.49Mb
-      - _1771 | 8.32Mb
-      - _1751 | 7.64Mb
-      - _1768 | 9.74Mb
-      - _1975 | 4.90Mb
-      - _1704 | 0.56Mb
-      - _665
-      - _1729 |15.40Mb
-      - 217.30.10.66:9041
-      - _1779 |14.01Mb
-      - _1785 | 9.52Mb
-      - US_2553 | 9.50Mb
-      - CA 1｜openit.ml
-      - _1734 |16.34Mb
-      - _1394 | 8.97Mb
-      - _1435 | 6.07Mb
-      - _1497 | 5.31Mb
-      - _1998 |10.11Mb
-      - _2035 |18.58Mb
-      - _1728 |14.12Mb
+      - _03 |45.78Mb
+      - _2016 |25.53Mb
+      - _2057 |45.90Mb
+      - TW_2213 | 9.30Mb
+      - _2006
+      - AU 2｜openit.ml
+      - _2010 |37.68Mb
+      - _2056 | 8.65Mb
+      - CN 21｜openit.ml
+      - US_2543 |16.76Mb
+      - _2058 |33.15Mb
+      - CN 38｜openit.ml
+      - JP_2265 |12.27Mb
+      - _1948 |14.63Mb
+      - _2097
+      - _2011 |40.44Mb
+      - _57
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
