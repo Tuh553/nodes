@@ -5,195 +5,83 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 中国_0814436, server: 113.142.205.92, port: 443, type: vmess, uuid: 400a1ff6-c0fb-49f9-dc82-83fc6f7f09ef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sgserverme.tk}, udp: true}
-  - {name: 新加坡_0814197, server: 47.241.220.160, port: 46622, type: vmess, uuid: 4a8610cd-ec1f-471b-f3cf-51241f1de4ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_ |59.91Mb, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: RU_2249 | 8.42Mb, server: 213.183.53.214, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: RU_2233 | 6.47Mb, server: 213.183.53.214, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: "|21.32Mb", server: 54.163.190.148, port: 31468, type: vmess, uuid: 30c9f74f-2a80-463e-b3e4-a933d996309f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_2039 | 6.59Mb, server: 85.208.108.90, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _677 | 8.35Mb, server: 213.183.59.190, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: RU_2194 | 5.60Mb, server: 213.183.53.198, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: RU_2229 | 4.93Mb, server: 213.183.53.214, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: US_2549 | 3.55Mb, server: 38.143.66.20, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _1716 | 4.75Mb, server: 38.143.66.20, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _748 |20.90Mb, server: 213.183.59.190, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: 加拿大_0814130, server: 134.195.196.107, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: RU_2211 | 6.14Mb, server: 213.183.53.214, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
-  - {name: RU_2232 |12.29Mb, server: 213.183.53.214, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: "|14.61Mb", server: 134.195.196.107, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _151 | 4.58Mb, server: 134.195.196.107, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_2896 |122.22Mb, server: 20.194.228.239, port: 44444, type: vmess, uuid: b9ee113f-b299-4d62-e89d-d6a943fee8f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /23564, ws-headers: {Host: 20.194.228.239}, udp: true}
-  - {name: _1121 | 2.34Mb, server: 213.183.53.214, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: _1711 |21.50Mb, server: 38.143.66.20, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _1232 | 2.14Mb, server: 172.99.188.71, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _1671 | 1.23Mb, server: 38.143.66.20, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: RU_2223 | 8.24Mb, server: 213.183.53.214, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: "| 8.28Mb", server: 213.183.53.182, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: RU_2214 | 6.47Mb, server: 213.183.53.182, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: RU_2218 | 5.26Mb, server: 213.183.53.214, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: _12 | 2.93Mb, server: 38.91.102.74, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 中国_0814282, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_2365 | 7.71Mb, server: 38.143.66.20, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _317 | 0.01Mb, server: 62.210.113.98, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _595 | 2.55Mb, server: 185.246.155.35, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
-  - {name: RU_2202 |14.16Mb, server: 213.183.53.182, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: RU_2225 | 3.46Mb, server: 213.183.53.214, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: 加拿大_0814023, server: 134.195.196.107, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: RU_2195 | 3.89Mb, server: 213.183.53.214, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: US_2625 | 7.60Mb, server: 38.143.66.20, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _1695 | 7.10Mb, server: 38.143.66.20, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: RU_2212 | 7.34Mb, server: 213.183.53.182, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: 越南_0814036, server: 103.186.148.113, port: 80, type: vmess, uuid: a479fc02-07c5-4864-8564-c4f147dfa488, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shopvpn.net, ws-headers: {Host: frontier-i18n.tiktokv.com}, udp: true}
-  - {name: "| 8.42Mb", server: 213.183.53.182, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
-  - {name: RU_2220 | 8.64Mb, server: 213.183.53.214, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: "|17.72Mb", server: 146.56.167.119, port: 6666, type: vmess, uuid: 64779fce-63a5-4faa-b59b-e4af40f4e419, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US 6｜openit.pw, server: azhj001.xiba1.xyz, port: 20804, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: US 7｜openit.pw, server: azhj001.xiba1.xyz, port: 20802, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN_1898, server: relay1.wallless.cloud, port: 39001, type: vmess, uuid: 6f686183-b399-4976-a60f-dd2685ef8075, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_1898 |97.48Mb, server: relay1.wallless.cloud, port: 39001, type: vmess, uuid: 6f686183-b399-4976-a60f-dd2685ef8075, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CA_66, server: 161.129.60.17, port: 25634, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, skip-cert-verify: true, udp: true}
+  - {name: CN_1867, server: relay1.wallless.cloud, port: 39021, type: vmess, uuid: 6f686183-b399-4976-a60f-dd2685ef8075, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_1886, server: relay1.wallless.cloud, port: 39021, type: vmess, uuid: 6f686183-b399-4976-a60f-dd2685ef8075, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_1886 |13.07Mb, server: relay1.wallless.cloud, port: 39021, type: vmess, uuid: 6f686183-b399-4976-a60f-dd2685ef8075, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: RO_639, server: 109.166.39.216, port: 39216, type: vmess, uuid: 5022b474-6ba7-4f66-b7a1-04cc4814d2ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tiktok, ws-headers: {Host: 109.166.39.216}, udp: true}
+  - {name: US 10｜openit.pw, server: 104.168.144.215, port: 443, type: trojan, password: srGSKqR5Fv, skip-cert-verify: true, udp: true}
+  - {name: US_1337, server: 45.10.153.188, port: 37558, type: vmess, uuid: 9d0f86ad-eec3-424f-f69a-fcb37e783d06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇷🇺RU-🇷🇺RU_83, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
+  - {name: US_125, server: 38.121.43.65, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _152 | 0.28Mb, server: 134.195.196.149, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: CN_1873, server: relay1.wallless.cloud, port: 39001, type: vmess, uuid: 6f686183-b399-4976-a60f-dd2685ef8075, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国_0814436
-      - 新加坡_0814197
-      - Relay_ |59.91Mb
-      - RU_2249 | 8.42Mb
-      - RU_2233 | 6.47Mb
-      - "|21.32Mb"
-      - JP_2039 | 6.59Mb
-      - _677 | 8.35Mb
-      - RU_2194 | 5.60Mb
-      - RU_2229 | 4.93Mb
-      - US_2549 | 3.55Mb
-      - _1716 | 4.75Mb
-      - _748 |20.90Mb
-      - 加拿大_0814130
-      - RU_2211 | 6.14Mb
-      - RU_2232 |12.29Mb
-      - "|14.61Mb"
-      - _151 | 4.58Mb
-      - US_2896 |122.22Mb
-      - _1121 | 2.34Mb
-      - _1711 |21.50Mb
-      - _1232 | 2.14Mb
-      - _1671 | 1.23Mb
-      - RU_2223 | 8.24Mb
-      - "| 8.28Mb"
-      - RU_2214 | 6.47Mb
-      - RU_2218 | 5.26Mb
-      - _12 | 2.93Mb
-      - 中国_0814282
-      - US_2365 | 7.71Mb
-      - _317 | 0.01Mb
-      - _595 | 2.55Mb
-      - RU_2202 |14.16Mb
-      - RU_2225 | 3.46Mb
-      - 加拿大_0814023
-      - RU_2195 | 3.89Mb
-      - US_2625 | 7.60Mb
-      - _1695 | 7.10Mb
-      - RU_2212 | 7.34Mb
-      - 越南_0814036
-      - "| 8.42Mb"
-      - RU_2220 | 8.64Mb
-      - "|17.72Mb"
+      - US 6｜openit.pw
+      - US 7｜openit.pw
+      - CN_1898
+      - CN_1898 |97.48Mb
+      - CA_66
+      - CN_1867
+      - CN_1886
+      - CN_1886 |13.07Mb
+      - RO_639
+      - US 10｜openit.pw
+      - US_1337
+      - Relay_🇷🇺RU-🇷🇺RU_83
+      - US_125
+      - _152 | 0.28Mb
+      - CN_1873
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 中国_0814436
-      - 新加坡_0814197
-      - Relay_ |59.91Mb
-      - RU_2249 | 8.42Mb
-      - RU_2233 | 6.47Mb
-      - "|21.32Mb"
-      - JP_2039 | 6.59Mb
-      - _677 | 8.35Mb
-      - RU_2194 | 5.60Mb
-      - RU_2229 | 4.93Mb
-      - US_2549 | 3.55Mb
-      - _1716 | 4.75Mb
-      - _748 |20.90Mb
-      - 加拿大_0814130
-      - RU_2211 | 6.14Mb
-      - RU_2232 |12.29Mb
-      - "|14.61Mb"
-      - _151 | 4.58Mb
-      - US_2896 |122.22Mb
-      - _1121 | 2.34Mb
-      - _1711 |21.50Mb
-      - _1232 | 2.14Mb
-      - _1671 | 1.23Mb
-      - RU_2223 | 8.24Mb
-      - "| 8.28Mb"
-      - RU_2214 | 6.47Mb
-      - RU_2218 | 5.26Mb
-      - _12 | 2.93Mb
-      - 中国_0814282
-      - US_2365 | 7.71Mb
-      - _317 | 0.01Mb
-      - _595 | 2.55Mb
-      - RU_2202 |14.16Mb
-      - RU_2225 | 3.46Mb
-      - 加拿大_0814023
-      - RU_2195 | 3.89Mb
-      - US_2625 | 7.60Mb
-      - _1695 | 7.10Mb
-      - RU_2212 | 7.34Mb
-      - 越南_0814036
-      - "| 8.42Mb"
-      - RU_2220 | 8.64Mb
-      - "|17.72Mb"
+      - US 6｜openit.pw
+      - US 7｜openit.pw
+      - CN_1898
+      - CN_1898 |97.48Mb
+      - CA_66
+      - CN_1867
+      - CN_1886
+      - CN_1886 |13.07Mb
+      - RO_639
+      - US 10｜openit.pw
+      - US_1337
+      - Relay_🇷🇺RU-🇷🇺RU_83
+      - US_125
+      - _152 | 0.28Mb
+      - CN_1873
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国_0814436
-      - 新加坡_0814197
-      - Relay_ |59.91Mb
-      - RU_2249 | 8.42Mb
-      - RU_2233 | 6.47Mb
-      - "|21.32Mb"
-      - JP_2039 | 6.59Mb
-      - _677 | 8.35Mb
-      - RU_2194 | 5.60Mb
-      - RU_2229 | 4.93Mb
-      - US_2549 | 3.55Mb
-      - _1716 | 4.75Mb
-      - _748 |20.90Mb
-      - 加拿大_0814130
-      - RU_2211 | 6.14Mb
-      - RU_2232 |12.29Mb
-      - "|14.61Mb"
-      - _151 | 4.58Mb
-      - US_2896 |122.22Mb
-      - _1121 | 2.34Mb
-      - _1711 |21.50Mb
-      - _1232 | 2.14Mb
-      - _1671 | 1.23Mb
-      - RU_2223 | 8.24Mb
-      - "| 8.28Mb"
-      - RU_2214 | 6.47Mb
-      - RU_2218 | 5.26Mb
-      - _12 | 2.93Mb
-      - 中国_0814282
-      - US_2365 | 7.71Mb
-      - _317 | 0.01Mb
-      - _595 | 2.55Mb
-      - RU_2202 |14.16Mb
-      - RU_2225 | 3.46Mb
-      - 加拿大_0814023
-      - RU_2195 | 3.89Mb
-      - US_2625 | 7.60Mb
-      - _1695 | 7.10Mb
-      - RU_2212 | 7.34Mb
-      - 越南_0814036
-      - "| 8.42Mb"
-      - RU_2220 | 8.64Mb
-      - "|17.72Mb"
+      - US 6｜openit.pw
+      - US 7｜openit.pw
+      - CN_1898
+      - CN_1898 |97.48Mb
+      - CA_66
+      - CN_1867
+      - CN_1886
+      - CN_1886 |13.07Mb
+      - RO_639
+      - US 10｜openit.pw
+      - US_1337
+      - Relay_🇷🇺RU-🇷🇺RU_83
+      - US_125
+      - _152 | 0.28Mb
+      - CN_1873
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -212,49 +100,21 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国_0814436
-      - 新加坡_0814197
-      - Relay_ |59.91Mb
-      - RU_2249 | 8.42Mb
-      - RU_2233 | 6.47Mb
-      - "|21.32Mb"
-      - JP_2039 | 6.59Mb
-      - _677 | 8.35Mb
-      - RU_2194 | 5.60Mb
-      - RU_2229 | 4.93Mb
-      - US_2549 | 3.55Mb
-      - _1716 | 4.75Mb
-      - _748 |20.90Mb
-      - 加拿大_0814130
-      - RU_2211 | 6.14Mb
-      - RU_2232 |12.29Mb
-      - "|14.61Mb"
-      - _151 | 4.58Mb
-      - US_2896 |122.22Mb
-      - _1121 | 2.34Mb
-      - _1711 |21.50Mb
-      - _1232 | 2.14Mb
-      - _1671 | 1.23Mb
-      - RU_2223 | 8.24Mb
-      - "| 8.28Mb"
-      - RU_2214 | 6.47Mb
-      - RU_2218 | 5.26Mb
-      - _12 | 2.93Mb
-      - 中国_0814282
-      - US_2365 | 7.71Mb
-      - _317 | 0.01Mb
-      - _595 | 2.55Mb
-      - RU_2202 |14.16Mb
-      - RU_2225 | 3.46Mb
-      - 加拿大_0814023
-      - RU_2195 | 3.89Mb
-      - US_2625 | 7.60Mb
-      - _1695 | 7.10Mb
-      - RU_2212 | 7.34Mb
-      - 越南_0814036
-      - "| 8.42Mb"
-      - RU_2220 | 8.64Mb
-      - "|17.72Mb"
+      - US 6｜openit.pw
+      - US 7｜openit.pw
+      - CN_1898
+      - CN_1898 |97.48Mb
+      - CA_66
+      - CN_1867
+      - CN_1886
+      - CN_1886 |13.07Mb
+      - RO_639
+      - US 10｜openit.pw
+      - US_1337
+      - Relay_🇷🇺RU-🇷🇺RU_83
+      - US_125
+      - _152 | 0.28Mb
+      - CN_1873
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -265,146 +125,62 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 中国_0814436
-      - 新加坡_0814197
-      - Relay_ |59.91Mb
-      - RU_2249 | 8.42Mb
-      - RU_2233 | 6.47Mb
-      - "|21.32Mb"
-      - JP_2039 | 6.59Mb
-      - _677 | 8.35Mb
-      - RU_2194 | 5.60Mb
-      - RU_2229 | 4.93Mb
-      - US_2549 | 3.55Mb
-      - _1716 | 4.75Mb
-      - _748 |20.90Mb
-      - 加拿大_0814130
-      - RU_2211 | 6.14Mb
-      - RU_2232 |12.29Mb
-      - "|14.61Mb"
-      - _151 | 4.58Mb
-      - US_2896 |122.22Mb
-      - _1121 | 2.34Mb
-      - _1711 |21.50Mb
-      - _1232 | 2.14Mb
-      - _1671 | 1.23Mb
-      - RU_2223 | 8.24Mb
-      - "| 8.28Mb"
-      - RU_2214 | 6.47Mb
-      - RU_2218 | 5.26Mb
-      - _12 | 2.93Mb
-      - 中国_0814282
-      - US_2365 | 7.71Mb
-      - _317 | 0.01Mb
-      - _595 | 2.55Mb
-      - RU_2202 |14.16Mb
-      - RU_2225 | 3.46Mb
-      - 加拿大_0814023
-      - RU_2195 | 3.89Mb
-      - US_2625 | 7.60Mb
-      - _1695 | 7.10Mb
-      - RU_2212 | 7.34Mb
-      - 越南_0814036
-      - "| 8.42Mb"
-      - RU_2220 | 8.64Mb
-      - "|17.72Mb"
+      - US 6｜openit.pw
+      - US 7｜openit.pw
+      - CN_1898
+      - CN_1898 |97.48Mb
+      - CA_66
+      - CN_1867
+      - CN_1886
+      - CN_1886 |13.07Mb
+      - RO_639
+      - US 10｜openit.pw
+      - US_1337
+      - Relay_🇷🇺RU-🇷🇺RU_83
+      - US_125
+      - _152 | 0.28Mb
+      - CN_1873
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 中国_0814436
-      - 新加坡_0814197
-      - Relay_ |59.91Mb
-      - RU_2249 | 8.42Mb
-      - RU_2233 | 6.47Mb
-      - "|21.32Mb"
-      - JP_2039 | 6.59Mb
-      - _677 | 8.35Mb
-      - RU_2194 | 5.60Mb
-      - RU_2229 | 4.93Mb
-      - US_2549 | 3.55Mb
-      - _1716 | 4.75Mb
-      - _748 |20.90Mb
-      - 加拿大_0814130
-      - RU_2211 | 6.14Mb
-      - RU_2232 |12.29Mb
-      - "|14.61Mb"
-      - _151 | 4.58Mb
-      - US_2896 |122.22Mb
-      - _1121 | 2.34Mb
-      - _1711 |21.50Mb
-      - _1232 | 2.14Mb
-      - _1671 | 1.23Mb
-      - RU_2223 | 8.24Mb
-      - "| 8.28Mb"
-      - RU_2214 | 6.47Mb
-      - RU_2218 | 5.26Mb
-      - _12 | 2.93Mb
-      - 中国_0814282
-      - US_2365 | 7.71Mb
-      - _317 | 0.01Mb
-      - _595 | 2.55Mb
-      - RU_2202 |14.16Mb
-      - RU_2225 | 3.46Mb
-      - 加拿大_0814023
-      - RU_2195 | 3.89Mb
-      - US_2625 | 7.60Mb
-      - _1695 | 7.10Mb
-      - RU_2212 | 7.34Mb
-      - 越南_0814036
-      - "| 8.42Mb"
-      - RU_2220 | 8.64Mb
-      - "|17.72Mb"
+      - US 6｜openit.pw
+      - US 7｜openit.pw
+      - CN_1898
+      - CN_1898 |97.48Mb
+      - CA_66
+      - CN_1867
+      - CN_1886
+      - CN_1886 |13.07Mb
+      - RO_639
+      - US 10｜openit.pw
+      - US_1337
+      - Relay_🇷🇺RU-🇷🇺RU_83
+      - US_125
+      - _152 | 0.28Mb
+      - CN_1873
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国_0814436
-      - 新加坡_0814197
-      - Relay_ |59.91Mb
-      - RU_2249 | 8.42Mb
-      - RU_2233 | 6.47Mb
-      - "|21.32Mb"
-      - JP_2039 | 6.59Mb
-      - _677 | 8.35Mb
-      - RU_2194 | 5.60Mb
-      - RU_2229 | 4.93Mb
-      - US_2549 | 3.55Mb
-      - _1716 | 4.75Mb
-      - _748 |20.90Mb
-      - 加拿大_0814130
-      - RU_2211 | 6.14Mb
-      - RU_2232 |12.29Mb
-      - "|14.61Mb"
-      - _151 | 4.58Mb
-      - US_2896 |122.22Mb
-      - _1121 | 2.34Mb
-      - _1711 |21.50Mb
-      - _1232 | 2.14Mb
-      - _1671 | 1.23Mb
-      - RU_2223 | 8.24Mb
-      - "| 8.28Mb"
-      - RU_2214 | 6.47Mb
-      - RU_2218 | 5.26Mb
-      - _12 | 2.93Mb
-      - 中国_0814282
-      - US_2365 | 7.71Mb
-      - _317 | 0.01Mb
-      - _595 | 2.55Mb
-      - RU_2202 |14.16Mb
-      - RU_2225 | 3.46Mb
-      - 加拿大_0814023
-      - RU_2195 | 3.89Mb
-      - US_2625 | 7.60Mb
-      - _1695 | 7.10Mb
-      - RU_2212 | 7.34Mb
-      - 越南_0814036
-      - "| 8.42Mb"
-      - RU_2220 | 8.64Mb
-      - "|17.72Mb"
+      - US 6｜openit.pw
+      - US 7｜openit.pw
+      - CN_1898
+      - CN_1898 |97.48Mb
+      - CA_66
+      - CN_1867
+      - CN_1886
+      - CN_1886 |13.07Mb
+      - RO_639
+      - US 10｜openit.pw
+      - US_1337
+      - Relay_🇷🇺RU-🇷🇺RU_83
+      - US_125
+      - _152 | 0.28Mb
+      - CN_1873
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -420,49 +196,21 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国_0814436
-      - 新加坡_0814197
-      - Relay_ |59.91Mb
-      - RU_2249 | 8.42Mb
-      - RU_2233 | 6.47Mb
-      - "|21.32Mb"
-      - JP_2039 | 6.59Mb
-      - _677 | 8.35Mb
-      - RU_2194 | 5.60Mb
-      - RU_2229 | 4.93Mb
-      - US_2549 | 3.55Mb
-      - _1716 | 4.75Mb
-      - _748 |20.90Mb
-      - 加拿大_0814130
-      - RU_2211 | 6.14Mb
-      - RU_2232 |12.29Mb
-      - "|14.61Mb"
-      - _151 | 4.58Mb
-      - US_2896 |122.22Mb
-      - _1121 | 2.34Mb
-      - _1711 |21.50Mb
-      - _1232 | 2.14Mb
-      - _1671 | 1.23Mb
-      - RU_2223 | 8.24Mb
-      - "| 8.28Mb"
-      - RU_2214 | 6.47Mb
-      - RU_2218 | 5.26Mb
-      - _12 | 2.93Mb
-      - 中国_0814282
-      - US_2365 | 7.71Mb
-      - _317 | 0.01Mb
-      - _595 | 2.55Mb
-      - RU_2202 |14.16Mb
-      - RU_2225 | 3.46Mb
-      - 加拿大_0814023
-      - RU_2195 | 3.89Mb
-      - US_2625 | 7.60Mb
-      - _1695 | 7.10Mb
-      - RU_2212 | 7.34Mb
-      - 越南_0814036
-      - "| 8.42Mb"
-      - RU_2220 | 8.64Mb
-      - "|17.72Mb"
+      - US 6｜openit.pw
+      - US 7｜openit.pw
+      - CN_1898
+      - CN_1898 |97.48Mb
+      - CA_66
+      - CN_1867
+      - CN_1886
+      - CN_1886 |13.07Mb
+      - RO_639
+      - US 10｜openit.pw
+      - US_1337
+      - Relay_🇷🇺RU-🇷🇺RU_83
+      - US_125
+      - _152 | 0.28Mb
+      - CN_1873
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
