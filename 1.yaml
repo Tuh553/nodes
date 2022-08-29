@@ -5,107 +5,91 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK_481, server: 52.184.90.142, port: 80, type: vmess, uuid: 6cbf4eda-e166-4db3-a53c-33f4c75a221c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vpngiare.net, ws-headers: {Host: 52.184.90.142}, udp: true}
-  - {name: 中国_0822138, server: 113.142.205.92, port: 443, type: vmess, uuid: 400a1ff6-c0fb-49f9-dc82-83fc6f7f09ef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sgserverme.tk}, udp: true}
-  - {name: US_1188 |32.58Mb, server: 23.105.199.160, port: 23166, type: vmess, uuid: f1cda9da-c859-4f26-f609-a2e8837cc9b8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_-🇺🇸US_07, server: crj749919467.n-tmd.com, port: 31502, type: vmess, uuid: 9b4f0258-1127-41d9-f30a-469e80737327, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: US_1353, server: 23.105.199.160, port: 23166, type: vmess, uuid: f1cda9da-c859-4f26-f609-a2e8837cc9b8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_70, server: cm.spacez.cloud, port: 30000, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇭🇰HK-🇭🇰HK_1559 |47.64Mb, server: hk-gz-hk-hkt-tr-b.cdn.savoy.click, port: 889, type: trojan, password: TqGiLGqoqLUssJpiIamJCpkGtxMRVJFV, sni: hk-gz-hk-hkt-tr-b.cdn.savoy.click, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_82, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: Pool_Pool__62🇨🇳CN_59, server: 36.137.14.38, port: 809, type: vmess, uuid: b407e880-cae7-4825-8ea1-5c509fcac743, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.137.14.38}, udp: true}
+  - {name: US_660, server: 74.211.97.81, port: 50500, type: trojan, password: bd52a53f-b02c-4bcb-be6a-ac4fd85e5f14, skip-cert-verify: true, udp: true}
+  - {name: _889 | 9.37Mb, server: 213.183.59.211, port: 9030, type: ss, cipher: aes-256-cfb, password: GeregetR8cvQHzYr, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_83, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34003, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
   - {name: CN_251, server: 1.14.43.171, port: 8000, type: vmess, uuid: 8886ec29-27f5-46d9-885b-8126d1f6b765, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_566, server: crj749919467.n-tmd.com, port: 31502, type: vmess, uuid: 9b4f0258-1127-41d9-f30a-469e80737327, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: Relay_ | 4.65Mb, server: crj749919467.n-tmd.com, port: 31502, type: vmess, uuid: 9b4f0258-1127-41d9-f30a-469e80737327, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: US_866 |68.65Mb, server: us02.henet.cyou, port: 30000, type: trojan, password: f522480e-f7e9-4db9-bc4f-d0bd59ebd000, sni: us02.henet.cyou, skip-cert-verify: true, udp: true}
-  - {name: _985_984, server: 213.183.59.206, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: CN_56, server: 1.14.43.171, port: 8000, type: vmess, uuid: 8886ec29-27f5-46d9-885b-8126d1f6b765, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "| 9.19Mb", server: 213.183.59.211, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: Relay_🇨🇳CN-🏁ZZ_247 |47.64Mb, server: jp-tyo-04-tr.cdn.savoy.click, port: 889, type: trojan, password: LTKPTMbjBDYisdMxKEBDzcduXacOvIVY, sni: jp-tyo-04-tr.cdn.savoy.click, skip-cert-verify: true, udp: true}
-  - {name: "| 8.03Mb", server: 213.183.53.202, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: _974_973, server: 213.183.59.206, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: "|10.39Mb", server: 213.183.59.211, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: Pool_🇨🇳CN_57, server: 36.137.14.38, port: 809, type: vmess, uuid: b407e880-cae7-4825-8ea1-5c509fcac743, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.137.14.38}, udp: true}
-  - {name: _888_887, server: 213.183.59.211, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: _417_417, server: 185.126.116.123, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: "| 8.93Mb", server: 213.183.53.202, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: US_1187 |31.80Mb, server: 23.105.199.160, port: 37584, type: vmess, uuid: 61914893-393a-4685-fc2d-13328bd8e491, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _63🇨🇳CN_55, server: 1.14.43.171, port: 8000, type: vmess, uuid: 8886ec29-27f5-46d9-885b-8126d1f6b765, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _03 |29.71Mb, server: 137.184.93.209, port: 10365, type: ss, cipher: chacha20-ietf-poly1305, password: 9682edd6-89e6-4e6a-b31d-271089771d87, udp: true}
+  - {name: Relay_🇺🇸 US-🇺🇸US_863, server: do.cloudorg.uk, port: 443, type: trojan, password: 9682edd6-89e6-4e6a-b31d-271089771d87, sni: do.cloudorg.uk, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸 US-🇺🇸US_812, server: do.cloudorg.uk, port: 10365, type: ss, cipher: chacha20-ietf-poly1305, password: 9682edd6-89e6-4e6a-b31d-271089771d87, udp: true}
+  - {name: "| 8.69Mb", server: 43.154.34.49, port: 23183, type: vmess, uuid: b402a4af-285a-463e-c3a7-53f91efdec78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🏁ZZ-🏁ZZ_3034 |30.50Mb, server: cc.cloudorg.uk, port: 8443, type: vmess, uuid: 0f88c09d-0fd9-4e34-b3ad-8719e908d5d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ngdchutwxbjt, ws-headers: {Host: cc.cloudorg.uk}, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_67, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34002, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: AU_38, server: 43.154.34.49, port: 23183, type: vmess, uuid: b402a4af-285a-463e-c3a7-53f91efdec78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_2883 |86.91Mb, server: 20.205.14.195, port: 12377, type: trojan, password: 0261c119-5498-4f6e-ad1b-d4718637c5b8, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK_481
-      - 中国_0822138
-      - US_1188 |32.58Mb
-      - Relay_-🇺🇸US_07
-      - US_1353
+      - Relay_🇨🇳CN-🇭🇰HK_70
+      - Relay_🇭🇰HK-🇭🇰HK_1559 |47.64Mb
+      - Relay_🇨🇳CN-🇹🇼TW_82
+      - Pool_Pool__62🇨🇳CN_59
+      - US_660
+      - _889 | 9.37Mb
+      - Relay_🇨🇳CN-🇭🇰HK_83
       - CN_251
-      - Relay_🇺🇸US-🇺🇸US_566
-      - Relay_ | 4.65Mb
-      - US_866 |68.65Mb
-      - _985_984
-      - CN_56
-      - "| 9.19Mb"
-      - Relay_🇨🇳CN-🏁ZZ_247 |47.64Mb
-      - "| 8.03Mb"
-      - _974_973
-      - "|10.39Mb"
-      - Pool_🇨🇳CN_57
-      - _888_887
-      - _417_417
-      - "| 8.93Mb"
-      - US_1187 |31.80Mb
+      - _63🇨🇳CN_55
+      - _03 |29.71Mb
+      - Relay_🇺🇸 US-🇺🇸US_863
+      - Relay_🇺🇸 US-🇺🇸US_812
+      - "| 8.69Mb"
+      - Relay_🏁ZZ-🏁ZZ_3034 |30.50Mb
+      - Relay_🇨🇳CN-🇭🇰HK_67
+      - AU_38
+      - US_2883 |86.91Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HK_481
-      - 中国_0822138
-      - US_1188 |32.58Mb
-      - Relay_-🇺🇸US_07
-      - US_1353
+      - Relay_🇨🇳CN-🇭🇰HK_70
+      - Relay_🇭🇰HK-🇭🇰HK_1559 |47.64Mb
+      - Relay_🇨🇳CN-🇹🇼TW_82
+      - Pool_Pool__62🇨🇳CN_59
+      - US_660
+      - _889 | 9.37Mb
+      - Relay_🇨🇳CN-🇭🇰HK_83
       - CN_251
-      - Relay_🇺🇸US-🇺🇸US_566
-      - Relay_ | 4.65Mb
-      - US_866 |68.65Mb
-      - _985_984
-      - CN_56
-      - "| 9.19Mb"
-      - Relay_🇨🇳CN-🏁ZZ_247 |47.64Mb
-      - "| 8.03Mb"
-      - _974_973
-      - "|10.39Mb"
-      - Pool_🇨🇳CN_57
-      - _888_887
-      - _417_417
-      - "| 8.93Mb"
-      - US_1187 |31.80Mb
+      - _63🇨🇳CN_55
+      - _03 |29.71Mb
+      - Relay_🇺🇸 US-🇺🇸US_863
+      - Relay_🇺🇸 US-🇺🇸US_812
+      - "| 8.69Mb"
+      - Relay_🏁ZZ-🏁ZZ_3034 |30.50Mb
+      - Relay_🇨🇳CN-🇭🇰HK_67
+      - AU_38
+      - US_2883 |86.91Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK_481
-      - 中国_0822138
-      - US_1188 |32.58Mb
-      - Relay_-🇺🇸US_07
-      - US_1353
+      - Relay_🇨🇳CN-🇭🇰HK_70
+      - Relay_🇭🇰HK-🇭🇰HK_1559 |47.64Mb
+      - Relay_🇨🇳CN-🇹🇼TW_82
+      - Pool_Pool__62🇨🇳CN_59
+      - US_660
+      - _889 | 9.37Mb
+      - Relay_🇨🇳CN-🇭🇰HK_83
       - CN_251
-      - Relay_🇺🇸US-🇺🇸US_566
-      - Relay_ | 4.65Mb
-      - US_866 |68.65Mb
-      - _985_984
-      - CN_56
-      - "| 9.19Mb"
-      - Relay_🇨🇳CN-🏁ZZ_247 |47.64Mb
-      - "| 8.03Mb"
-      - _974_973
-      - "|10.39Mb"
-      - Pool_🇨🇳CN_57
-      - _888_887
-      - _417_417
-      - "| 8.93Mb"
-      - US_1187 |31.80Mb
+      - _63🇨🇳CN_55
+      - _03 |29.71Mb
+      - Relay_🇺🇸 US-🇺🇸US_863
+      - Relay_🇺🇸 US-🇺🇸US_812
+      - "| 8.69Mb"
+      - Relay_🏁ZZ-🏁ZZ_3034 |30.50Mb
+      - Relay_🇨🇳CN-🇭🇰HK_67
+      - AU_38
+      - US_2883 |86.91Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -124,27 +108,23 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK_481
-      - 中国_0822138
-      - US_1188 |32.58Mb
-      - Relay_-🇺🇸US_07
-      - US_1353
+      - Relay_🇨🇳CN-🇭🇰HK_70
+      - Relay_🇭🇰HK-🇭🇰HK_1559 |47.64Mb
+      - Relay_🇨🇳CN-🇹🇼TW_82
+      - Pool_Pool__62🇨🇳CN_59
+      - US_660
+      - _889 | 9.37Mb
+      - Relay_🇨🇳CN-🇭🇰HK_83
       - CN_251
-      - Relay_🇺🇸US-🇺🇸US_566
-      - Relay_ | 4.65Mb
-      - US_866 |68.65Mb
-      - _985_984
-      - CN_56
-      - "| 9.19Mb"
-      - Relay_🇨🇳CN-🏁ZZ_247 |47.64Mb
-      - "| 8.03Mb"
-      - _974_973
-      - "|10.39Mb"
-      - Pool_🇨🇳CN_57
-      - _888_887
-      - _417_417
-      - "| 8.93Mb"
-      - US_1187 |31.80Mb
+      - _63🇨🇳CN_55
+      - _03 |29.71Mb
+      - Relay_🇺🇸 US-🇺🇸US_863
+      - Relay_🇺🇸 US-🇺🇸US_812
+      - "| 8.69Mb"
+      - Relay_🏁ZZ-🏁ZZ_3034 |30.50Mb
+      - Relay_🇨🇳CN-🇭🇰HK_67
+      - AU_38
+      - US_2883 |86.91Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -155,80 +135,68 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HK_481
-      - 中国_0822138
-      - US_1188 |32.58Mb
-      - Relay_-🇺🇸US_07
-      - US_1353
+      - Relay_🇨🇳CN-🇭🇰HK_70
+      - Relay_🇭🇰HK-🇭🇰HK_1559 |47.64Mb
+      - Relay_🇨🇳CN-🇹🇼TW_82
+      - Pool_Pool__62🇨🇳CN_59
+      - US_660
+      - _889 | 9.37Mb
+      - Relay_🇨🇳CN-🇭🇰HK_83
       - CN_251
-      - Relay_🇺🇸US-🇺🇸US_566
-      - Relay_ | 4.65Mb
-      - US_866 |68.65Mb
-      - _985_984
-      - CN_56
-      - "| 9.19Mb"
-      - Relay_🇨🇳CN-🏁ZZ_247 |47.64Mb
-      - "| 8.03Mb"
-      - _974_973
-      - "|10.39Mb"
-      - Pool_🇨🇳CN_57
-      - _888_887
-      - _417_417
-      - "| 8.93Mb"
-      - US_1187 |31.80Mb
+      - _63🇨🇳CN_55
+      - _03 |29.71Mb
+      - Relay_🇺🇸 US-🇺🇸US_863
+      - Relay_🇺🇸 US-🇺🇸US_812
+      - "| 8.69Mb"
+      - Relay_🏁ZZ-🏁ZZ_3034 |30.50Mb
+      - Relay_🇨🇳CN-🇭🇰HK_67
+      - AU_38
+      - US_2883 |86.91Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HK_481
-      - 中国_0822138
-      - US_1188 |32.58Mb
-      - Relay_-🇺🇸US_07
-      - US_1353
+      - Relay_🇨🇳CN-🇭🇰HK_70
+      - Relay_🇭🇰HK-🇭🇰HK_1559 |47.64Mb
+      - Relay_🇨🇳CN-🇹🇼TW_82
+      - Pool_Pool__62🇨🇳CN_59
+      - US_660
+      - _889 | 9.37Mb
+      - Relay_🇨🇳CN-🇭🇰HK_83
       - CN_251
-      - Relay_🇺🇸US-🇺🇸US_566
-      - Relay_ | 4.65Mb
-      - US_866 |68.65Mb
-      - _985_984
-      - CN_56
-      - "| 9.19Mb"
-      - Relay_🇨🇳CN-🏁ZZ_247 |47.64Mb
-      - "| 8.03Mb"
-      - _974_973
-      - "|10.39Mb"
-      - Pool_🇨🇳CN_57
-      - _888_887
-      - _417_417
-      - "| 8.93Mb"
-      - US_1187 |31.80Mb
+      - _63🇨🇳CN_55
+      - _03 |29.71Mb
+      - Relay_🇺🇸 US-🇺🇸US_863
+      - Relay_🇺🇸 US-🇺🇸US_812
+      - "| 8.69Mb"
+      - Relay_🏁ZZ-🏁ZZ_3034 |30.50Mb
+      - Relay_🇨🇳CN-🇭🇰HK_67
+      - AU_38
+      - US_2883 |86.91Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK_481
-      - 中国_0822138
-      - US_1188 |32.58Mb
-      - Relay_-🇺🇸US_07
-      - US_1353
+      - Relay_🇨🇳CN-🇭🇰HK_70
+      - Relay_🇭🇰HK-🇭🇰HK_1559 |47.64Mb
+      - Relay_🇨🇳CN-🇹🇼TW_82
+      - Pool_Pool__62🇨🇳CN_59
+      - US_660
+      - _889 | 9.37Mb
+      - Relay_🇨🇳CN-🇭🇰HK_83
       - CN_251
-      - Relay_🇺🇸US-🇺🇸US_566
-      - Relay_ | 4.65Mb
-      - US_866 |68.65Mb
-      - _985_984
-      - CN_56
-      - "| 9.19Mb"
-      - Relay_🇨🇳CN-🏁ZZ_247 |47.64Mb
-      - "| 8.03Mb"
-      - _974_973
-      - "|10.39Mb"
-      - Pool_🇨🇳CN_57
-      - _888_887
-      - _417_417
-      - "| 8.93Mb"
-      - US_1187 |31.80Mb
+      - _63🇨🇳CN_55
+      - _03 |29.71Mb
+      - Relay_🇺🇸 US-🇺🇸US_863
+      - Relay_🇺🇸 US-🇺🇸US_812
+      - "| 8.69Mb"
+      - Relay_🏁ZZ-🏁ZZ_3034 |30.50Mb
+      - Relay_🇨🇳CN-🇭🇰HK_67
+      - AU_38
+      - US_2883 |86.91Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -244,27 +212,23 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK_481
-      - 中国_0822138
-      - US_1188 |32.58Mb
-      - Relay_-🇺🇸US_07
-      - US_1353
+      - Relay_🇨🇳CN-🇭🇰HK_70
+      - Relay_🇭🇰HK-🇭🇰HK_1559 |47.64Mb
+      - Relay_🇨🇳CN-🇹🇼TW_82
+      - Pool_Pool__62🇨🇳CN_59
+      - US_660
+      - _889 | 9.37Mb
+      - Relay_🇨🇳CN-🇭🇰HK_83
       - CN_251
-      - Relay_🇺🇸US-🇺🇸US_566
-      - Relay_ | 4.65Mb
-      - US_866 |68.65Mb
-      - _985_984
-      - CN_56
-      - "| 9.19Mb"
-      - Relay_🇨🇳CN-🏁ZZ_247 |47.64Mb
-      - "| 8.03Mb"
-      - _974_973
-      - "|10.39Mb"
-      - Pool_🇨🇳CN_57
-      - _888_887
-      - _417_417
-      - "| 8.93Mb"
-      - US_1187 |31.80Mb
+      - _63🇨🇳CN_55
+      - _03 |29.71Mb
+      - Relay_🇺🇸 US-🇺🇸US_863
+      - Relay_🇺🇸 US-🇺🇸US_812
+      - "| 8.69Mb"
+      - Relay_🏁ZZ-🏁ZZ_3034 |30.50Mb
+      - Relay_🇨🇳CN-🇭🇰HK_67
+      - AU_38
+      - US_2883 |86.91Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
