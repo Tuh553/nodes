@@ -5,83 +5,123 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 越南_0910054, server: hanoi01.vifast.net, port: 80, type: vmess, uuid: 4c2d3f00-8f9b-49c2-a43b-10f022b2fde5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dl.kgvn.garenanow.com}, udp: true}
-  - {name: Relay_🇺🇸US-🇹🇼TW_2986, server: 20.239.188.10, port: 20768, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_2961 |27.02Mb, server: jparm.fineyoo.ml, port: 443, type: vmess, uuid: 10ba478e-9de1-4aa9-c09e-7707025334d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /123, ws-headers: {Host: jparm.fineyoo.ml}, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_2990 |23.68Mb, server: s3.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hass.win, skip-cert-verify: true, udp: true}
-  - {name: US_1937, server: 128.199.3.64, port: 443, type: vmess, uuid: bd0da444-a5a0-3bcb-b288-d31488be5475, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /aaec, ws-headers: {Host: 128.199.3.64}, udp: true}
-  - {name: Relay_🇺🇸US-🇯🇵JP_3025, server: 20.205.63.249, port: 20803, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_2989 |23.34Mb, server: s1.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hass.win, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯联邦_0910002, server: aeadruaes01.xn--z4q48lcvp.com, port: 35476, type: trojan, password: 84837c9b-01ae-4eee-89f1-c1c51c9d869a, sni: aeadruaes01.xn--z4q48lcvp.com, skip-cert-verify: true, udp: true}
-  - {name: US_1074, server: 38.75.136.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: Relay_🇨🇳CN-🏁ZZ_1454 |33.99Mb, server: moblev3.mipglxi.cn, port: 6604, type: ss, cipher: aes-128-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: US_2903 | 8.92Mb, server: 185.112.83.35, port: 40443, type: vmess, uuid: B6C76F8A-77ED-F562-654E-59F997F58426, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: RO_2152 |11.79Mb, server: 185.126.116.125, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: RO_2155 | 7.53Mb, server: 185.126.116.125, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: US_2925 | 8.12Mb, server: 185.112.83.35, port: 40443, type: vmess, uuid: 7ED6C76A-277E-1D03-2C6F-48B728899686, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯联邦_0910007, server: 185.112.83.35, port: 40443, type: vmess, uuid: 5ADDADF4-E05B-65E6-A409-E08CEA8826DF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_929, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: 新加坡_0922005, server: sg2.3320.top, port: 443, type: vmess, uuid: 4111ed89-8dc3-4102-867c-ae807a759d0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg2.3320.top}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_939, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸 US-🇺🇸US_407, server: s1.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hass.win, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_928, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: 美国_09221822, server: 34.219.183.33, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: 中国_0914298, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸 US-🇺🇸US_408, server: s2.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hass.win, skip-cert-verify: true, udp: true}
+  - {name: 中国_0914283, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_0914284, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国_0922112, server: 138.68.90.231, port: 8080, type: vmess, uuid: d019484c-2181-4d4a-a0fb-302a55351156, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: "%7B%22Host%22:%22138.68.90.231%22%7D"}, udp: true}
+  - {name: 英国_0922067, server: 165.227.231.254, port: 8080, type: vmess, uuid: e4e46233-376c-49be-b302-3ff6fce7a8fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: 165.227.231.254}, udp: true}
+  - {name: 加拿大_0922001, server: 138.197.165.31, port: 8080, type: vmess, uuid: 2ed609d0-7467-471b-94a9-34a734ccc40a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: "%7B%22Host%22:%22138.197.165.31%22%7D"}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_502 |34.14Mb, server: crj749919467.n-tmd.com, port: 31502, type: vmess, uuid: 9b4f0258-1127-41d9-f30a-469e80737327, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 加拿大_0922004, server: 138.197.165.31, port: 8080, type: vmess, uuid: 0c7caa09-5c69-42dc-8048-8e8b0d7efd4a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: "%7B%22Host%22:%22138.197.165.31%22%7D"}, udp: true}
+  - {name: 加拿大_0922128, server: 138.197.165.31, port: 8080, type: vmess, uuid: 826b8d0a-e0d3-407a-927d-19953c170779, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: 138.197.165.31}, udp: true}
+  - {name: 英国_0922002, server: 165.227.231.254, port: 8080, type: vmess, uuid: 826b8d0a-e0d3-407a-927d-19953c170779, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: 165.227.231.254}, udp: true}
+  - {name: 加拿大_0922016, server: 138.197.165.31, port: 8080, type: vmess, uuid: e4e46233-376c-49be-b302-3ff6fce7a8fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: 138.197.165.31}, udp: true}
+  - {name: 加拿大_0922076, server: 138.197.165.31, port: 8080, type: vmess, uuid: d019484c-2181-4d4a-a0fb-302a55351156, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: 138.197.165.31}, udp: true}
+  - {name: HK_153 |12.05Mb, server: 61.93.179.153, port: 80, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, udp: true}
+  - {name: 英国_0922069, server: 165.227.231.254, port: 8080, type: vmess, uuid: d019484c-2181-4d4a-a0fb-302a55351156, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: 165.227.231.254}, udp: true}
+  - {name: 加拿大_0922074, server: 138.197.165.31, port: 8080, type: vmess, uuid: 826b8d0a-e0d3-407a-927d-19953c170779, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: 138.197.165.31}, udp: true}
+  - {name: 英国_0922066, server: 165.227.231.254, port: 8080, type: vmess, uuid: 2ed609d0-7467-471b-94a9-34a734ccc40a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: 165.227.231.254}, udp: true}
+  - {name: 英国_0922004, server: 165.227.231.254, port: 8080, type: vmess, uuid: 0c7caa09-5c69-42dc-8048-8e8b0d7efd4a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: 165.227.231.254}, udp: true}
+  - {name: CN_44, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 越南_0910054
-      - Relay_🇺🇸US-🇹🇼TW_2986
-      - Relay_🇺🇸US-🇺🇸US_2961 |27.02Mb
-      - Relay_🇺🇸US-🇺🇸US_2990 |23.68Mb
-      - US_1937
-      - Relay_🇺🇸US-🇯🇵JP_3025
-      - Relay_🇺🇸US-🇺🇸US_2989 |23.34Mb
-      - 俄罗斯联邦_0910002
-      - US_1074
-      - Relay_🇨🇳CN-🏁ZZ_1454 |33.99Mb
-      - US_2903 | 8.92Mb
-      - RO_2152 |11.79Mb
-      - RO_2155 | 7.53Mb
-      - US_2925 | 8.12Mb
-      - 俄罗斯联邦_0910007
+      - Relay_🇺🇸US-🇺🇸US_929
+      - 新加坡_0922005
+      - Relay_🇺🇸US-🇺🇸US_939
+      - Relay_🇺🇸 US-🇺🇸US_407
+      - Relay_🇺🇸US-🇺🇸US_928
+      - 美国_09221822
+      - 中国_0914298
+      - Relay_🇺🇸 US-🇺🇸US_408
+      - 中国_0914283
+      - 中国_0914284
+      - 德国_0922112
+      - 英国_0922067
+      - 加拿大_0922001
+      - Relay_🇺🇸US-🇺🇸US_502 |34.14Mb
+      - 加拿大_0922004
+      - 加拿大_0922128
+      - 英国_0922002
+      - 加拿大_0922016
+      - 加拿大_0922076
+      - HK_153 |12.05Mb
+      - 英国_0922069
+      - 加拿大_0922074
+      - 英国_0922066
+      - 英国_0922004
+      - CN_44
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 越南_0910054
-      - Relay_🇺🇸US-🇹🇼TW_2986
-      - Relay_🇺🇸US-🇺🇸US_2961 |27.02Mb
-      - Relay_🇺🇸US-🇺🇸US_2990 |23.68Mb
-      - US_1937
-      - Relay_🇺🇸US-🇯🇵JP_3025
-      - Relay_🇺🇸US-🇺🇸US_2989 |23.34Mb
-      - 俄罗斯联邦_0910002
-      - US_1074
-      - Relay_🇨🇳CN-🏁ZZ_1454 |33.99Mb
-      - US_2903 | 8.92Mb
-      - RO_2152 |11.79Mb
-      - RO_2155 | 7.53Mb
-      - US_2925 | 8.12Mb
-      - 俄罗斯联邦_0910007
+      - Relay_🇺🇸US-🇺🇸US_929
+      - 新加坡_0922005
+      - Relay_🇺🇸US-🇺🇸US_939
+      - Relay_🇺🇸 US-🇺🇸US_407
+      - Relay_🇺🇸US-🇺🇸US_928
+      - 美国_09221822
+      - 中国_0914298
+      - Relay_🇺🇸 US-🇺🇸US_408
+      - 中国_0914283
+      - 中国_0914284
+      - 德国_0922112
+      - 英国_0922067
+      - 加拿大_0922001
+      - Relay_🇺🇸US-🇺🇸US_502 |34.14Mb
+      - 加拿大_0922004
+      - 加拿大_0922128
+      - 英国_0922002
+      - 加拿大_0922016
+      - 加拿大_0922076
+      - HK_153 |12.05Mb
+      - 英国_0922069
+      - 加拿大_0922074
+      - 英国_0922066
+      - 英国_0922004
+      - CN_44
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 越南_0910054
-      - Relay_🇺🇸US-🇹🇼TW_2986
-      - Relay_🇺🇸US-🇺🇸US_2961 |27.02Mb
-      - Relay_🇺🇸US-🇺🇸US_2990 |23.68Mb
-      - US_1937
-      - Relay_🇺🇸US-🇯🇵JP_3025
-      - Relay_🇺🇸US-🇺🇸US_2989 |23.34Mb
-      - 俄罗斯联邦_0910002
-      - US_1074
-      - Relay_🇨🇳CN-🏁ZZ_1454 |33.99Mb
-      - US_2903 | 8.92Mb
-      - RO_2152 |11.79Mb
-      - RO_2155 | 7.53Mb
-      - US_2925 | 8.12Mb
-      - 俄罗斯联邦_0910007
+      - Relay_🇺🇸US-🇺🇸US_929
+      - 新加坡_0922005
+      - Relay_🇺🇸US-🇺🇸US_939
+      - Relay_🇺🇸 US-🇺🇸US_407
+      - Relay_🇺🇸US-🇺🇸US_928
+      - 美国_09221822
+      - 中国_0914298
+      - Relay_🇺🇸 US-🇺🇸US_408
+      - 中国_0914283
+      - 中国_0914284
+      - 德国_0922112
+      - 英国_0922067
+      - 加拿大_0922001
+      - Relay_🇺🇸US-🇺🇸US_502 |34.14Mb
+      - 加拿大_0922004
+      - 加拿大_0922128
+      - 英国_0922002
+      - 加拿大_0922016
+      - 加拿大_0922076
+      - HK_153 |12.05Mb
+      - 英国_0922069
+      - 加拿大_0922074
+      - 英国_0922066
+      - 英国_0922004
+      - CN_44
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -100,21 +140,31 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 越南_0910054
-      - Relay_🇺🇸US-🇹🇼TW_2986
-      - Relay_🇺🇸US-🇺🇸US_2961 |27.02Mb
-      - Relay_🇺🇸US-🇺🇸US_2990 |23.68Mb
-      - US_1937
-      - Relay_🇺🇸US-🇯🇵JP_3025
-      - Relay_🇺🇸US-🇺🇸US_2989 |23.34Mb
-      - 俄罗斯联邦_0910002
-      - US_1074
-      - Relay_🇨🇳CN-🏁ZZ_1454 |33.99Mb
-      - US_2903 | 8.92Mb
-      - RO_2152 |11.79Mb
-      - RO_2155 | 7.53Mb
-      - US_2925 | 8.12Mb
-      - 俄罗斯联邦_0910007
+      - Relay_🇺🇸US-🇺🇸US_929
+      - 新加坡_0922005
+      - Relay_🇺🇸US-🇺🇸US_939
+      - Relay_🇺🇸 US-🇺🇸US_407
+      - Relay_🇺🇸US-🇺🇸US_928
+      - 美国_09221822
+      - 中国_0914298
+      - Relay_🇺🇸 US-🇺🇸US_408
+      - 中国_0914283
+      - 中国_0914284
+      - 德国_0922112
+      - 英国_0922067
+      - 加拿大_0922001
+      - Relay_🇺🇸US-🇺🇸US_502 |34.14Mb
+      - 加拿大_0922004
+      - 加拿大_0922128
+      - 英国_0922002
+      - 加拿大_0922016
+      - 加拿大_0922076
+      - HK_153 |12.05Mb
+      - 英国_0922069
+      - 加拿大_0922074
+      - 英国_0922066
+      - 英国_0922004
+      - CN_44
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -125,62 +175,92 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 越南_0910054
-      - Relay_🇺🇸US-🇹🇼TW_2986
-      - Relay_🇺🇸US-🇺🇸US_2961 |27.02Mb
-      - Relay_🇺🇸US-🇺🇸US_2990 |23.68Mb
-      - US_1937
-      - Relay_🇺🇸US-🇯🇵JP_3025
-      - Relay_🇺🇸US-🇺🇸US_2989 |23.34Mb
-      - 俄罗斯联邦_0910002
-      - US_1074
-      - Relay_🇨🇳CN-🏁ZZ_1454 |33.99Mb
-      - US_2903 | 8.92Mb
-      - RO_2152 |11.79Mb
-      - RO_2155 | 7.53Mb
-      - US_2925 | 8.12Mb
-      - 俄罗斯联邦_0910007
+      - Relay_🇺🇸US-🇺🇸US_929
+      - 新加坡_0922005
+      - Relay_🇺🇸US-🇺🇸US_939
+      - Relay_🇺🇸 US-🇺🇸US_407
+      - Relay_🇺🇸US-🇺🇸US_928
+      - 美国_09221822
+      - 中国_0914298
+      - Relay_🇺🇸 US-🇺🇸US_408
+      - 中国_0914283
+      - 中国_0914284
+      - 德国_0922112
+      - 英国_0922067
+      - 加拿大_0922001
+      - Relay_🇺🇸US-🇺🇸US_502 |34.14Mb
+      - 加拿大_0922004
+      - 加拿大_0922128
+      - 英国_0922002
+      - 加拿大_0922016
+      - 加拿大_0922076
+      - HK_153 |12.05Mb
+      - 英国_0922069
+      - 加拿大_0922074
+      - 英国_0922066
+      - 英国_0922004
+      - CN_44
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 越南_0910054
-      - Relay_🇺🇸US-🇹🇼TW_2986
-      - Relay_🇺🇸US-🇺🇸US_2961 |27.02Mb
-      - Relay_🇺🇸US-🇺🇸US_2990 |23.68Mb
-      - US_1937
-      - Relay_🇺🇸US-🇯🇵JP_3025
-      - Relay_🇺🇸US-🇺🇸US_2989 |23.34Mb
-      - 俄罗斯联邦_0910002
-      - US_1074
-      - Relay_🇨🇳CN-🏁ZZ_1454 |33.99Mb
-      - US_2903 | 8.92Mb
-      - RO_2152 |11.79Mb
-      - RO_2155 | 7.53Mb
-      - US_2925 | 8.12Mb
-      - 俄罗斯联邦_0910007
+      - Relay_🇺🇸US-🇺🇸US_929
+      - 新加坡_0922005
+      - Relay_🇺🇸US-🇺🇸US_939
+      - Relay_🇺🇸 US-🇺🇸US_407
+      - Relay_🇺🇸US-🇺🇸US_928
+      - 美国_09221822
+      - 中国_0914298
+      - Relay_🇺🇸 US-🇺🇸US_408
+      - 中国_0914283
+      - 中国_0914284
+      - 德国_0922112
+      - 英国_0922067
+      - 加拿大_0922001
+      - Relay_🇺🇸US-🇺🇸US_502 |34.14Mb
+      - 加拿大_0922004
+      - 加拿大_0922128
+      - 英国_0922002
+      - 加拿大_0922016
+      - 加拿大_0922076
+      - HK_153 |12.05Mb
+      - 英国_0922069
+      - 加拿大_0922074
+      - 英国_0922066
+      - 英国_0922004
+      - CN_44
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 越南_0910054
-      - Relay_🇺🇸US-🇹🇼TW_2986
-      - Relay_🇺🇸US-🇺🇸US_2961 |27.02Mb
-      - Relay_🇺🇸US-🇺🇸US_2990 |23.68Mb
-      - US_1937
-      - Relay_🇺🇸US-🇯🇵JP_3025
-      - Relay_🇺🇸US-🇺🇸US_2989 |23.34Mb
-      - 俄罗斯联邦_0910002
-      - US_1074
-      - Relay_🇨🇳CN-🏁ZZ_1454 |33.99Mb
-      - US_2903 | 8.92Mb
-      - RO_2152 |11.79Mb
-      - RO_2155 | 7.53Mb
-      - US_2925 | 8.12Mb
-      - 俄罗斯联邦_0910007
+      - Relay_🇺🇸US-🇺🇸US_929
+      - 新加坡_0922005
+      - Relay_🇺🇸US-🇺🇸US_939
+      - Relay_🇺🇸 US-🇺🇸US_407
+      - Relay_🇺🇸US-🇺🇸US_928
+      - 美国_09221822
+      - 中国_0914298
+      - Relay_🇺🇸 US-🇺🇸US_408
+      - 中国_0914283
+      - 中国_0914284
+      - 德国_0922112
+      - 英国_0922067
+      - 加拿大_0922001
+      - Relay_🇺🇸US-🇺🇸US_502 |34.14Mb
+      - 加拿大_0922004
+      - 加拿大_0922128
+      - 英国_0922002
+      - 加拿大_0922016
+      - 加拿大_0922076
+      - HK_153 |12.05Mb
+      - 英国_0922069
+      - 加拿大_0922074
+      - 英国_0922066
+      - 英国_0922004
+      - CN_44
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -196,21 +276,31 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 越南_0910054
-      - Relay_🇺🇸US-🇹🇼TW_2986
-      - Relay_🇺🇸US-🇺🇸US_2961 |27.02Mb
-      - Relay_🇺🇸US-🇺🇸US_2990 |23.68Mb
-      - US_1937
-      - Relay_🇺🇸US-🇯🇵JP_3025
-      - Relay_🇺🇸US-🇺🇸US_2989 |23.34Mb
-      - 俄罗斯联邦_0910002
-      - US_1074
-      - Relay_🇨🇳CN-🏁ZZ_1454 |33.99Mb
-      - US_2903 | 8.92Mb
-      - RO_2152 |11.79Mb
-      - RO_2155 | 7.53Mb
-      - US_2925 | 8.12Mb
-      - 俄罗斯联邦_0910007
+      - Relay_🇺🇸US-🇺🇸US_929
+      - 新加坡_0922005
+      - Relay_🇺🇸US-🇺🇸US_939
+      - Relay_🇺🇸 US-🇺🇸US_407
+      - Relay_🇺🇸US-🇺🇸US_928
+      - 美国_09221822
+      - 中国_0914298
+      - Relay_🇺🇸 US-🇺🇸US_408
+      - 中国_0914283
+      - 中国_0914284
+      - 德国_0922112
+      - 英国_0922067
+      - 加拿大_0922001
+      - Relay_🇺🇸US-🇺🇸US_502 |34.14Mb
+      - 加拿大_0922004
+      - 加拿大_0922128
+      - 英国_0922002
+      - 加拿大_0922016
+      - 加拿大_0922076
+      - HK_153 |12.05Mb
+      - 英国_0922069
+      - 加拿大_0922074
+      - 英国_0922066
+      - 英国_0922004
+      - CN_44
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
