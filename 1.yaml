@@ -5,123 +5,155 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_🇺🇸US-🇺🇸US_929, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: 新加坡_0922005, server: sg2.3320.top, port: 443, type: vmess, uuid: 4111ed89-8dc3-4102-867c-ae807a759d0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg2.3320.top}, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_939, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸 US-🇺🇸US_407, server: s1.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hass.win, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_928, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: 美国_09221822, server: 34.219.183.33, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: 中国_0914298, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸 US-🇺🇸US_408, server: s2.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hass.win, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇺🇸 US 51 TG:@nodpai (Beta), server: tratw1.bitznet.one, port: 32003, type: trojan, password: 407b71d1-4617-4f3a-9cf5-3bf09bba854c, sni: tratw1.bitznet.one, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_181, server: az.hk01.paopaocloud.cyou, port: 10002, type: vmess, uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: az.hk01.paopaocloud.cyou}, udp: true}
+  - {name: Relay_-🇷🇺RU_51, server: 124.71.16.99, port: 12323, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇺🇸 US 69 TG:@nodpai (Beta), server: trajp1.bitznet.one, port: 32004, type: trojan, password: 407b71d1-4617-4f3a-9cf5-3bf09bba854c, sni: trajp1.bitznet.one, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇺🇸 US 56 TG:@nodpai (Beta), server: trahk1.bitznet.one, port: 32443, type: trojan, password: 407b71d1-4617-4f3a-9cf5-3bf09bba854c, sni: trahk1.bitznet.one, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇺🇸 US 60 TG:@nodpai (Beta), server: trahk5.bitznet.one, port: 32000, type: trojan, password: 407b71d1-4617-4f3a-9cf5-3bf09bba854c, sni: trahk5.bitznet.one, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇨🇦CA_37, server: 124.71.16.99, port: 12353, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_134 | 2.99Mb, server: 183.232.141.154, port: 19203, type: trojan, password: a992be42-bed4-3037-8788-9e860cd635d3, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇷🇺RU_83, server: 124.71.16.99, port: 12334, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: true, udp: true}
   - {name: 中国_0914283, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇺🇸 US 61 TG:@nodpai (Beta), server: train1.bitznet.one, port: 32017, type: trojan, password: 407b71d1-4617-4f3a-9cf5-3bf09bba854c, sni: train1.bitznet.one, skip-cert-verify: true, udp: true}
+  - {name: _38 |30.39Mb, server: 144.126.211.35, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇺🇸 US 53 TG:@nodpai (Beta), server: dttw1.bitznet.one, port: 33003, type: trojan, password: 407b71d1-4617-4f3a-9cf5-3bf09bba854c, sni: dttw1.bitznet.one, skip-cert-verify: true, udp: true}
+  - {name: 美国_0922019, server: 88.210.37.106, port: 41443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: CA_19, server: 165.154.235.171, port: 24567, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇨🇦CA_49, server: 120.195.181.51, port: 12350, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇺🇸 US 59 TG:@nodpai (Beta), server: dtin1.bitznet.one, port: 33017, type: trojan, password: 407b71d1-4617-4f3a-9cf5-3bf09bba854c, sni: dtin1.bitznet.one, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇨🇦CA_54, server: 120.195.181.72, port: 12350, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: true, udp: true}
+  - {name: 美国_09221349, server: 88.210.37.106, port: 41443, type: vmess, uuid: B6C76F8A-77ED-F562-654E-59F997F58426, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇨🇦CA_42, server: 120.195.181.72, port: 12354, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: true, udp: true}
+  - {name: 英国_0922072, server: 138.68.178.33, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_68, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇷🇺RU_71, server: 120.195.181.51, port: 12324, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇨🇦CA_26, server: 120.195.181.51, port: 12354, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇨🇳CN_122, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_0914298, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 中国_0914284, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国_0922112, server: 138.68.90.231, port: 8080, type: vmess, uuid: d019484c-2181-4d4a-a0fb-302a55351156, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: "%7B%22Host%22:%22138.68.90.231%22%7D"}, udp: true}
-  - {name: 英国_0922067, server: 165.227.231.254, port: 8080, type: vmess, uuid: e4e46233-376c-49be-b302-3ff6fce7a8fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: 165.227.231.254}, udp: true}
-  - {name: 加拿大_0922001, server: 138.197.165.31, port: 8080, type: vmess, uuid: 2ed609d0-7467-471b-94a9-34a734ccc40a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: "%7B%22Host%22:%22138.197.165.31%22%7D"}, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_502 |34.14Mb, server: crj749919467.n-tmd.com, port: 31502, type: vmess, uuid: 9b4f0258-1127-41d9-f30a-469e80737327, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 加拿大_0922004, server: 138.197.165.31, port: 8080, type: vmess, uuid: 0c7caa09-5c69-42dc-8048-8e8b0d7efd4a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: "%7B%22Host%22:%22138.197.165.31%22%7D"}, udp: true}
-  - {name: 加拿大_0922128, server: 138.197.165.31, port: 8080, type: vmess, uuid: 826b8d0a-e0d3-407a-927d-19953c170779, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: 138.197.165.31}, udp: true}
-  - {name: 英国_0922002, server: 165.227.231.254, port: 8080, type: vmess, uuid: 826b8d0a-e0d3-407a-927d-19953c170779, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: 165.227.231.254}, udp: true}
-  - {name: 加拿大_0922016, server: 138.197.165.31, port: 8080, type: vmess, uuid: e4e46233-376c-49be-b302-3ff6fce7a8fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: 138.197.165.31}, udp: true}
-  - {name: 加拿大_0922076, server: 138.197.165.31, port: 8080, type: vmess, uuid: d019484c-2181-4d4a-a0fb-302a55351156, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: 138.197.165.31}, udp: true}
-  - {name: HK_153 |12.05Mb, server: 61.93.179.153, port: 80, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, udp: true}
-  - {name: 英国_0922069, server: 165.227.231.254, port: 8080, type: vmess, uuid: d019484c-2181-4d4a-a0fb-302a55351156, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: 165.227.231.254}, udp: true}
-  - {name: 加拿大_0922074, server: 138.197.165.31, port: 8080, type: vmess, uuid: 826b8d0a-e0d3-407a-927d-19953c170779, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: 138.197.165.31}, udp: true}
-  - {name: 英国_0922066, server: 165.227.231.254, port: 8080, type: vmess, uuid: 2ed609d0-7467-471b-94a9-34a734ccc40a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: 165.227.231.254}, udp: true}
-  - {name: 英国_0922004, server: 165.227.231.254, port: 8080, type: vmess, uuid: 0c7caa09-5c69-42dc-8048-8e8b0d7efd4a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: 165.227.231.254}, udp: true}
-  - {name: CN_44, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇺🇸 US 68 TG:@nodpai (Beta), server: 183.237.144.252, port: 56511, type: ss, cipher: aes-256-gcm, password: b125d3b6-71e3-4182-b0e4-bd750a0de286, udp: true}
+  - {name: CN_144, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "|13.08Mb", server: 61.93.179.153, port: 80, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, udp: true}
+  - {name: CN_127 |11.82Mb, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: ZZ_694 | 5.66Mb, server: 103.159.132.100, port: 51919, type: vmess, uuid: 35e0c4cb-2caa-4c09-cb85-cb26c2cb06b9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇷🇺RU_81, server: 120.195.181.72, port: 12333, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇺🇸US-🇺🇸US_929
-      - 新加坡_0922005
-      - Relay_🇺🇸US-🇺🇸US_939
-      - Relay_🇺🇸 US-🇺🇸US_407
-      - Relay_🇺🇸US-🇺🇸US_928
-      - 美国_09221822
-      - 中国_0914298
-      - Relay_🇺🇸 US-🇺🇸US_408
+      - 中转 🇺🇸 US 51 TG:@nodpai (Beta)
+      - Relay_🇺🇸US-🇺🇸US_181
+      - Relay_-🇷🇺RU_51
+      - 中转 🇺🇸 US 69 TG:@nodpai (Beta)
+      - 中转 🇺🇸 US 56 TG:@nodpai (Beta)
+      - 中转 🇺🇸 US 60 TG:@nodpai (Beta)
+      - Relay_-🇨🇦CA_37
+      - Relay_🇨🇳CN-🇭🇰HK_134 | 2.99Mb
+      - Relay_-🇷🇺RU_83
       - 中国_0914283
+      - 中转 🇺🇸 US 61 TG:@nodpai (Beta)
+      - _38 |30.39Mb
+      - 中转 🇺🇸 US 53 TG:@nodpai (Beta)
+      - 美国_0922019
+      - CA_19
+      - Relay_-🇨🇦CA_49
+      - 中转 🇺🇸 US 59 TG:@nodpai (Beta)
+      - Relay_-🇨🇦CA_54
+      - 美国_09221349
+      - Relay_-🇨🇦CA_42
+      - 英国_0922072
+      - CN_68
+      - Relay_-🇷🇺RU_71
+      - Relay_-🇨🇦CA_26
+      - Relay_🇨🇳CN-🇨🇳CN_122
+      - 中国_0914298
       - 中国_0914284
-      - 德国_0922112
-      - 英国_0922067
-      - 加拿大_0922001
-      - Relay_🇺🇸US-🇺🇸US_502 |34.14Mb
-      - 加拿大_0922004
-      - 加拿大_0922128
-      - 英国_0922002
-      - 加拿大_0922016
-      - 加拿大_0922076
-      - HK_153 |12.05Mb
-      - 英国_0922069
-      - 加拿大_0922074
-      - 英国_0922066
-      - 英国_0922004
-      - CN_44
+      - 中转 🇺🇸 US 68 TG:@nodpai (Beta)
+      - CN_144
+      - "|13.08Mb"
+      - CN_127 |11.82Mb
+      - ZZ_694 | 5.66Mb
+      - Relay_-🇷🇺RU_81
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇺🇸US-🇺🇸US_929
-      - 新加坡_0922005
-      - Relay_🇺🇸US-🇺🇸US_939
-      - Relay_🇺🇸 US-🇺🇸US_407
-      - Relay_🇺🇸US-🇺🇸US_928
-      - 美国_09221822
-      - 中国_0914298
-      - Relay_🇺🇸 US-🇺🇸US_408
+      - 中转 🇺🇸 US 51 TG:@nodpai (Beta)
+      - Relay_🇺🇸US-🇺🇸US_181
+      - Relay_-🇷🇺RU_51
+      - 中转 🇺🇸 US 69 TG:@nodpai (Beta)
+      - 中转 🇺🇸 US 56 TG:@nodpai (Beta)
+      - 中转 🇺🇸 US 60 TG:@nodpai (Beta)
+      - Relay_-🇨🇦CA_37
+      - Relay_🇨🇳CN-🇭🇰HK_134 | 2.99Mb
+      - Relay_-🇷🇺RU_83
       - 中国_0914283
+      - 中转 🇺🇸 US 61 TG:@nodpai (Beta)
+      - _38 |30.39Mb
+      - 中转 🇺🇸 US 53 TG:@nodpai (Beta)
+      - 美国_0922019
+      - CA_19
+      - Relay_-🇨🇦CA_49
+      - 中转 🇺🇸 US 59 TG:@nodpai (Beta)
+      - Relay_-🇨🇦CA_54
+      - 美国_09221349
+      - Relay_-🇨🇦CA_42
+      - 英国_0922072
+      - CN_68
+      - Relay_-🇷🇺RU_71
+      - Relay_-🇨🇦CA_26
+      - Relay_🇨🇳CN-🇨🇳CN_122
+      - 中国_0914298
       - 中国_0914284
-      - 德国_0922112
-      - 英国_0922067
-      - 加拿大_0922001
-      - Relay_🇺🇸US-🇺🇸US_502 |34.14Mb
-      - 加拿大_0922004
-      - 加拿大_0922128
-      - 英国_0922002
-      - 加拿大_0922016
-      - 加拿大_0922076
-      - HK_153 |12.05Mb
-      - 英国_0922069
-      - 加拿大_0922074
-      - 英国_0922066
-      - 英国_0922004
-      - CN_44
+      - 中转 🇺🇸 US 68 TG:@nodpai (Beta)
+      - CN_144
+      - "|13.08Mb"
+      - CN_127 |11.82Mb
+      - ZZ_694 | 5.66Mb
+      - Relay_-🇷🇺RU_81
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇺🇸US-🇺🇸US_929
-      - 新加坡_0922005
-      - Relay_🇺🇸US-🇺🇸US_939
-      - Relay_🇺🇸 US-🇺🇸US_407
-      - Relay_🇺🇸US-🇺🇸US_928
-      - 美国_09221822
-      - 中国_0914298
-      - Relay_🇺🇸 US-🇺🇸US_408
+      - 中转 🇺🇸 US 51 TG:@nodpai (Beta)
+      - Relay_🇺🇸US-🇺🇸US_181
+      - Relay_-🇷🇺RU_51
+      - 中转 🇺🇸 US 69 TG:@nodpai (Beta)
+      - 中转 🇺🇸 US 56 TG:@nodpai (Beta)
+      - 中转 🇺🇸 US 60 TG:@nodpai (Beta)
+      - Relay_-🇨🇦CA_37
+      - Relay_🇨🇳CN-🇭🇰HK_134 | 2.99Mb
+      - Relay_-🇷🇺RU_83
       - 中国_0914283
+      - 中转 🇺🇸 US 61 TG:@nodpai (Beta)
+      - _38 |30.39Mb
+      - 中转 🇺🇸 US 53 TG:@nodpai (Beta)
+      - 美国_0922019
+      - CA_19
+      - Relay_-🇨🇦CA_49
+      - 中转 🇺🇸 US 59 TG:@nodpai (Beta)
+      - Relay_-🇨🇦CA_54
+      - 美国_09221349
+      - Relay_-🇨🇦CA_42
+      - 英国_0922072
+      - CN_68
+      - Relay_-🇷🇺RU_71
+      - Relay_-🇨🇦CA_26
+      - Relay_🇨🇳CN-🇨🇳CN_122
+      - 中国_0914298
       - 中国_0914284
-      - 德国_0922112
-      - 英国_0922067
-      - 加拿大_0922001
-      - Relay_🇺🇸US-🇺🇸US_502 |34.14Mb
-      - 加拿大_0922004
-      - 加拿大_0922128
-      - 英国_0922002
-      - 加拿大_0922016
-      - 加拿大_0922076
-      - HK_153 |12.05Mb
-      - 英国_0922069
-      - 加拿大_0922074
-      - 英国_0922066
-      - 英国_0922004
-      - CN_44
+      - 中转 🇺🇸 US 68 TG:@nodpai (Beta)
+      - CN_144
+      - "|13.08Mb"
+      - CN_127 |11.82Mb
+      - ZZ_694 | 5.66Mb
+      - Relay_-🇷🇺RU_81
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -140,31 +172,39 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇺🇸US-🇺🇸US_929
-      - 新加坡_0922005
-      - Relay_🇺🇸US-🇺🇸US_939
-      - Relay_🇺🇸 US-🇺🇸US_407
-      - Relay_🇺🇸US-🇺🇸US_928
-      - 美国_09221822
-      - 中国_0914298
-      - Relay_🇺🇸 US-🇺🇸US_408
+      - 中转 🇺🇸 US 51 TG:@nodpai (Beta)
+      - Relay_🇺🇸US-🇺🇸US_181
+      - Relay_-🇷🇺RU_51
+      - 中转 🇺🇸 US 69 TG:@nodpai (Beta)
+      - 中转 🇺🇸 US 56 TG:@nodpai (Beta)
+      - 中转 🇺🇸 US 60 TG:@nodpai (Beta)
+      - Relay_-🇨🇦CA_37
+      - Relay_🇨🇳CN-🇭🇰HK_134 | 2.99Mb
+      - Relay_-🇷🇺RU_83
       - 中国_0914283
+      - 中转 🇺🇸 US 61 TG:@nodpai (Beta)
+      - _38 |30.39Mb
+      - 中转 🇺🇸 US 53 TG:@nodpai (Beta)
+      - 美国_0922019
+      - CA_19
+      - Relay_-🇨🇦CA_49
+      - 中转 🇺🇸 US 59 TG:@nodpai (Beta)
+      - Relay_-🇨🇦CA_54
+      - 美国_09221349
+      - Relay_-🇨🇦CA_42
+      - 英国_0922072
+      - CN_68
+      - Relay_-🇷🇺RU_71
+      - Relay_-🇨🇦CA_26
+      - Relay_🇨🇳CN-🇨🇳CN_122
+      - 中国_0914298
       - 中国_0914284
-      - 德国_0922112
-      - 英国_0922067
-      - 加拿大_0922001
-      - Relay_🇺🇸US-🇺🇸US_502 |34.14Mb
-      - 加拿大_0922004
-      - 加拿大_0922128
-      - 英国_0922002
-      - 加拿大_0922016
-      - 加拿大_0922076
-      - HK_153 |12.05Mb
-      - 英国_0922069
-      - 加拿大_0922074
-      - 英国_0922066
-      - 英国_0922004
-      - CN_44
+      - 中转 🇺🇸 US 68 TG:@nodpai (Beta)
+      - CN_144
+      - "|13.08Mb"
+      - CN_127 |11.82Mb
+      - ZZ_694 | 5.66Mb
+      - Relay_-🇷🇺RU_81
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -175,92 +215,116 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇺🇸US-🇺🇸US_929
-      - 新加坡_0922005
-      - Relay_🇺🇸US-🇺🇸US_939
-      - Relay_🇺🇸 US-🇺🇸US_407
-      - Relay_🇺🇸US-🇺🇸US_928
-      - 美国_09221822
-      - 中国_0914298
-      - Relay_🇺🇸 US-🇺🇸US_408
+      - 中转 🇺🇸 US 51 TG:@nodpai (Beta)
+      - Relay_🇺🇸US-🇺🇸US_181
+      - Relay_-🇷🇺RU_51
+      - 中转 🇺🇸 US 69 TG:@nodpai (Beta)
+      - 中转 🇺🇸 US 56 TG:@nodpai (Beta)
+      - 中转 🇺🇸 US 60 TG:@nodpai (Beta)
+      - Relay_-🇨🇦CA_37
+      - Relay_🇨🇳CN-🇭🇰HK_134 | 2.99Mb
+      - Relay_-🇷🇺RU_83
       - 中国_0914283
+      - 中转 🇺🇸 US 61 TG:@nodpai (Beta)
+      - _38 |30.39Mb
+      - 中转 🇺🇸 US 53 TG:@nodpai (Beta)
+      - 美国_0922019
+      - CA_19
+      - Relay_-🇨🇦CA_49
+      - 中转 🇺🇸 US 59 TG:@nodpai (Beta)
+      - Relay_-🇨🇦CA_54
+      - 美国_09221349
+      - Relay_-🇨🇦CA_42
+      - 英国_0922072
+      - CN_68
+      - Relay_-🇷🇺RU_71
+      - Relay_-🇨🇦CA_26
+      - Relay_🇨🇳CN-🇨🇳CN_122
+      - 中国_0914298
       - 中国_0914284
-      - 德国_0922112
-      - 英国_0922067
-      - 加拿大_0922001
-      - Relay_🇺🇸US-🇺🇸US_502 |34.14Mb
-      - 加拿大_0922004
-      - 加拿大_0922128
-      - 英国_0922002
-      - 加拿大_0922016
-      - 加拿大_0922076
-      - HK_153 |12.05Mb
-      - 英国_0922069
-      - 加拿大_0922074
-      - 英国_0922066
-      - 英国_0922004
-      - CN_44
+      - 中转 🇺🇸 US 68 TG:@nodpai (Beta)
+      - CN_144
+      - "|13.08Mb"
+      - CN_127 |11.82Mb
+      - ZZ_694 | 5.66Mb
+      - Relay_-🇷🇺RU_81
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇺🇸US-🇺🇸US_929
-      - 新加坡_0922005
-      - Relay_🇺🇸US-🇺🇸US_939
-      - Relay_🇺🇸 US-🇺🇸US_407
-      - Relay_🇺🇸US-🇺🇸US_928
-      - 美国_09221822
-      - 中国_0914298
-      - Relay_🇺🇸 US-🇺🇸US_408
+      - 中转 🇺🇸 US 51 TG:@nodpai (Beta)
+      - Relay_🇺🇸US-🇺🇸US_181
+      - Relay_-🇷🇺RU_51
+      - 中转 🇺🇸 US 69 TG:@nodpai (Beta)
+      - 中转 🇺🇸 US 56 TG:@nodpai (Beta)
+      - 中转 🇺🇸 US 60 TG:@nodpai (Beta)
+      - Relay_-🇨🇦CA_37
+      - Relay_🇨🇳CN-🇭🇰HK_134 | 2.99Mb
+      - Relay_-🇷🇺RU_83
       - 中国_0914283
+      - 中转 🇺🇸 US 61 TG:@nodpai (Beta)
+      - _38 |30.39Mb
+      - 中转 🇺🇸 US 53 TG:@nodpai (Beta)
+      - 美国_0922019
+      - CA_19
+      - Relay_-🇨🇦CA_49
+      - 中转 🇺🇸 US 59 TG:@nodpai (Beta)
+      - Relay_-🇨🇦CA_54
+      - 美国_09221349
+      - Relay_-🇨🇦CA_42
+      - 英国_0922072
+      - CN_68
+      - Relay_-🇷🇺RU_71
+      - Relay_-🇨🇦CA_26
+      - Relay_🇨🇳CN-🇨🇳CN_122
+      - 中国_0914298
       - 中国_0914284
-      - 德国_0922112
-      - 英国_0922067
-      - 加拿大_0922001
-      - Relay_🇺🇸US-🇺🇸US_502 |34.14Mb
-      - 加拿大_0922004
-      - 加拿大_0922128
-      - 英国_0922002
-      - 加拿大_0922016
-      - 加拿大_0922076
-      - HK_153 |12.05Mb
-      - 英国_0922069
-      - 加拿大_0922074
-      - 英国_0922066
-      - 英国_0922004
-      - CN_44
+      - 中转 🇺🇸 US 68 TG:@nodpai (Beta)
+      - CN_144
+      - "|13.08Mb"
+      - CN_127 |11.82Mb
+      - ZZ_694 | 5.66Mb
+      - Relay_-🇷🇺RU_81
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇺🇸US-🇺🇸US_929
-      - 新加坡_0922005
-      - Relay_🇺🇸US-🇺🇸US_939
-      - Relay_🇺🇸 US-🇺🇸US_407
-      - Relay_🇺🇸US-🇺🇸US_928
-      - 美国_09221822
-      - 中国_0914298
-      - Relay_🇺🇸 US-🇺🇸US_408
+      - 中转 🇺🇸 US 51 TG:@nodpai (Beta)
+      - Relay_🇺🇸US-🇺🇸US_181
+      - Relay_-🇷🇺RU_51
+      - 中转 🇺🇸 US 69 TG:@nodpai (Beta)
+      - 中转 🇺🇸 US 56 TG:@nodpai (Beta)
+      - 中转 🇺🇸 US 60 TG:@nodpai (Beta)
+      - Relay_-🇨🇦CA_37
+      - Relay_🇨🇳CN-🇭🇰HK_134 | 2.99Mb
+      - Relay_-🇷🇺RU_83
       - 中国_0914283
+      - 中转 🇺🇸 US 61 TG:@nodpai (Beta)
+      - _38 |30.39Mb
+      - 中转 🇺🇸 US 53 TG:@nodpai (Beta)
+      - 美国_0922019
+      - CA_19
+      - Relay_-🇨🇦CA_49
+      - 中转 🇺🇸 US 59 TG:@nodpai (Beta)
+      - Relay_-🇨🇦CA_54
+      - 美国_09221349
+      - Relay_-🇨🇦CA_42
+      - 英国_0922072
+      - CN_68
+      - Relay_-🇷🇺RU_71
+      - Relay_-🇨🇦CA_26
+      - Relay_🇨🇳CN-🇨🇳CN_122
+      - 中国_0914298
       - 中国_0914284
-      - 德国_0922112
-      - 英国_0922067
-      - 加拿大_0922001
-      - Relay_🇺🇸US-🇺🇸US_502 |34.14Mb
-      - 加拿大_0922004
-      - 加拿大_0922128
-      - 英国_0922002
-      - 加拿大_0922016
-      - 加拿大_0922076
-      - HK_153 |12.05Mb
-      - 英国_0922069
-      - 加拿大_0922074
-      - 英国_0922066
-      - 英国_0922004
-      - CN_44
+      - 中转 🇺🇸 US 68 TG:@nodpai (Beta)
+      - CN_144
+      - "|13.08Mb"
+      - CN_127 |11.82Mb
+      - ZZ_694 | 5.66Mb
+      - Relay_-🇷🇺RU_81
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -276,31 +340,39 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇺🇸US-🇺🇸US_929
-      - 新加坡_0922005
-      - Relay_🇺🇸US-🇺🇸US_939
-      - Relay_🇺🇸 US-🇺🇸US_407
-      - Relay_🇺🇸US-🇺🇸US_928
-      - 美国_09221822
-      - 中国_0914298
-      - Relay_🇺🇸 US-🇺🇸US_408
+      - 中转 🇺🇸 US 51 TG:@nodpai (Beta)
+      - Relay_🇺🇸US-🇺🇸US_181
+      - Relay_-🇷🇺RU_51
+      - 中转 🇺🇸 US 69 TG:@nodpai (Beta)
+      - 中转 🇺🇸 US 56 TG:@nodpai (Beta)
+      - 中转 🇺🇸 US 60 TG:@nodpai (Beta)
+      - Relay_-🇨🇦CA_37
+      - Relay_🇨🇳CN-🇭🇰HK_134 | 2.99Mb
+      - Relay_-🇷🇺RU_83
       - 中国_0914283
+      - 中转 🇺🇸 US 61 TG:@nodpai (Beta)
+      - _38 |30.39Mb
+      - 中转 🇺🇸 US 53 TG:@nodpai (Beta)
+      - 美国_0922019
+      - CA_19
+      - Relay_-🇨🇦CA_49
+      - 中转 🇺🇸 US 59 TG:@nodpai (Beta)
+      - Relay_-🇨🇦CA_54
+      - 美国_09221349
+      - Relay_-🇨🇦CA_42
+      - 英国_0922072
+      - CN_68
+      - Relay_-🇷🇺RU_71
+      - Relay_-🇨🇦CA_26
+      - Relay_🇨🇳CN-🇨🇳CN_122
+      - 中国_0914298
       - 中国_0914284
-      - 德国_0922112
-      - 英国_0922067
-      - 加拿大_0922001
-      - Relay_🇺🇸US-🇺🇸US_502 |34.14Mb
-      - 加拿大_0922004
-      - 加拿大_0922128
-      - 英国_0922002
-      - 加拿大_0922016
-      - 加拿大_0922076
-      - HK_153 |12.05Mb
-      - 英国_0922069
-      - 加拿大_0922074
-      - 英国_0922066
-      - 英国_0922004
-      - CN_44
+      - 中转 🇺🇸 US 68 TG:@nodpai (Beta)
+      - CN_144
+      - "|13.08Mb"
+      - CN_127 |11.82Mb
+      - ZZ_694 | 5.66Mb
+      - Relay_-🇷🇺RU_81
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
