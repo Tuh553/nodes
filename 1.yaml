@@ -5,43 +5,719 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: JP_67, server: 168.138.43.89, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, skip-cert-verify: true, udp: true}
-  - {name: 日本_1006218, server: 150.230.96.103, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_169 | 3.74Mb, server: 183.232.141.154, port: 19203, type: trojan, password: a992be42-bed4-3037-8788-9e860cd635d3, skip-cert-verify: true, udp: true}
-  - {name: SG-165.154.253.15-5167, server: 165.154.253.15, port: 49011, type: trojan, password: 6c4e3611-5f2d-4eb5-8c56-3e2b850e4cca, skip-cert-verify: true, udp: true}
-  - {name: SG-165.154.253.15-5288, server: 165.154.253.15, port: 49008, type: trojan, password: 6c4e3611-5f2d-4eb5-8c56-3e2b850e4cca, skip-cert-verify: true, udp: true}
+  - {name: CN-124.225.24.142-4441, server: relay_cm1.flyxxl.xyz, port: 46081, type: vmess, uuid: 4859aff4-f829-4750-8281-1de012e4e507, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /pic/fjiew2-054j0gewn23k-1fr, ws-headers: {Host: f932c3d98981b.download.microsoft.com}, udp: true}
+  - {name: RELAY-172.67.164.132-5217, server: sgarm.ptuu.cf, port: 443, type: vmess, uuid: a928a26c-2adb-45fe-e57d-8a27dade309e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: sgarm.ptuu.cf}, udp: true}
+  - {name: CN-221.131.165.72-5295, server: 221.131.165.72, port: 9002, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-118.212.143.4-4430, server: 118.212.143.4, port: 47082, type: ss, cipher: chacha20-ietf-poly1305, password: xiV0iCe8ZnzGy, udp: true}
+  - {name: CN-111.45.22.152-5080, server: 111.45.22.152, port: 9000, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-124.225.24.142-4442, server: relay_cm1.flyxxl.xyz, port: 46082, type: vmess, uuid: 4859aff4-f829-4750-8281-1de012e4e507, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /pic/fjiew2-054j0gewn23k-1fr, ws-headers: {Host: f932c3d98981b.download.microsoft.com}, udp: true}
+  - {name: CN-111.45.22.152-4852, server: 111.45.22.152, port: 9000, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-5059, server: 221.131.165.72, port: 9005, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-4846, server: 111.45.22.151, port: 11904, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-5074, server: 221.131.165.72, port: 9008, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-5099, server: 221.131.165.72, port: 11906, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-5095, server: 111.45.22.152, port: 9008, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-119.23.45.18-0828, server: s1.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-116.129.254.6-5091, server: 116.129.254.6, port: 9004, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-4854, server: 221.131.165.72, port: 11906, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-5100, server: 111.45.22.152, port: 11907, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-4893, server: 221.131.165.72, port: 11904, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-5117, server: 221.131.165.72, port: 11925, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-4819, server: 111.45.22.152, port: 11925, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-117.31.4.41-4443, server: relaybgp_pro.flyxxl.xyz, port: 45550, type: vmess, uuid: 4859aff4-f829-4750-8281-1de012e4e507, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /pic/fjiew2-054j0gewn23k-1fr, ws-headers: {Host: f932c3d98981b.download.microsoft.com}, udp: true}
+  - {name: CN-111.45.22.152-5103, server: 111.45.22.152, port: 11904, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_228, server: 146.56.176.239, port: 443, type: trojan, password: a153fb4e-6d1b-4db0-b03d-acb4012b7198, skip-cert-verify: true, udp: true}
+  - {name: CN-112.45.34.140-0834, server: 112.45.34.140, port: 80, type: vmess, uuid: 4a85a357-9e6a-4035-bc5e-b7da792beadb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: Relay_ |32.77Mb, server: c90s2.jamjams3.net, port: 19623, type: ss, cipher: aes-256-gcm, password: wpfgqbrTF7aEyWq3, udp: true}
+  - {name: US-129.146.190.42-5167, server: 129.146.190.42, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, skip-cert-verify: true, udp: true}
+  - {name: US-23.83.227.211-5634, server: c90s801.jamjams3.net, port: 19623, type: vmess, uuid: b03a1e7b-f1ad-4d0e-895d-639354e35ff4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-5254, server: 111.45.22.151, port: 11904, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US-23.83.227.211-4789, server: c90s801.jamjams3.net, port: 19623, type: vmess, uuid: b03a1e7b-f1ad-4d0e-895d-639354e35ff4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US-23.83.227.211-4629, server: c90s801.jamjams3.net, port: 19623, type: vmess, uuid: b03a1e7b-f1ad-4d0e-895d-639354e35ff4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-5094, server: 221.131.165.72, port: 11907, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-5308, server: 111.45.22.152, port: 11908, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_1006082, server: s1.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_1006031, server: 172.64.155.200, port: 443, type: vmess, uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg4.zhujicn2.com}, udp: true}
+  - {name: CN-111.45.22.152-5125, server: 111.45.22.152, port: 9004, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-4824, server: 111.45.22.152, port: 11918, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-5062, server: 111.45.22.152, port: 9005, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-116.129.254.6-4845, server: 116.129.254.6, port: 9022, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-116.129.254.6-5098, server: 116.129.254.6, port: 9003, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇦CA-🇨🇦CA_59, server: c90s5.jamjams3.net, port: 19623, type: vmess, uuid: b03a1e7b-f1ad-4d0e-895d-639354e35ff4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇦CA-🇨🇦CA_78 |159.02Mb, server: c90s5.jamjams3.net, port: 19623, type: vmess, uuid: b03a1e7b-f1ad-4d0e-895d-639354e35ff4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-5116, server: 111.45.22.151, port: 11906, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-116.129.254.6-4842, server: 116.129.254.6, port: 9026, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-4830, server: 221.131.165.72, port: 11926, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-5175, server: 221.131.165.72, port: 11908, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-4797, server: 111.45.22.152, port: 11907, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-4831, server: 111.45.22.151, port: 11906, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-116.129.254.6-4884, server: 116.129.254.6, port: 9024, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-116.129.254.6-5126, server: 116.129.254.6, port: 9023, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-116.129.254.6-4895, server: 116.129.254.6, port: 11918, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-116.129.254.6-5113, server: 116.129.254.6, port: 9022, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-5288, server: 221.131.165.72, port: 9003, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-4859, server: 221.131.165.72, port: 11908, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-4812, server: 111.45.22.152, port: 9028, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-5176, server: 221.131.165.72, port: 11926, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_980, server: la.p1.gay, port: 23511, type: trojan, password: 69a019dd-617b-449f-9af0-57762a476530, sni: la.p1.gay, skip-cert-verify: true, udp: true}
+  - {name: CN-116.129.254.6-5139, server: 116.129.254.6, port: 9001, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_1006029, server: 172.64.144.100, port: 443, type: vmess, uuid: 6e9217de-ad7e-4a67-bd17-a6dca951733b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg3.zhujicn2.com}, udp: true}
+  - {name: CN-221.131.165.72-4860, server: 221.131.165.72, port: 9001, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: RELAY-104.21.10.209-0369, server: usarm.ptuu.cf, port: 443, type: vmess, uuid: cb7c9465-ca11-44c8-ab8f-3585631fa640, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: usarm.ptuu.cf}, udp: true}
+  - {name: CN-116.129.254.6-4910, server: 116.129.254.6, port: 11908, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "| 5.20Mb", server: 149.56.141.11, port: 443, type: trojan, password: 8b6daf15-8342-482d-b894-1239fd98ce7f, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-5214, server: 221.131.165.72, port: 11913, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-4828, server: 221.131.165.72, port: 9026, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-5220, server: 111.45.22.151, port: 11913, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-5277, server: 111.45.22.152, port: 11913, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-4823, server: 221.131.165.72, port: 9022, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-4821, server: 221.131.165.72, port: 11907, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: RELAY-172.64.144.100-2345, server: 172.64.144.100, port: 443, type: vmess, uuid: 6e9217de-ad7e-4a67-bd17-a6dca951733b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg3.zhujicn2.com}, udp: true}
+  - {name: CN-117.31.4.41-4444, server: relaybgp_pro.flyxxl.xyz, port: 45601, type: vmess, uuid: 4859aff4-f829-4750-8281-1de012e4e507, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /pic/fjiew2-054j0gewn23k-1fr, ws-headers: {Host: f932c3d98981b.download.microsoft.com}, udp: true}
+  - {name: CN-221.131.165.72-5134, server: 221.131.165.72, port: 9026, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-4777, server: 111.45.22.152, port: 11929, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-116.129.254.6-5078, server: 116.129.254.6, port: 9005, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-4876, server: 111.45.22.151, port: 11913, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-116.129.254.6-5106, server: 116.129.254.6, port: 9002, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-116.129.254.6-5146, server: 116.129.254.6, port: 9024, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-5131, server: 221.131.165.72, port: 9023, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-116.129.254.6-5119, server: 116.129.254.6, port: 9025, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-5086, server: 111.45.22.152, port: 11906, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-5211, server: 111.45.22.151, port: 11916, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-116.129.254.6-4856, server: 116.129.254.6, port: 9025, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: VN-103.186.148.106-4008, server: 103.186.148.106, port: 80, type: vmess, uuid: 67468d89-cf87-443c-baca-49f1e73b5991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shopvpn.net, ws-headers: {Host: 103.186.148.106}, udp: true}
+  - {name: CN-111.45.22.152-4811, server: 111.45.22.152, port: 11915, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-4804, server: 111.45.22.151, port: 11915, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-4782, server: 221.131.165.72, port: 11913, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-5171, server: 221.131.165.72, port: 11929, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CA_228, server: cat1.sshocean.net, port: 443, type: trojan, password: 8b6daf15-8342-482d-b894-1239fd98ce7f, sni: cat1.sshocean.net, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-4822, server: 111.45.22.152, port: 11916, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-5173, server: 111.45.22.151, port: 11929, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-4853, server: 111.45.22.151, port: 11916, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-116.129.254.6-5233, server: 116.129.254.6, port: 11908, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-4972, server: 111.45.22.151, port: 11922, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-5219, server: 111.45.22.151, port: 11915, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-116.129.254.6-5160, server: 116.129.254.6, port: 11918, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-5236, server: 111.45.22.151, port: 11922, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-4784, server: 221.131.165.72, port: 11929, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-5246, server: 111.45.22.152, port: 11922, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: FR-146.59.43.129-2241, server: 146.59.43.129, port: 443, type: vmess, uuid: 54c6c823-4957-4c6c-b10c-359bc51f7cc3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /a54e284cb6/, ws-headers: {Host: 146.59.43.129}, udp: true}
+  - {name: CN-111.45.22.152-4849, server: 111.45.22.152, port: 11922, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-5143, server: 221.131.165.72, port: 9028, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-4880, server: 111.45.22.152, port: 11904, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-4806, server: 111.45.22.151, port: 11932, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-4857, server: 111.45.22.151, port: 11931, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 法国_1006002, server: 146.59.43.129, port: 443, type: vmess, uuid: 54c6c823-4957-4c6c-b10c-359bc51f7cc3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /a54e284cb6/, ws-headers: {Host: 146.59.43.129}, udp: true}
+  - {name: CN-221.131.165.72-4818, server: 221.131.165.72, port: 11932, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-4773, server: 111.45.22.152, port: 9029, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-4851, server: 111.45.22.152, port: 11901, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: FR-146.59.43.129-2243, server: PL.nexitally.xyz, port: 443, type: vmess, uuid: 54c6c823-4957-4c6c-b10c-359bc51f7cc3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /a54e284cb6/, ws-headers: {Host: PL.nexitally.xyz}, udp: true}
+  - {name: CN-111.45.22.151-4890, server: 111.45.22.151, port: 11921, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-4796, server: 111.45.22.152, port: 11908, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-116.129.254.6-4825, server: 116.129.254.6, port: 9029, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-4838, server: 111.45.22.152, port: 11934, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-112.45.34.139-0833, server: 112.45.34.139, port: 80, type: vmess, uuid: 4a85a357-9e6a-4035-bc5e-b7da792beadb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: CN-111.45.22.151-4798, server: 111.45.22.151, port: 11909, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-5264, server: 111.45.22.151, port: 11905, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-5273, server: 111.45.22.152, port: 11921, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-4790, server: 111.45.22.152, port: 11926, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-116.129.254.6-4836, server: 116.129.254.6, port: 11902, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-5242, server: 111.45.22.152, port: 11902, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: RU-91.243.82.249-0266, server: 91.243.82.249, port: 20003, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-4801, server: 111.45.22.152, port: 11910, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-4855, server: 221.131.165.72, port: 9023, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-5195, server: 111.45.22.152, port: 9028, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-5221, server: 111.45.22.152, port: 11901, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-116.129.254.6-5245, server: 116.129.254.6, port: 11902, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-4800, server: 221.131.165.72, port: 11930, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-5305, server: 111.45.22.151, port: 11931, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-4843, server: 111.45.22.152, port: 11932, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-4774, server: 111.45.22.151, port: 11902, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-4799, server: 221.131.165.72, port: 11910, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-4810, server: 111.45.22.152, port: 11906, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-4815, server: 111.45.22.152, port: 11902, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🏁ZZ-🇹🇼TW_1261 |18.72Mb, server: 5.44.249.155, port: 3389, type: trojan, password: d02058f4f819dced, skip-cert-verify: true, udp: true}
+  - {name: KR-146.56.176.239-5914, server: kr1.api-aws.com, port: 443, type: trojan, password: d30afdba-ca55-463a-b26e-27080698a2a6, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: CN-116.129.254.6-5148, server: 116.129.254.6, port: 9027, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-4826, server: 111.45.22.152, port: 11909, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-116.129.254.6-5127, server: 116.129.254.6, port: 9029, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-5133, server: 221.131.165.72, port: 9001, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-5253, server: 221.131.165.72, port: 11930, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-5260, server: 111.45.22.152, port: 11932, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-5303, server: 111.45.22.151, port: 11902, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇷🇴RO_08, server: 125.124.254.143, port: 47092, type: ss, cipher: chacha20-ietf-poly1305, password: qsYwqKwymGRre, udp: true}
+  - {name: CN-111.45.22.152-5268, server: 111.45.22.152, port: 11931, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-4866, server: 111.45.22.151, port: 11930, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-5262, server: 111.45.22.151, port: 11921, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-5275, server: 111.45.22.151, port: 11909, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-4863, server: 111.45.22.152, port: 11913, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-5263, server: 111.45.22.151, port: 11932, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-4834, server: 221.131.165.72, port: 11931, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-5213, server: 111.45.22.152, port: 11934, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-5272, server: 111.45.22.152, port: 11909, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: RU-91.243.82.249-4920, server: 91.243.82.249, port: 20003, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-4814, server: 111.45.22.152, port: 11921, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: RU-91.243.82.249-0352, server: 91.243.82.249, port: 20003, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-5249, server: 111.45.22.151, port: 11930, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-5286, server: 111.45.22.151, port: 9008, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-116.129.254.6-5276, server: 116.129.254.6, port: 11928, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-5274, server: 221.131.165.72, port: 11931, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-4870, server: 111.45.22.152, port: 11931, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-5250, server: 111.45.22.152, port: 11910, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: DE_10, server: 93.186.201.158, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: CN-111.45.22.151-4770, server: 111.45.22.151, port: 11929, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: GB_184, server: 178.62.16.161, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
+  - {name: CN-59.34.148.109-5310, server: Gd.jsyml.cn, port: 80, type: vmess, uuid: 4a85a357-9e6a-4035-bc5e-b7da792beadb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: CN-111.45.22.152-5215, server: 111.45.22.152, port: 11915, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-5267, server: 111.45.22.152, port: 11930, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-5147, server: 221.131.165.72, port: 9027, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-4769, server: 221.131.165.72, port: 9028, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-4896, server: 111.45.22.151, port: 11914, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-5198, server: 111.45.22.152, port: 11925, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-5255, server: 221.131.165.72, port: 11910, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-221.131.165.72-4865, server: 221.131.165.72, port: 9027, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.152-5197, server: 111.45.22.152, port: 11926, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-111.45.22.151-5309, server: 111.45.22.151, port: 11914, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: RU-91.243.82.249-5033, server: 91.243.82.249, port: 20003, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_67
-      - 日本_1006218
-      - Relay_🇨🇳CN-🇭🇰HK_169 | 3.74Mb
-      - SG-165.154.253.15-5167
-      - SG-165.154.253.15-5288
+      - CN-124.225.24.142-4441
+      - RELAY-172.67.164.132-5217
+      - CN-221.131.165.72-5295
+      - CN-118.212.143.4-4430
+      - CN-111.45.22.152-5080
+      - CN-124.225.24.142-4442
+      - CN-111.45.22.152-4852
+      - CN-221.131.165.72-5059
+      - CN-111.45.22.151-4846
+      - CN-221.131.165.72-5074
+      - CN-221.131.165.72-5099
+      - CN-111.45.22.152-5095
+      - CN-119.23.45.18-0828
+      - CN-116.129.254.6-5091
+      - CN-221.131.165.72-4854
+      - CN-111.45.22.152-5100
+      - CN-221.131.165.72-4893
+      - CN-221.131.165.72-5117
+      - CN-111.45.22.152-4819
+      - CN-117.31.4.41-4443
+      - CN-111.45.22.152-5103
+      - JP_228
+      - CN-112.45.34.140-0834
+      - Relay_ |32.77Mb
+      - US-129.146.190.42-5167
+      - US-23.83.227.211-5634
+      - CN-111.45.22.151-5254
+      - US-23.83.227.211-4789
+      - US-23.83.227.211-4629
+      - CN-221.131.165.72-5094
+      - CN-111.45.22.152-5308
+      - 中国_1006082
+      - 美国_1006031
+      - CN-111.45.22.152-5125
+      - CN-111.45.22.152-4824
+      - CN-111.45.22.152-5062
+      - CN-116.129.254.6-4845
+      - CN-116.129.254.6-5098
+      - Relay_🇨🇦CA-🇨🇦CA_59
+      - Relay_🇨🇦CA-🇨🇦CA_78 |159.02Mb
+      - CN-111.45.22.151-5116
+      - CN-116.129.254.6-4842
+      - CN-221.131.165.72-4830
+      - CN-221.131.165.72-5175
+      - CN-111.45.22.152-4797
+      - CN-111.45.22.151-4831
+      - CN-116.129.254.6-4884
+      - CN-116.129.254.6-5126
+      - CN-116.129.254.6-4895
+      - CN-116.129.254.6-5113
+      - CN-221.131.165.72-5288
+      - CN-221.131.165.72-4859
+      - CN-111.45.22.152-4812
+      - CN-221.131.165.72-5176
+      - Relay_🇺🇸US-🇺🇸US_980
+      - CN-116.129.254.6-5139
+      - 美国_1006029
+      - CN-221.131.165.72-4860
+      - RELAY-104.21.10.209-0369
+      - CN-116.129.254.6-4910
+      - "| 5.20Mb"
+      - CN-221.131.165.72-5214
+      - CN-221.131.165.72-4828
+      - CN-111.45.22.151-5220
+      - CN-111.45.22.152-5277
+      - CN-221.131.165.72-4823
+      - CN-221.131.165.72-4821
+      - RELAY-172.64.144.100-2345
+      - CN-117.31.4.41-4444
+      - CN-221.131.165.72-5134
+      - CN-111.45.22.152-4777
+      - CN-116.129.254.6-5078
+      - CN-111.45.22.151-4876
+      - CN-116.129.254.6-5106
+      - CN-116.129.254.6-5146
+      - CN-221.131.165.72-5131
+      - CN-116.129.254.6-5119
+      - CN-111.45.22.152-5086
+      - CN-111.45.22.151-5211
+      - CN-116.129.254.6-4856
+      - VN-103.186.148.106-4008
+      - CN-111.45.22.152-4811
+      - CN-111.45.22.151-4804
+      - CN-221.131.165.72-4782
+      - CN-221.131.165.72-5171
+      - CA_228
+      - CN-111.45.22.152-4822
+      - CN-111.45.22.151-5173
+      - CN-111.45.22.151-4853
+      - CN-116.129.254.6-5233
+      - CN-111.45.22.151-4972
+      - CN-111.45.22.151-5219
+      - CN-116.129.254.6-5160
+      - CN-111.45.22.151-5236
+      - CN-221.131.165.72-4784
+      - CN-111.45.22.152-5246
+      - FR-146.59.43.129-2241
+      - CN-111.45.22.152-4849
+      - CN-221.131.165.72-5143
+      - CN-111.45.22.152-4880
+      - CN-111.45.22.151-4806
+      - CN-111.45.22.151-4857
+      - 法国_1006002
+      - CN-221.131.165.72-4818
+      - CN-111.45.22.152-4773
+      - CN-111.45.22.152-4851
+      - FR-146.59.43.129-2243
+      - CN-111.45.22.151-4890
+      - CN-111.45.22.152-4796
+      - CN-116.129.254.6-4825
+      - CN-111.45.22.152-4838
+      - CN-112.45.34.139-0833
+      - CN-111.45.22.151-4798
+      - CN-111.45.22.151-5264
+      - CN-111.45.22.152-5273
+      - CN-111.45.22.152-4790
+      - CN-116.129.254.6-4836
+      - CN-111.45.22.152-5242
+      - RU-91.243.82.249-0266
+      - CN-111.45.22.152-4801
+      - CN-221.131.165.72-4855
+      - CN-111.45.22.152-5195
+      - CN-111.45.22.152-5221
+      - CN-116.129.254.6-5245
+      - CN-221.131.165.72-4800
+      - CN-111.45.22.151-5305
+      - CN-111.45.22.152-4843
+      - CN-111.45.22.151-4774
+      - CN-221.131.165.72-4799
+      - CN-111.45.22.152-4810
+      - CN-111.45.22.152-4815
+      - Relay_🏁ZZ-🇹🇼TW_1261 |18.72Mb
+      - KR-146.56.176.239-5914
+      - CN-116.129.254.6-5148
+      - CN-111.45.22.152-4826
+      - CN-116.129.254.6-5127
+      - CN-221.131.165.72-5133
+      - CN-221.131.165.72-5253
+      - CN-111.45.22.152-5260
+      - CN-111.45.22.151-5303
+      - Relay_🇨🇳CN-🇷🇴RO_08
+      - CN-111.45.22.152-5268
+      - CN-111.45.22.151-4866
+      - CN-111.45.22.151-5262
+      - CN-111.45.22.151-5275
+      - CN-111.45.22.152-4863
+      - CN-111.45.22.151-5263
+      - CN-221.131.165.72-4834
+      - CN-111.45.22.152-5213
+      - CN-111.45.22.152-5272
+      - RU-91.243.82.249-4920
+      - CN-111.45.22.152-4814
+      - RU-91.243.82.249-0352
+      - CN-111.45.22.151-5249
+      - CN-111.45.22.151-5286
+      - CN-116.129.254.6-5276
+      - CN-221.131.165.72-5274
+      - CN-111.45.22.152-4870
+      - CN-111.45.22.152-5250
+      - DE_10
+      - CN-111.45.22.151-4770
+      - GB_184
+      - CN-59.34.148.109-5310
+      - CN-111.45.22.152-5215
+      - CN-111.45.22.152-5267
+      - CN-221.131.165.72-5147
+      - CN-221.131.165.72-4769
+      - CN-111.45.22.151-4896
+      - CN-111.45.22.152-5198
+      - CN-221.131.165.72-5255
+      - CN-221.131.165.72-4865
+      - CN-111.45.22.152-5197
+      - CN-111.45.22.151-5309
+      - RU-91.243.82.249-5033
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - JP_67
-      - 日本_1006218
-      - Relay_🇨🇳CN-🇭🇰HK_169 | 3.74Mb
-      - SG-165.154.253.15-5167
-      - SG-165.154.253.15-5288
+      - CN-124.225.24.142-4441
+      - RELAY-172.67.164.132-5217
+      - CN-221.131.165.72-5295
+      - CN-118.212.143.4-4430
+      - CN-111.45.22.152-5080
+      - CN-124.225.24.142-4442
+      - CN-111.45.22.152-4852
+      - CN-221.131.165.72-5059
+      - CN-111.45.22.151-4846
+      - CN-221.131.165.72-5074
+      - CN-221.131.165.72-5099
+      - CN-111.45.22.152-5095
+      - CN-119.23.45.18-0828
+      - CN-116.129.254.6-5091
+      - CN-221.131.165.72-4854
+      - CN-111.45.22.152-5100
+      - CN-221.131.165.72-4893
+      - CN-221.131.165.72-5117
+      - CN-111.45.22.152-4819
+      - CN-117.31.4.41-4443
+      - CN-111.45.22.152-5103
+      - JP_228
+      - CN-112.45.34.140-0834
+      - Relay_ |32.77Mb
+      - US-129.146.190.42-5167
+      - US-23.83.227.211-5634
+      - CN-111.45.22.151-5254
+      - US-23.83.227.211-4789
+      - US-23.83.227.211-4629
+      - CN-221.131.165.72-5094
+      - CN-111.45.22.152-5308
+      - 中国_1006082
+      - 美国_1006031
+      - CN-111.45.22.152-5125
+      - CN-111.45.22.152-4824
+      - CN-111.45.22.152-5062
+      - CN-116.129.254.6-4845
+      - CN-116.129.254.6-5098
+      - Relay_🇨🇦CA-🇨🇦CA_59
+      - Relay_🇨🇦CA-🇨🇦CA_78 |159.02Mb
+      - CN-111.45.22.151-5116
+      - CN-116.129.254.6-4842
+      - CN-221.131.165.72-4830
+      - CN-221.131.165.72-5175
+      - CN-111.45.22.152-4797
+      - CN-111.45.22.151-4831
+      - CN-116.129.254.6-4884
+      - CN-116.129.254.6-5126
+      - CN-116.129.254.6-4895
+      - CN-116.129.254.6-5113
+      - CN-221.131.165.72-5288
+      - CN-221.131.165.72-4859
+      - CN-111.45.22.152-4812
+      - CN-221.131.165.72-5176
+      - Relay_🇺🇸US-🇺🇸US_980
+      - CN-116.129.254.6-5139
+      - 美国_1006029
+      - CN-221.131.165.72-4860
+      - RELAY-104.21.10.209-0369
+      - CN-116.129.254.6-4910
+      - "| 5.20Mb"
+      - CN-221.131.165.72-5214
+      - CN-221.131.165.72-4828
+      - CN-111.45.22.151-5220
+      - CN-111.45.22.152-5277
+      - CN-221.131.165.72-4823
+      - CN-221.131.165.72-4821
+      - RELAY-172.64.144.100-2345
+      - CN-117.31.4.41-4444
+      - CN-221.131.165.72-5134
+      - CN-111.45.22.152-4777
+      - CN-116.129.254.6-5078
+      - CN-111.45.22.151-4876
+      - CN-116.129.254.6-5106
+      - CN-116.129.254.6-5146
+      - CN-221.131.165.72-5131
+      - CN-116.129.254.6-5119
+      - CN-111.45.22.152-5086
+      - CN-111.45.22.151-5211
+      - CN-116.129.254.6-4856
+      - VN-103.186.148.106-4008
+      - CN-111.45.22.152-4811
+      - CN-111.45.22.151-4804
+      - CN-221.131.165.72-4782
+      - CN-221.131.165.72-5171
+      - CA_228
+      - CN-111.45.22.152-4822
+      - CN-111.45.22.151-5173
+      - CN-111.45.22.151-4853
+      - CN-116.129.254.6-5233
+      - CN-111.45.22.151-4972
+      - CN-111.45.22.151-5219
+      - CN-116.129.254.6-5160
+      - CN-111.45.22.151-5236
+      - CN-221.131.165.72-4784
+      - CN-111.45.22.152-5246
+      - FR-146.59.43.129-2241
+      - CN-111.45.22.152-4849
+      - CN-221.131.165.72-5143
+      - CN-111.45.22.152-4880
+      - CN-111.45.22.151-4806
+      - CN-111.45.22.151-4857
+      - 法国_1006002
+      - CN-221.131.165.72-4818
+      - CN-111.45.22.152-4773
+      - CN-111.45.22.152-4851
+      - FR-146.59.43.129-2243
+      - CN-111.45.22.151-4890
+      - CN-111.45.22.152-4796
+      - CN-116.129.254.6-4825
+      - CN-111.45.22.152-4838
+      - CN-112.45.34.139-0833
+      - CN-111.45.22.151-4798
+      - CN-111.45.22.151-5264
+      - CN-111.45.22.152-5273
+      - CN-111.45.22.152-4790
+      - CN-116.129.254.6-4836
+      - CN-111.45.22.152-5242
+      - RU-91.243.82.249-0266
+      - CN-111.45.22.152-4801
+      - CN-221.131.165.72-4855
+      - CN-111.45.22.152-5195
+      - CN-111.45.22.152-5221
+      - CN-116.129.254.6-5245
+      - CN-221.131.165.72-4800
+      - CN-111.45.22.151-5305
+      - CN-111.45.22.152-4843
+      - CN-111.45.22.151-4774
+      - CN-221.131.165.72-4799
+      - CN-111.45.22.152-4810
+      - CN-111.45.22.152-4815
+      - Relay_🏁ZZ-🇹🇼TW_1261 |18.72Mb
+      - KR-146.56.176.239-5914
+      - CN-116.129.254.6-5148
+      - CN-111.45.22.152-4826
+      - CN-116.129.254.6-5127
+      - CN-221.131.165.72-5133
+      - CN-221.131.165.72-5253
+      - CN-111.45.22.152-5260
+      - CN-111.45.22.151-5303
+      - Relay_🇨🇳CN-🇷🇴RO_08
+      - CN-111.45.22.152-5268
+      - CN-111.45.22.151-4866
+      - CN-111.45.22.151-5262
+      - CN-111.45.22.151-5275
+      - CN-111.45.22.152-4863
+      - CN-111.45.22.151-5263
+      - CN-221.131.165.72-4834
+      - CN-111.45.22.152-5213
+      - CN-111.45.22.152-5272
+      - RU-91.243.82.249-4920
+      - CN-111.45.22.152-4814
+      - RU-91.243.82.249-0352
+      - CN-111.45.22.151-5249
+      - CN-111.45.22.151-5286
+      - CN-116.129.254.6-5276
+      - CN-221.131.165.72-5274
+      - CN-111.45.22.152-4870
+      - CN-111.45.22.152-5250
+      - DE_10
+      - CN-111.45.22.151-4770
+      - GB_184
+      - CN-59.34.148.109-5310
+      - CN-111.45.22.152-5215
+      - CN-111.45.22.152-5267
+      - CN-221.131.165.72-5147
+      - CN-221.131.165.72-4769
+      - CN-111.45.22.151-4896
+      - CN-111.45.22.152-5198
+      - CN-221.131.165.72-5255
+      - CN-221.131.165.72-4865
+      - CN-111.45.22.152-5197
+      - CN-111.45.22.151-5309
+      - RU-91.243.82.249-5033
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_67
-      - 日本_1006218
-      - Relay_🇨🇳CN-🇭🇰HK_169 | 3.74Mb
-      - SG-165.154.253.15-5167
-      - SG-165.154.253.15-5288
+      - CN-124.225.24.142-4441
+      - RELAY-172.67.164.132-5217
+      - CN-221.131.165.72-5295
+      - CN-118.212.143.4-4430
+      - CN-111.45.22.152-5080
+      - CN-124.225.24.142-4442
+      - CN-111.45.22.152-4852
+      - CN-221.131.165.72-5059
+      - CN-111.45.22.151-4846
+      - CN-221.131.165.72-5074
+      - CN-221.131.165.72-5099
+      - CN-111.45.22.152-5095
+      - CN-119.23.45.18-0828
+      - CN-116.129.254.6-5091
+      - CN-221.131.165.72-4854
+      - CN-111.45.22.152-5100
+      - CN-221.131.165.72-4893
+      - CN-221.131.165.72-5117
+      - CN-111.45.22.152-4819
+      - CN-117.31.4.41-4443
+      - CN-111.45.22.152-5103
+      - JP_228
+      - CN-112.45.34.140-0834
+      - Relay_ |32.77Mb
+      - US-129.146.190.42-5167
+      - US-23.83.227.211-5634
+      - CN-111.45.22.151-5254
+      - US-23.83.227.211-4789
+      - US-23.83.227.211-4629
+      - CN-221.131.165.72-5094
+      - CN-111.45.22.152-5308
+      - 中国_1006082
+      - 美国_1006031
+      - CN-111.45.22.152-5125
+      - CN-111.45.22.152-4824
+      - CN-111.45.22.152-5062
+      - CN-116.129.254.6-4845
+      - CN-116.129.254.6-5098
+      - Relay_🇨🇦CA-🇨🇦CA_59
+      - Relay_🇨🇦CA-🇨🇦CA_78 |159.02Mb
+      - CN-111.45.22.151-5116
+      - CN-116.129.254.6-4842
+      - CN-221.131.165.72-4830
+      - CN-221.131.165.72-5175
+      - CN-111.45.22.152-4797
+      - CN-111.45.22.151-4831
+      - CN-116.129.254.6-4884
+      - CN-116.129.254.6-5126
+      - CN-116.129.254.6-4895
+      - CN-116.129.254.6-5113
+      - CN-221.131.165.72-5288
+      - CN-221.131.165.72-4859
+      - CN-111.45.22.152-4812
+      - CN-221.131.165.72-5176
+      - Relay_🇺🇸US-🇺🇸US_980
+      - CN-116.129.254.6-5139
+      - 美国_1006029
+      - CN-221.131.165.72-4860
+      - RELAY-104.21.10.209-0369
+      - CN-116.129.254.6-4910
+      - "| 5.20Mb"
+      - CN-221.131.165.72-5214
+      - CN-221.131.165.72-4828
+      - CN-111.45.22.151-5220
+      - CN-111.45.22.152-5277
+      - CN-221.131.165.72-4823
+      - CN-221.131.165.72-4821
+      - RELAY-172.64.144.100-2345
+      - CN-117.31.4.41-4444
+      - CN-221.131.165.72-5134
+      - CN-111.45.22.152-4777
+      - CN-116.129.254.6-5078
+      - CN-111.45.22.151-4876
+      - CN-116.129.254.6-5106
+      - CN-116.129.254.6-5146
+      - CN-221.131.165.72-5131
+      - CN-116.129.254.6-5119
+      - CN-111.45.22.152-5086
+      - CN-111.45.22.151-5211
+      - CN-116.129.254.6-4856
+      - VN-103.186.148.106-4008
+      - CN-111.45.22.152-4811
+      - CN-111.45.22.151-4804
+      - CN-221.131.165.72-4782
+      - CN-221.131.165.72-5171
+      - CA_228
+      - CN-111.45.22.152-4822
+      - CN-111.45.22.151-5173
+      - CN-111.45.22.151-4853
+      - CN-116.129.254.6-5233
+      - CN-111.45.22.151-4972
+      - CN-111.45.22.151-5219
+      - CN-116.129.254.6-5160
+      - CN-111.45.22.151-5236
+      - CN-221.131.165.72-4784
+      - CN-111.45.22.152-5246
+      - FR-146.59.43.129-2241
+      - CN-111.45.22.152-4849
+      - CN-221.131.165.72-5143
+      - CN-111.45.22.152-4880
+      - CN-111.45.22.151-4806
+      - CN-111.45.22.151-4857
+      - 法国_1006002
+      - CN-221.131.165.72-4818
+      - CN-111.45.22.152-4773
+      - CN-111.45.22.152-4851
+      - FR-146.59.43.129-2243
+      - CN-111.45.22.151-4890
+      - CN-111.45.22.152-4796
+      - CN-116.129.254.6-4825
+      - CN-111.45.22.152-4838
+      - CN-112.45.34.139-0833
+      - CN-111.45.22.151-4798
+      - CN-111.45.22.151-5264
+      - CN-111.45.22.152-5273
+      - CN-111.45.22.152-4790
+      - CN-116.129.254.6-4836
+      - CN-111.45.22.152-5242
+      - RU-91.243.82.249-0266
+      - CN-111.45.22.152-4801
+      - CN-221.131.165.72-4855
+      - CN-111.45.22.152-5195
+      - CN-111.45.22.152-5221
+      - CN-116.129.254.6-5245
+      - CN-221.131.165.72-4800
+      - CN-111.45.22.151-5305
+      - CN-111.45.22.152-4843
+      - CN-111.45.22.151-4774
+      - CN-221.131.165.72-4799
+      - CN-111.45.22.152-4810
+      - CN-111.45.22.152-4815
+      - Relay_🏁ZZ-🇹🇼TW_1261 |18.72Mb
+      - KR-146.56.176.239-5914
+      - CN-116.129.254.6-5148
+      - CN-111.45.22.152-4826
+      - CN-116.129.254.6-5127
+      - CN-221.131.165.72-5133
+      - CN-221.131.165.72-5253
+      - CN-111.45.22.152-5260
+      - CN-111.45.22.151-5303
+      - Relay_🇨🇳CN-🇷🇴RO_08
+      - CN-111.45.22.152-5268
+      - CN-111.45.22.151-4866
+      - CN-111.45.22.151-5262
+      - CN-111.45.22.151-5275
+      - CN-111.45.22.152-4863
+      - CN-111.45.22.151-5263
+      - CN-221.131.165.72-4834
+      - CN-111.45.22.152-5213
+      - CN-111.45.22.152-5272
+      - RU-91.243.82.249-4920
+      - CN-111.45.22.152-4814
+      - RU-91.243.82.249-0352
+      - CN-111.45.22.151-5249
+      - CN-111.45.22.151-5286
+      - CN-116.129.254.6-5276
+      - CN-221.131.165.72-5274
+      - CN-111.45.22.152-4870
+      - CN-111.45.22.152-5250
+      - DE_10
+      - CN-111.45.22.151-4770
+      - GB_184
+      - CN-59.34.148.109-5310
+      - CN-111.45.22.152-5215
+      - CN-111.45.22.152-5267
+      - CN-221.131.165.72-5147
+      - CN-221.131.165.72-4769
+      - CN-111.45.22.151-4896
+      - CN-111.45.22.152-5198
+      - CN-221.131.165.72-5255
+      - CN-221.131.165.72-4865
+      - CN-111.45.22.152-5197
+      - CN-111.45.22.151-5309
+      - RU-91.243.82.249-5033
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -60,11 +736,180 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_67
-      - 日本_1006218
-      - Relay_🇨🇳CN-🇭🇰HK_169 | 3.74Mb
-      - SG-165.154.253.15-5167
-      - SG-165.154.253.15-5288
+      - CN-124.225.24.142-4441
+      - RELAY-172.67.164.132-5217
+      - CN-221.131.165.72-5295
+      - CN-118.212.143.4-4430
+      - CN-111.45.22.152-5080
+      - CN-124.225.24.142-4442
+      - CN-111.45.22.152-4852
+      - CN-221.131.165.72-5059
+      - CN-111.45.22.151-4846
+      - CN-221.131.165.72-5074
+      - CN-221.131.165.72-5099
+      - CN-111.45.22.152-5095
+      - CN-119.23.45.18-0828
+      - CN-116.129.254.6-5091
+      - CN-221.131.165.72-4854
+      - CN-111.45.22.152-5100
+      - CN-221.131.165.72-4893
+      - CN-221.131.165.72-5117
+      - CN-111.45.22.152-4819
+      - CN-117.31.4.41-4443
+      - CN-111.45.22.152-5103
+      - JP_228
+      - CN-112.45.34.140-0834
+      - Relay_ |32.77Mb
+      - US-129.146.190.42-5167
+      - US-23.83.227.211-5634
+      - CN-111.45.22.151-5254
+      - US-23.83.227.211-4789
+      - US-23.83.227.211-4629
+      - CN-221.131.165.72-5094
+      - CN-111.45.22.152-5308
+      - 中国_1006082
+      - 美国_1006031
+      - CN-111.45.22.152-5125
+      - CN-111.45.22.152-4824
+      - CN-111.45.22.152-5062
+      - CN-116.129.254.6-4845
+      - CN-116.129.254.6-5098
+      - Relay_🇨🇦CA-🇨🇦CA_59
+      - Relay_🇨🇦CA-🇨🇦CA_78 |159.02Mb
+      - CN-111.45.22.151-5116
+      - CN-116.129.254.6-4842
+      - CN-221.131.165.72-4830
+      - CN-221.131.165.72-5175
+      - CN-111.45.22.152-4797
+      - CN-111.45.22.151-4831
+      - CN-116.129.254.6-4884
+      - CN-116.129.254.6-5126
+      - CN-116.129.254.6-4895
+      - CN-116.129.254.6-5113
+      - CN-221.131.165.72-5288
+      - CN-221.131.165.72-4859
+      - CN-111.45.22.152-4812
+      - CN-221.131.165.72-5176
+      - Relay_🇺🇸US-🇺🇸US_980
+      - CN-116.129.254.6-5139
+      - 美国_1006029
+      - CN-221.131.165.72-4860
+      - RELAY-104.21.10.209-0369
+      - CN-116.129.254.6-4910
+      - "| 5.20Mb"
+      - CN-221.131.165.72-5214
+      - CN-221.131.165.72-4828
+      - CN-111.45.22.151-5220
+      - CN-111.45.22.152-5277
+      - CN-221.131.165.72-4823
+      - CN-221.131.165.72-4821
+      - RELAY-172.64.144.100-2345
+      - CN-117.31.4.41-4444
+      - CN-221.131.165.72-5134
+      - CN-111.45.22.152-4777
+      - CN-116.129.254.6-5078
+      - CN-111.45.22.151-4876
+      - CN-116.129.254.6-5106
+      - CN-116.129.254.6-5146
+      - CN-221.131.165.72-5131
+      - CN-116.129.254.6-5119
+      - CN-111.45.22.152-5086
+      - CN-111.45.22.151-5211
+      - CN-116.129.254.6-4856
+      - VN-103.186.148.106-4008
+      - CN-111.45.22.152-4811
+      - CN-111.45.22.151-4804
+      - CN-221.131.165.72-4782
+      - CN-221.131.165.72-5171
+      - CA_228
+      - CN-111.45.22.152-4822
+      - CN-111.45.22.151-5173
+      - CN-111.45.22.151-4853
+      - CN-116.129.254.6-5233
+      - CN-111.45.22.151-4972
+      - CN-111.45.22.151-5219
+      - CN-116.129.254.6-5160
+      - CN-111.45.22.151-5236
+      - CN-221.131.165.72-4784
+      - CN-111.45.22.152-5246
+      - FR-146.59.43.129-2241
+      - CN-111.45.22.152-4849
+      - CN-221.131.165.72-5143
+      - CN-111.45.22.152-4880
+      - CN-111.45.22.151-4806
+      - CN-111.45.22.151-4857
+      - 法国_1006002
+      - CN-221.131.165.72-4818
+      - CN-111.45.22.152-4773
+      - CN-111.45.22.152-4851
+      - FR-146.59.43.129-2243
+      - CN-111.45.22.151-4890
+      - CN-111.45.22.152-4796
+      - CN-116.129.254.6-4825
+      - CN-111.45.22.152-4838
+      - CN-112.45.34.139-0833
+      - CN-111.45.22.151-4798
+      - CN-111.45.22.151-5264
+      - CN-111.45.22.152-5273
+      - CN-111.45.22.152-4790
+      - CN-116.129.254.6-4836
+      - CN-111.45.22.152-5242
+      - RU-91.243.82.249-0266
+      - CN-111.45.22.152-4801
+      - CN-221.131.165.72-4855
+      - CN-111.45.22.152-5195
+      - CN-111.45.22.152-5221
+      - CN-116.129.254.6-5245
+      - CN-221.131.165.72-4800
+      - CN-111.45.22.151-5305
+      - CN-111.45.22.152-4843
+      - CN-111.45.22.151-4774
+      - CN-221.131.165.72-4799
+      - CN-111.45.22.152-4810
+      - CN-111.45.22.152-4815
+      - Relay_🏁ZZ-🇹🇼TW_1261 |18.72Mb
+      - KR-146.56.176.239-5914
+      - CN-116.129.254.6-5148
+      - CN-111.45.22.152-4826
+      - CN-116.129.254.6-5127
+      - CN-221.131.165.72-5133
+      - CN-221.131.165.72-5253
+      - CN-111.45.22.152-5260
+      - CN-111.45.22.151-5303
+      - Relay_🇨🇳CN-🇷🇴RO_08
+      - CN-111.45.22.152-5268
+      - CN-111.45.22.151-4866
+      - CN-111.45.22.151-5262
+      - CN-111.45.22.151-5275
+      - CN-111.45.22.152-4863
+      - CN-111.45.22.151-5263
+      - CN-221.131.165.72-4834
+      - CN-111.45.22.152-5213
+      - CN-111.45.22.152-5272
+      - RU-91.243.82.249-4920
+      - CN-111.45.22.152-4814
+      - RU-91.243.82.249-0352
+      - CN-111.45.22.151-5249
+      - CN-111.45.22.151-5286
+      - CN-116.129.254.6-5276
+      - CN-221.131.165.72-5274
+      - CN-111.45.22.152-4870
+      - CN-111.45.22.152-5250
+      - DE_10
+      - CN-111.45.22.151-4770
+      - GB_184
+      - CN-59.34.148.109-5310
+      - CN-111.45.22.152-5215
+      - CN-111.45.22.152-5267
+      - CN-221.131.165.72-5147
+      - CN-221.131.165.72-4769
+      - CN-111.45.22.151-4896
+      - CN-111.45.22.152-5198
+      - CN-221.131.165.72-5255
+      - CN-221.131.165.72-4865
+      - CN-111.45.22.152-5197
+      - CN-111.45.22.151-5309
+      - RU-91.243.82.249-5033
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -75,32 +920,539 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - JP_67
-      - 日本_1006218
-      - Relay_🇨🇳CN-🇭🇰HK_169 | 3.74Mb
-      - SG-165.154.253.15-5167
-      - SG-165.154.253.15-5288
+      - CN-124.225.24.142-4441
+      - RELAY-172.67.164.132-5217
+      - CN-221.131.165.72-5295
+      - CN-118.212.143.4-4430
+      - CN-111.45.22.152-5080
+      - CN-124.225.24.142-4442
+      - CN-111.45.22.152-4852
+      - CN-221.131.165.72-5059
+      - CN-111.45.22.151-4846
+      - CN-221.131.165.72-5074
+      - CN-221.131.165.72-5099
+      - CN-111.45.22.152-5095
+      - CN-119.23.45.18-0828
+      - CN-116.129.254.6-5091
+      - CN-221.131.165.72-4854
+      - CN-111.45.22.152-5100
+      - CN-221.131.165.72-4893
+      - CN-221.131.165.72-5117
+      - CN-111.45.22.152-4819
+      - CN-117.31.4.41-4443
+      - CN-111.45.22.152-5103
+      - JP_228
+      - CN-112.45.34.140-0834
+      - Relay_ |32.77Mb
+      - US-129.146.190.42-5167
+      - US-23.83.227.211-5634
+      - CN-111.45.22.151-5254
+      - US-23.83.227.211-4789
+      - US-23.83.227.211-4629
+      - CN-221.131.165.72-5094
+      - CN-111.45.22.152-5308
+      - 中国_1006082
+      - 美国_1006031
+      - CN-111.45.22.152-5125
+      - CN-111.45.22.152-4824
+      - CN-111.45.22.152-5062
+      - CN-116.129.254.6-4845
+      - CN-116.129.254.6-5098
+      - Relay_🇨🇦CA-🇨🇦CA_59
+      - Relay_🇨🇦CA-🇨🇦CA_78 |159.02Mb
+      - CN-111.45.22.151-5116
+      - CN-116.129.254.6-4842
+      - CN-221.131.165.72-4830
+      - CN-221.131.165.72-5175
+      - CN-111.45.22.152-4797
+      - CN-111.45.22.151-4831
+      - CN-116.129.254.6-4884
+      - CN-116.129.254.6-5126
+      - CN-116.129.254.6-4895
+      - CN-116.129.254.6-5113
+      - CN-221.131.165.72-5288
+      - CN-221.131.165.72-4859
+      - CN-111.45.22.152-4812
+      - CN-221.131.165.72-5176
+      - Relay_🇺🇸US-🇺🇸US_980
+      - CN-116.129.254.6-5139
+      - 美国_1006029
+      - CN-221.131.165.72-4860
+      - RELAY-104.21.10.209-0369
+      - CN-116.129.254.6-4910
+      - "| 5.20Mb"
+      - CN-221.131.165.72-5214
+      - CN-221.131.165.72-4828
+      - CN-111.45.22.151-5220
+      - CN-111.45.22.152-5277
+      - CN-221.131.165.72-4823
+      - CN-221.131.165.72-4821
+      - RELAY-172.64.144.100-2345
+      - CN-117.31.4.41-4444
+      - CN-221.131.165.72-5134
+      - CN-111.45.22.152-4777
+      - CN-116.129.254.6-5078
+      - CN-111.45.22.151-4876
+      - CN-116.129.254.6-5106
+      - CN-116.129.254.6-5146
+      - CN-221.131.165.72-5131
+      - CN-116.129.254.6-5119
+      - CN-111.45.22.152-5086
+      - CN-111.45.22.151-5211
+      - CN-116.129.254.6-4856
+      - VN-103.186.148.106-4008
+      - CN-111.45.22.152-4811
+      - CN-111.45.22.151-4804
+      - CN-221.131.165.72-4782
+      - CN-221.131.165.72-5171
+      - CA_228
+      - CN-111.45.22.152-4822
+      - CN-111.45.22.151-5173
+      - CN-111.45.22.151-4853
+      - CN-116.129.254.6-5233
+      - CN-111.45.22.151-4972
+      - CN-111.45.22.151-5219
+      - CN-116.129.254.6-5160
+      - CN-111.45.22.151-5236
+      - CN-221.131.165.72-4784
+      - CN-111.45.22.152-5246
+      - FR-146.59.43.129-2241
+      - CN-111.45.22.152-4849
+      - CN-221.131.165.72-5143
+      - CN-111.45.22.152-4880
+      - CN-111.45.22.151-4806
+      - CN-111.45.22.151-4857
+      - 法国_1006002
+      - CN-221.131.165.72-4818
+      - CN-111.45.22.152-4773
+      - CN-111.45.22.152-4851
+      - FR-146.59.43.129-2243
+      - CN-111.45.22.151-4890
+      - CN-111.45.22.152-4796
+      - CN-116.129.254.6-4825
+      - CN-111.45.22.152-4838
+      - CN-112.45.34.139-0833
+      - CN-111.45.22.151-4798
+      - CN-111.45.22.151-5264
+      - CN-111.45.22.152-5273
+      - CN-111.45.22.152-4790
+      - CN-116.129.254.6-4836
+      - CN-111.45.22.152-5242
+      - RU-91.243.82.249-0266
+      - CN-111.45.22.152-4801
+      - CN-221.131.165.72-4855
+      - CN-111.45.22.152-5195
+      - CN-111.45.22.152-5221
+      - CN-116.129.254.6-5245
+      - CN-221.131.165.72-4800
+      - CN-111.45.22.151-5305
+      - CN-111.45.22.152-4843
+      - CN-111.45.22.151-4774
+      - CN-221.131.165.72-4799
+      - CN-111.45.22.152-4810
+      - CN-111.45.22.152-4815
+      - Relay_🏁ZZ-🇹🇼TW_1261 |18.72Mb
+      - KR-146.56.176.239-5914
+      - CN-116.129.254.6-5148
+      - CN-111.45.22.152-4826
+      - CN-116.129.254.6-5127
+      - CN-221.131.165.72-5133
+      - CN-221.131.165.72-5253
+      - CN-111.45.22.152-5260
+      - CN-111.45.22.151-5303
+      - Relay_🇨🇳CN-🇷🇴RO_08
+      - CN-111.45.22.152-5268
+      - CN-111.45.22.151-4866
+      - CN-111.45.22.151-5262
+      - CN-111.45.22.151-5275
+      - CN-111.45.22.152-4863
+      - CN-111.45.22.151-5263
+      - CN-221.131.165.72-4834
+      - CN-111.45.22.152-5213
+      - CN-111.45.22.152-5272
+      - RU-91.243.82.249-4920
+      - CN-111.45.22.152-4814
+      - RU-91.243.82.249-0352
+      - CN-111.45.22.151-5249
+      - CN-111.45.22.151-5286
+      - CN-116.129.254.6-5276
+      - CN-221.131.165.72-5274
+      - CN-111.45.22.152-4870
+      - CN-111.45.22.152-5250
+      - DE_10
+      - CN-111.45.22.151-4770
+      - GB_184
+      - CN-59.34.148.109-5310
+      - CN-111.45.22.152-5215
+      - CN-111.45.22.152-5267
+      - CN-221.131.165.72-5147
+      - CN-221.131.165.72-4769
+      - CN-111.45.22.151-4896
+      - CN-111.45.22.152-5198
+      - CN-221.131.165.72-5255
+      - CN-221.131.165.72-4865
+      - CN-111.45.22.152-5197
+      - CN-111.45.22.151-5309
+      - RU-91.243.82.249-5033
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - JP_67
-      - 日本_1006218
-      - Relay_🇨🇳CN-🇭🇰HK_169 | 3.74Mb
-      - SG-165.154.253.15-5167
-      - SG-165.154.253.15-5288
+      - CN-124.225.24.142-4441
+      - RELAY-172.67.164.132-5217
+      - CN-221.131.165.72-5295
+      - CN-118.212.143.4-4430
+      - CN-111.45.22.152-5080
+      - CN-124.225.24.142-4442
+      - CN-111.45.22.152-4852
+      - CN-221.131.165.72-5059
+      - CN-111.45.22.151-4846
+      - CN-221.131.165.72-5074
+      - CN-221.131.165.72-5099
+      - CN-111.45.22.152-5095
+      - CN-119.23.45.18-0828
+      - CN-116.129.254.6-5091
+      - CN-221.131.165.72-4854
+      - CN-111.45.22.152-5100
+      - CN-221.131.165.72-4893
+      - CN-221.131.165.72-5117
+      - CN-111.45.22.152-4819
+      - CN-117.31.4.41-4443
+      - CN-111.45.22.152-5103
+      - JP_228
+      - CN-112.45.34.140-0834
+      - Relay_ |32.77Mb
+      - US-129.146.190.42-5167
+      - US-23.83.227.211-5634
+      - CN-111.45.22.151-5254
+      - US-23.83.227.211-4789
+      - US-23.83.227.211-4629
+      - CN-221.131.165.72-5094
+      - CN-111.45.22.152-5308
+      - 中国_1006082
+      - 美国_1006031
+      - CN-111.45.22.152-5125
+      - CN-111.45.22.152-4824
+      - CN-111.45.22.152-5062
+      - CN-116.129.254.6-4845
+      - CN-116.129.254.6-5098
+      - Relay_🇨🇦CA-🇨🇦CA_59
+      - Relay_🇨🇦CA-🇨🇦CA_78 |159.02Mb
+      - CN-111.45.22.151-5116
+      - CN-116.129.254.6-4842
+      - CN-221.131.165.72-4830
+      - CN-221.131.165.72-5175
+      - CN-111.45.22.152-4797
+      - CN-111.45.22.151-4831
+      - CN-116.129.254.6-4884
+      - CN-116.129.254.6-5126
+      - CN-116.129.254.6-4895
+      - CN-116.129.254.6-5113
+      - CN-221.131.165.72-5288
+      - CN-221.131.165.72-4859
+      - CN-111.45.22.152-4812
+      - CN-221.131.165.72-5176
+      - Relay_🇺🇸US-🇺🇸US_980
+      - CN-116.129.254.6-5139
+      - 美国_1006029
+      - CN-221.131.165.72-4860
+      - RELAY-104.21.10.209-0369
+      - CN-116.129.254.6-4910
+      - "| 5.20Mb"
+      - CN-221.131.165.72-5214
+      - CN-221.131.165.72-4828
+      - CN-111.45.22.151-5220
+      - CN-111.45.22.152-5277
+      - CN-221.131.165.72-4823
+      - CN-221.131.165.72-4821
+      - RELAY-172.64.144.100-2345
+      - CN-117.31.4.41-4444
+      - CN-221.131.165.72-5134
+      - CN-111.45.22.152-4777
+      - CN-116.129.254.6-5078
+      - CN-111.45.22.151-4876
+      - CN-116.129.254.6-5106
+      - CN-116.129.254.6-5146
+      - CN-221.131.165.72-5131
+      - CN-116.129.254.6-5119
+      - CN-111.45.22.152-5086
+      - CN-111.45.22.151-5211
+      - CN-116.129.254.6-4856
+      - VN-103.186.148.106-4008
+      - CN-111.45.22.152-4811
+      - CN-111.45.22.151-4804
+      - CN-221.131.165.72-4782
+      - CN-221.131.165.72-5171
+      - CA_228
+      - CN-111.45.22.152-4822
+      - CN-111.45.22.151-5173
+      - CN-111.45.22.151-4853
+      - CN-116.129.254.6-5233
+      - CN-111.45.22.151-4972
+      - CN-111.45.22.151-5219
+      - CN-116.129.254.6-5160
+      - CN-111.45.22.151-5236
+      - CN-221.131.165.72-4784
+      - CN-111.45.22.152-5246
+      - FR-146.59.43.129-2241
+      - CN-111.45.22.152-4849
+      - CN-221.131.165.72-5143
+      - CN-111.45.22.152-4880
+      - CN-111.45.22.151-4806
+      - CN-111.45.22.151-4857
+      - 法国_1006002
+      - CN-221.131.165.72-4818
+      - CN-111.45.22.152-4773
+      - CN-111.45.22.152-4851
+      - FR-146.59.43.129-2243
+      - CN-111.45.22.151-4890
+      - CN-111.45.22.152-4796
+      - CN-116.129.254.6-4825
+      - CN-111.45.22.152-4838
+      - CN-112.45.34.139-0833
+      - CN-111.45.22.151-4798
+      - CN-111.45.22.151-5264
+      - CN-111.45.22.152-5273
+      - CN-111.45.22.152-4790
+      - CN-116.129.254.6-4836
+      - CN-111.45.22.152-5242
+      - RU-91.243.82.249-0266
+      - CN-111.45.22.152-4801
+      - CN-221.131.165.72-4855
+      - CN-111.45.22.152-5195
+      - CN-111.45.22.152-5221
+      - CN-116.129.254.6-5245
+      - CN-221.131.165.72-4800
+      - CN-111.45.22.151-5305
+      - CN-111.45.22.152-4843
+      - CN-111.45.22.151-4774
+      - CN-221.131.165.72-4799
+      - CN-111.45.22.152-4810
+      - CN-111.45.22.152-4815
+      - Relay_🏁ZZ-🇹🇼TW_1261 |18.72Mb
+      - KR-146.56.176.239-5914
+      - CN-116.129.254.6-5148
+      - CN-111.45.22.152-4826
+      - CN-116.129.254.6-5127
+      - CN-221.131.165.72-5133
+      - CN-221.131.165.72-5253
+      - CN-111.45.22.152-5260
+      - CN-111.45.22.151-5303
+      - Relay_🇨🇳CN-🇷🇴RO_08
+      - CN-111.45.22.152-5268
+      - CN-111.45.22.151-4866
+      - CN-111.45.22.151-5262
+      - CN-111.45.22.151-5275
+      - CN-111.45.22.152-4863
+      - CN-111.45.22.151-5263
+      - CN-221.131.165.72-4834
+      - CN-111.45.22.152-5213
+      - CN-111.45.22.152-5272
+      - RU-91.243.82.249-4920
+      - CN-111.45.22.152-4814
+      - RU-91.243.82.249-0352
+      - CN-111.45.22.151-5249
+      - CN-111.45.22.151-5286
+      - CN-116.129.254.6-5276
+      - CN-221.131.165.72-5274
+      - CN-111.45.22.152-4870
+      - CN-111.45.22.152-5250
+      - DE_10
+      - CN-111.45.22.151-4770
+      - GB_184
+      - CN-59.34.148.109-5310
+      - CN-111.45.22.152-5215
+      - CN-111.45.22.152-5267
+      - CN-221.131.165.72-5147
+      - CN-221.131.165.72-4769
+      - CN-111.45.22.151-4896
+      - CN-111.45.22.152-5198
+      - CN-221.131.165.72-5255
+      - CN-221.131.165.72-4865
+      - CN-111.45.22.152-5197
+      - CN-111.45.22.151-5309
+      - RU-91.243.82.249-5033
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP_67
-      - 日本_1006218
-      - Relay_🇨🇳CN-🇭🇰HK_169 | 3.74Mb
-      - SG-165.154.253.15-5167
-      - SG-165.154.253.15-5288
+      - CN-124.225.24.142-4441
+      - RELAY-172.67.164.132-5217
+      - CN-221.131.165.72-5295
+      - CN-118.212.143.4-4430
+      - CN-111.45.22.152-5080
+      - CN-124.225.24.142-4442
+      - CN-111.45.22.152-4852
+      - CN-221.131.165.72-5059
+      - CN-111.45.22.151-4846
+      - CN-221.131.165.72-5074
+      - CN-221.131.165.72-5099
+      - CN-111.45.22.152-5095
+      - CN-119.23.45.18-0828
+      - CN-116.129.254.6-5091
+      - CN-221.131.165.72-4854
+      - CN-111.45.22.152-5100
+      - CN-221.131.165.72-4893
+      - CN-221.131.165.72-5117
+      - CN-111.45.22.152-4819
+      - CN-117.31.4.41-4443
+      - CN-111.45.22.152-5103
+      - JP_228
+      - CN-112.45.34.140-0834
+      - Relay_ |32.77Mb
+      - US-129.146.190.42-5167
+      - US-23.83.227.211-5634
+      - CN-111.45.22.151-5254
+      - US-23.83.227.211-4789
+      - US-23.83.227.211-4629
+      - CN-221.131.165.72-5094
+      - CN-111.45.22.152-5308
+      - 中国_1006082
+      - 美国_1006031
+      - CN-111.45.22.152-5125
+      - CN-111.45.22.152-4824
+      - CN-111.45.22.152-5062
+      - CN-116.129.254.6-4845
+      - CN-116.129.254.6-5098
+      - Relay_🇨🇦CA-🇨🇦CA_59
+      - Relay_🇨🇦CA-🇨🇦CA_78 |159.02Mb
+      - CN-111.45.22.151-5116
+      - CN-116.129.254.6-4842
+      - CN-221.131.165.72-4830
+      - CN-221.131.165.72-5175
+      - CN-111.45.22.152-4797
+      - CN-111.45.22.151-4831
+      - CN-116.129.254.6-4884
+      - CN-116.129.254.6-5126
+      - CN-116.129.254.6-4895
+      - CN-116.129.254.6-5113
+      - CN-221.131.165.72-5288
+      - CN-221.131.165.72-4859
+      - CN-111.45.22.152-4812
+      - CN-221.131.165.72-5176
+      - Relay_🇺🇸US-🇺🇸US_980
+      - CN-116.129.254.6-5139
+      - 美国_1006029
+      - CN-221.131.165.72-4860
+      - RELAY-104.21.10.209-0369
+      - CN-116.129.254.6-4910
+      - "| 5.20Mb"
+      - CN-221.131.165.72-5214
+      - CN-221.131.165.72-4828
+      - CN-111.45.22.151-5220
+      - CN-111.45.22.152-5277
+      - CN-221.131.165.72-4823
+      - CN-221.131.165.72-4821
+      - RELAY-172.64.144.100-2345
+      - CN-117.31.4.41-4444
+      - CN-221.131.165.72-5134
+      - CN-111.45.22.152-4777
+      - CN-116.129.254.6-5078
+      - CN-111.45.22.151-4876
+      - CN-116.129.254.6-5106
+      - CN-116.129.254.6-5146
+      - CN-221.131.165.72-5131
+      - CN-116.129.254.6-5119
+      - CN-111.45.22.152-5086
+      - CN-111.45.22.151-5211
+      - CN-116.129.254.6-4856
+      - VN-103.186.148.106-4008
+      - CN-111.45.22.152-4811
+      - CN-111.45.22.151-4804
+      - CN-221.131.165.72-4782
+      - CN-221.131.165.72-5171
+      - CA_228
+      - CN-111.45.22.152-4822
+      - CN-111.45.22.151-5173
+      - CN-111.45.22.151-4853
+      - CN-116.129.254.6-5233
+      - CN-111.45.22.151-4972
+      - CN-111.45.22.151-5219
+      - CN-116.129.254.6-5160
+      - CN-111.45.22.151-5236
+      - CN-221.131.165.72-4784
+      - CN-111.45.22.152-5246
+      - FR-146.59.43.129-2241
+      - CN-111.45.22.152-4849
+      - CN-221.131.165.72-5143
+      - CN-111.45.22.152-4880
+      - CN-111.45.22.151-4806
+      - CN-111.45.22.151-4857
+      - 法国_1006002
+      - CN-221.131.165.72-4818
+      - CN-111.45.22.152-4773
+      - CN-111.45.22.152-4851
+      - FR-146.59.43.129-2243
+      - CN-111.45.22.151-4890
+      - CN-111.45.22.152-4796
+      - CN-116.129.254.6-4825
+      - CN-111.45.22.152-4838
+      - CN-112.45.34.139-0833
+      - CN-111.45.22.151-4798
+      - CN-111.45.22.151-5264
+      - CN-111.45.22.152-5273
+      - CN-111.45.22.152-4790
+      - CN-116.129.254.6-4836
+      - CN-111.45.22.152-5242
+      - RU-91.243.82.249-0266
+      - CN-111.45.22.152-4801
+      - CN-221.131.165.72-4855
+      - CN-111.45.22.152-5195
+      - CN-111.45.22.152-5221
+      - CN-116.129.254.6-5245
+      - CN-221.131.165.72-4800
+      - CN-111.45.22.151-5305
+      - CN-111.45.22.152-4843
+      - CN-111.45.22.151-4774
+      - CN-221.131.165.72-4799
+      - CN-111.45.22.152-4810
+      - CN-111.45.22.152-4815
+      - Relay_🏁ZZ-🇹🇼TW_1261 |18.72Mb
+      - KR-146.56.176.239-5914
+      - CN-116.129.254.6-5148
+      - CN-111.45.22.152-4826
+      - CN-116.129.254.6-5127
+      - CN-221.131.165.72-5133
+      - CN-221.131.165.72-5253
+      - CN-111.45.22.152-5260
+      - CN-111.45.22.151-5303
+      - Relay_🇨🇳CN-🇷🇴RO_08
+      - CN-111.45.22.152-5268
+      - CN-111.45.22.151-4866
+      - CN-111.45.22.151-5262
+      - CN-111.45.22.151-5275
+      - CN-111.45.22.152-4863
+      - CN-111.45.22.151-5263
+      - CN-221.131.165.72-4834
+      - CN-111.45.22.152-5213
+      - CN-111.45.22.152-5272
+      - RU-91.243.82.249-4920
+      - CN-111.45.22.152-4814
+      - RU-91.243.82.249-0352
+      - CN-111.45.22.151-5249
+      - CN-111.45.22.151-5286
+      - CN-116.129.254.6-5276
+      - CN-221.131.165.72-5274
+      - CN-111.45.22.152-4870
+      - CN-111.45.22.152-5250
+      - DE_10
+      - CN-111.45.22.151-4770
+      - GB_184
+      - CN-59.34.148.109-5310
+      - CN-111.45.22.152-5215
+      - CN-111.45.22.152-5267
+      - CN-221.131.165.72-5147
+      - CN-221.131.165.72-4769
+      - CN-111.45.22.151-4896
+      - CN-111.45.22.152-5198
+      - CN-221.131.165.72-5255
+      - CN-221.131.165.72-4865
+      - CN-111.45.22.152-5197
+      - CN-111.45.22.151-5309
+      - RU-91.243.82.249-5033
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -116,11 +1468,180 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP_67
-      - 日本_1006218
-      - Relay_🇨🇳CN-🇭🇰HK_169 | 3.74Mb
-      - SG-165.154.253.15-5167
-      - SG-165.154.253.15-5288
+      - CN-124.225.24.142-4441
+      - RELAY-172.67.164.132-5217
+      - CN-221.131.165.72-5295
+      - CN-118.212.143.4-4430
+      - CN-111.45.22.152-5080
+      - CN-124.225.24.142-4442
+      - CN-111.45.22.152-4852
+      - CN-221.131.165.72-5059
+      - CN-111.45.22.151-4846
+      - CN-221.131.165.72-5074
+      - CN-221.131.165.72-5099
+      - CN-111.45.22.152-5095
+      - CN-119.23.45.18-0828
+      - CN-116.129.254.6-5091
+      - CN-221.131.165.72-4854
+      - CN-111.45.22.152-5100
+      - CN-221.131.165.72-4893
+      - CN-221.131.165.72-5117
+      - CN-111.45.22.152-4819
+      - CN-117.31.4.41-4443
+      - CN-111.45.22.152-5103
+      - JP_228
+      - CN-112.45.34.140-0834
+      - Relay_ |32.77Mb
+      - US-129.146.190.42-5167
+      - US-23.83.227.211-5634
+      - CN-111.45.22.151-5254
+      - US-23.83.227.211-4789
+      - US-23.83.227.211-4629
+      - CN-221.131.165.72-5094
+      - CN-111.45.22.152-5308
+      - 中国_1006082
+      - 美国_1006031
+      - CN-111.45.22.152-5125
+      - CN-111.45.22.152-4824
+      - CN-111.45.22.152-5062
+      - CN-116.129.254.6-4845
+      - CN-116.129.254.6-5098
+      - Relay_🇨🇦CA-🇨🇦CA_59
+      - Relay_🇨🇦CA-🇨🇦CA_78 |159.02Mb
+      - CN-111.45.22.151-5116
+      - CN-116.129.254.6-4842
+      - CN-221.131.165.72-4830
+      - CN-221.131.165.72-5175
+      - CN-111.45.22.152-4797
+      - CN-111.45.22.151-4831
+      - CN-116.129.254.6-4884
+      - CN-116.129.254.6-5126
+      - CN-116.129.254.6-4895
+      - CN-116.129.254.6-5113
+      - CN-221.131.165.72-5288
+      - CN-221.131.165.72-4859
+      - CN-111.45.22.152-4812
+      - CN-221.131.165.72-5176
+      - Relay_🇺🇸US-🇺🇸US_980
+      - CN-116.129.254.6-5139
+      - 美国_1006029
+      - CN-221.131.165.72-4860
+      - RELAY-104.21.10.209-0369
+      - CN-116.129.254.6-4910
+      - "| 5.20Mb"
+      - CN-221.131.165.72-5214
+      - CN-221.131.165.72-4828
+      - CN-111.45.22.151-5220
+      - CN-111.45.22.152-5277
+      - CN-221.131.165.72-4823
+      - CN-221.131.165.72-4821
+      - RELAY-172.64.144.100-2345
+      - CN-117.31.4.41-4444
+      - CN-221.131.165.72-5134
+      - CN-111.45.22.152-4777
+      - CN-116.129.254.6-5078
+      - CN-111.45.22.151-4876
+      - CN-116.129.254.6-5106
+      - CN-116.129.254.6-5146
+      - CN-221.131.165.72-5131
+      - CN-116.129.254.6-5119
+      - CN-111.45.22.152-5086
+      - CN-111.45.22.151-5211
+      - CN-116.129.254.6-4856
+      - VN-103.186.148.106-4008
+      - CN-111.45.22.152-4811
+      - CN-111.45.22.151-4804
+      - CN-221.131.165.72-4782
+      - CN-221.131.165.72-5171
+      - CA_228
+      - CN-111.45.22.152-4822
+      - CN-111.45.22.151-5173
+      - CN-111.45.22.151-4853
+      - CN-116.129.254.6-5233
+      - CN-111.45.22.151-4972
+      - CN-111.45.22.151-5219
+      - CN-116.129.254.6-5160
+      - CN-111.45.22.151-5236
+      - CN-221.131.165.72-4784
+      - CN-111.45.22.152-5246
+      - FR-146.59.43.129-2241
+      - CN-111.45.22.152-4849
+      - CN-221.131.165.72-5143
+      - CN-111.45.22.152-4880
+      - CN-111.45.22.151-4806
+      - CN-111.45.22.151-4857
+      - 法国_1006002
+      - CN-221.131.165.72-4818
+      - CN-111.45.22.152-4773
+      - CN-111.45.22.152-4851
+      - FR-146.59.43.129-2243
+      - CN-111.45.22.151-4890
+      - CN-111.45.22.152-4796
+      - CN-116.129.254.6-4825
+      - CN-111.45.22.152-4838
+      - CN-112.45.34.139-0833
+      - CN-111.45.22.151-4798
+      - CN-111.45.22.151-5264
+      - CN-111.45.22.152-5273
+      - CN-111.45.22.152-4790
+      - CN-116.129.254.6-4836
+      - CN-111.45.22.152-5242
+      - RU-91.243.82.249-0266
+      - CN-111.45.22.152-4801
+      - CN-221.131.165.72-4855
+      - CN-111.45.22.152-5195
+      - CN-111.45.22.152-5221
+      - CN-116.129.254.6-5245
+      - CN-221.131.165.72-4800
+      - CN-111.45.22.151-5305
+      - CN-111.45.22.152-4843
+      - CN-111.45.22.151-4774
+      - CN-221.131.165.72-4799
+      - CN-111.45.22.152-4810
+      - CN-111.45.22.152-4815
+      - Relay_🏁ZZ-🇹🇼TW_1261 |18.72Mb
+      - KR-146.56.176.239-5914
+      - CN-116.129.254.6-5148
+      - CN-111.45.22.152-4826
+      - CN-116.129.254.6-5127
+      - CN-221.131.165.72-5133
+      - CN-221.131.165.72-5253
+      - CN-111.45.22.152-5260
+      - CN-111.45.22.151-5303
+      - Relay_🇨🇳CN-🇷🇴RO_08
+      - CN-111.45.22.152-5268
+      - CN-111.45.22.151-4866
+      - CN-111.45.22.151-5262
+      - CN-111.45.22.151-5275
+      - CN-111.45.22.152-4863
+      - CN-111.45.22.151-5263
+      - CN-221.131.165.72-4834
+      - CN-111.45.22.152-5213
+      - CN-111.45.22.152-5272
+      - RU-91.243.82.249-4920
+      - CN-111.45.22.152-4814
+      - RU-91.243.82.249-0352
+      - CN-111.45.22.151-5249
+      - CN-111.45.22.151-5286
+      - CN-116.129.254.6-5276
+      - CN-221.131.165.72-5274
+      - CN-111.45.22.152-4870
+      - CN-111.45.22.152-5250
+      - DE_10
+      - CN-111.45.22.151-4770
+      - GB_184
+      - CN-59.34.148.109-5310
+      - CN-111.45.22.152-5215
+      - CN-111.45.22.152-5267
+      - CN-221.131.165.72-5147
+      - CN-221.131.165.72-4769
+      - CN-111.45.22.151-4896
+      - CN-111.45.22.152-5198
+      - CN-221.131.165.72-5255
+      - CN-221.131.165.72-4865
+      - CN-111.45.22.152-5197
+      - CN-111.45.22.151-5309
+      - RU-91.243.82.249-5033
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
