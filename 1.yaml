@@ -5,175 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 中转 🇸🇬 SG 3 TG:@nodpai, server: zj.ecvvvw.cn, port: 48002, type: trojan, password: c00d4818-febd-3d95-839a-f4ea6355463f, sni: zj.ecvvvw.cn, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇸🇬 SG 2 TG:@nodpai, server: 111.45.22.152, port: 9040, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇯🇵JP_172 |10.62Mb, server: zj.ecvvvw.cn, port: 46000, type: trojan, password: c00d4818-febd-3d95-839a-f4ea6355463f, sni: zj.ecvvvw.cn, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇯🇵JP_163 |10.08Mb, server: zj.ecvvvw.cn, port: 46002, type: trojan, password: c00d4818-febd-3d95-839a-f4ea6355463f, sni: zj.ecvvvw.cn, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇯🇵 JP 8 TG:@airproxies, server: zj.ecvvvw.cn, port: 46001, type: trojan, password: c00d4818-febd-3d95-839a-f4ea6355463f, sni: zj.ecvvvw.cn, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_171 |10.49Mb, server: zj.ecvvvw.cn, port: 45002, type: trojan, password: c00d4818-febd-3d95-839a-f4ea6355463f, sni: zj.ecvvvw.cn, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_170 | 8.73Mb, server: zj.ecvvvw.cn, port: 45000, type: trojan, password: c00d4818-febd-3d95-839a-f4ea6355463f, sni: zj.ecvvvw.cn, skip-cert-verify: true, udp: true}
-  - {name: _11 |29.47Mb, server: 65.49.193.51, port: 254, type: ss, cipher: aes-256-cfb, password: bwhskrskr01, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_165 |10.92Mb, server: zj.ecvvvw.cn, port: 45003, type: trojan, password: c00d4818-febd-3d95-839a-f4ea6355463f, sni: zj.ecvvvw.cn, skip-cert-verify: true, udp: true}
-  - {name: US_1029, server: 107.173.153.147, port: 8765, type: vmess, uuid: d518dec3-f801-46f6-b295-63f4bf16fe12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 107.173.153.147}, udp: true}
-  - {name: US_603, server: 144.168.60.70, port: 252, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_164 |10.80Mb, server: zj.ecvvvw.cn, port: 49001, type: trojan, password: c00d4818-febd-3d95-839a-f4ea6355463f, sni: zj.ecvvvw.cn, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇺🇸 US 4 TG:@airproxies, server: zj.ecvvvw.cn, port: 47001, type: trojan, password: c00d4818-febd-3d95-839a-f4ea6355463f, sni: zj.ecvvvw.cn, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸 US-🇺🇸US_496, server: aa.houdinix.space, port: 56656, type: vmess, uuid: fdb1740c-f246-4f5d-d1ff-87c5b29ae22c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /wis, ws-headers: {Host: aa.houdinix.space}, udp: true}
-  - {name: Relay_🇯🇵 JP-🇯🇵JP_244, server: kr1.api-aws.com, port: 443, type: trojan, password: aa7d24e0-b60c-44bb-bcd1-8b74a297cdbc, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_158 | 9.69Mb, server: zj.ecvvvw.cn, port: 47000, type: trojan, password: c00d4818-febd-3d95-839a-f4ea6355463f, sni: zj.ecvvvw.cn, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇸🇬 SG 4 TG:@airproxies, server: 221.131.165.72, port: 9041, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇨🇦CA_162 | 9.22Mb, server: zj.ecvvvw.cn, port: 47004, type: trojan, password: c00d4818-febd-3d95-839a-f4ea6355463f, sni: zj.ecvvvw.cn, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇺🇸 US 2 TG:@airproxies, server: zj.ecvvvw.cn, port: 47002, type: trojan, password: c00d4818-febd-3d95-839a-f4ea6355463f, sni: zj.ecvvvw.cn, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇧🇩 BD 1 TG:@nodpai, server: 116.129.254.6, port: 11908, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_169 | 9.30Mb, server: zj.ecvvvw.cn, port: 47003, type: trojan, password: c00d4818-febd-3d95-839a-f4ea6355463f, sni: zj.ecvvvw.cn, skip-cert-verify: true, udp: true}
-  - {name: 未知_1006023, server: ca.0112233.xyz, port: 8443, type: vmess, uuid: c3000e9d-bee7-4fdb-b312-dd07030f325d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /home, ws-headers: {Host: ca.0112233.xyz}, udp: true}
-  - {name: CN_58, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN-111.45.22.152-5224, server: 111.45.22.152, port: 11901, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP 6 TG:@nodpai, server: jpws.p1.gay, port: 25617, type: vmess, uuid: 69a019dd-617b-449f-9af0-57762a476530, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hootfun, ws-headers: {Host: jpws.p1.gay}, udp: true}
-  - {name: 美国_1006156, server: ee.cloudflare.quest, port: 80, type: vmess, uuid: f9247df4-02d5-4b31-acc5-4022652c5953, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aries, ws-headers: {Host: ee.cloudflare.quest}, udp: true}
-  - {name: 中转 🇨🇴 CO 1 TG:@nodpai, server: 111.45.22.152, port: 11922, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: AU_65 | 2.38Mb, server: 152.67.98.30, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, skip-cert-verify: true, udp: true}
-  - {name: US_984 |25.92Mb, server: 129.159.139.101, port: 443, type: vmess, uuid: b7519a6f-c1de-4667-e606-b60c65d19078, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 129.159.139.101}, udp: true}
-  - {name: 法国_1006002, server: 146.59.43.129, port: 443, type: vmess, uuid: 54c6c823-4957-4c6c-b10c-359bc51f7cc3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /a54e284cb6/, ws-headers: {Host: 146.59.43.129}, udp: true}
-  - {name: AU_236, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, sni: jgwxn4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇨🇦 CA 1 TG:@nodpai, server: 111.45.22.151, port: 11902, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 法国_1006012, server: PL.nexitally.xyz, port: 443, type: vmess, uuid: 54c6c823-4957-4c6c-b10c-359bc51f7cc3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /a54e284cb6/, ws-headers: {Host: PL.nexitally.xyz}, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_265, server: kr1.api-aws.com, port: 443, type: trojan, password: 33073a7c-e6d5-4271-9b19-4416afcc25b5, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇭🇰HK-🇭🇰HK_222, server: gztc.bjyxrwlkj.com, port: 20005, type: vmess, uuid: e041b94e-e309-3b94-8116-8ca393124930, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /game, ws-headers: {Host: gztc.bjyxrwlkj.com}, udp: true}
-  - {name: 以色列_1006001, server: 129.159.139.101, port: 443, type: vmess, uuid: b7519a6f-c1de-4667-e606-b60c65d19078, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 129.159.139.101}, udp: true}
-  - {name: Relay_🇺🇸US-🇭🇰HK_1055, server: shcn2.bjyxrwlkj.com, port: 20002, type: vmess, uuid: e041b94e-e309-3b94-8116-8ca393124930, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /game, ws-headers: {Host: shcn2.bjyxrwlkj.com}, udp: true}
-  - {name: 中转 🇭🇰 HK 29 TG:@nodpai, server: zj.ecvvvw.cn, port: 45001, type: trojan, password: c00d4818-febd-3d95-839a-f4ea6355463f, sni: zj.ecvvvw.cn, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_65, server: ingress-i2.iivvppnn.info, port: 38102, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: ingress-i2.iivvppnn.info}, udp: true}
+  - {name: 中国_1012019, server: s2.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_1012813, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_1012866, server: s2.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_1012020, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中转 🇸🇬 SG 3 TG:@nodpai
-      - 中转 🇸🇬 SG 2 TG:@nodpai
-      - Relay_🇨🇳CN-🇯🇵JP_172 |10.62Mb
-      - Relay_🇨🇳CN-🇯🇵JP_163 |10.08Mb
-      - 中转 🇯🇵 JP 8 TG:@airproxies
-      - Relay_🇨🇳CN-🇭🇰HK_171 |10.49Mb
-      - Relay_🇨🇳CN-🇭🇰HK_170 | 8.73Mb
-      - _11 |29.47Mb
-      - Relay_🇨🇳CN-🇭🇰HK_165 |10.92Mb
-      - US_1029
-      - US_603
-      - Relay_🇨🇳CN-🇹🇼TW_164 |10.80Mb
-      - 中转 🇺🇸 US 4 TG:@airproxies
-      - Relay_🇺🇸 US-🇺🇸US_496
-      - Relay_🇯🇵 JP-🇯🇵JP_244
-      - Relay_🇨🇳CN-🇺🇸US_158 | 9.69Mb
-      - 中转 🇸🇬 SG 4 TG:@airproxies
-      - Relay_🇨🇳CN-🇨🇦CA_162 | 9.22Mb
-      - 中转 🇺🇸 US 2 TG:@airproxies
-      - 中转 🇧🇩 BD 1 TG:@nodpai
-      - Relay_🇨🇳CN-🇺🇸US_169 | 9.30Mb
-      - 未知_1006023
-      - CN_58
-      - CN-111.45.22.152-5224
-      - JP 6 TG:@nodpai
-      - 美国_1006156
-      - 中转 🇨🇴 CO 1 TG:@nodpai
-      - AU_65 | 2.38Mb
-      - US_984 |25.92Mb
-      - 法国_1006002
-      - AU_236
-      - 中转 🇨🇦 CA 1 TG:@nodpai
-      - 法国_1006012
-      - Relay_🇯🇵JP-🇯🇵JP_265
-      - Relay_🇭🇰HK-🇭🇰HK_222
-      - 以色列_1006001
-      - Relay_🇺🇸US-🇭🇰HK_1055
-      - 中转 🇭🇰 HK 29 TG:@nodpai
+      - Relay_🇨🇳CN-🇭🇰HK_65
+      - 中国_1012019
+      - 中国_1012813
+      - 中国_1012866
+      - 中国_1012020
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 中转 🇸🇬 SG 3 TG:@nodpai
-      - 中转 🇸🇬 SG 2 TG:@nodpai
-      - Relay_🇨🇳CN-🇯🇵JP_172 |10.62Mb
-      - Relay_🇨🇳CN-🇯🇵JP_163 |10.08Mb
-      - 中转 🇯🇵 JP 8 TG:@airproxies
-      - Relay_🇨🇳CN-🇭🇰HK_171 |10.49Mb
-      - Relay_🇨🇳CN-🇭🇰HK_170 | 8.73Mb
-      - _11 |29.47Mb
-      - Relay_🇨🇳CN-🇭🇰HK_165 |10.92Mb
-      - US_1029
-      - US_603
-      - Relay_🇨🇳CN-🇹🇼TW_164 |10.80Mb
-      - 中转 🇺🇸 US 4 TG:@airproxies
-      - Relay_🇺🇸 US-🇺🇸US_496
-      - Relay_🇯🇵 JP-🇯🇵JP_244
-      - Relay_🇨🇳CN-🇺🇸US_158 | 9.69Mb
-      - 中转 🇸🇬 SG 4 TG:@airproxies
-      - Relay_🇨🇳CN-🇨🇦CA_162 | 9.22Mb
-      - 中转 🇺🇸 US 2 TG:@airproxies
-      - 中转 🇧🇩 BD 1 TG:@nodpai
-      - Relay_🇨🇳CN-🇺🇸US_169 | 9.30Mb
-      - 未知_1006023
-      - CN_58
-      - CN-111.45.22.152-5224
-      - JP 6 TG:@nodpai
-      - 美国_1006156
-      - 中转 🇨🇴 CO 1 TG:@nodpai
-      - AU_65 | 2.38Mb
-      - US_984 |25.92Mb
-      - 法国_1006002
-      - AU_236
-      - 中转 🇨🇦 CA 1 TG:@nodpai
-      - 法国_1006012
-      - Relay_🇯🇵JP-🇯🇵JP_265
-      - Relay_🇭🇰HK-🇭🇰HK_222
-      - 以色列_1006001
-      - Relay_🇺🇸US-🇭🇰HK_1055
-      - 中转 🇭🇰 HK 29 TG:@nodpai
+      - Relay_🇨🇳CN-🇭🇰HK_65
+      - 中国_1012019
+      - 中国_1012813
+      - 中国_1012866
+      - 中国_1012020
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中转 🇸🇬 SG 3 TG:@nodpai
-      - 中转 🇸🇬 SG 2 TG:@nodpai
-      - Relay_🇨🇳CN-🇯🇵JP_172 |10.62Mb
-      - Relay_🇨🇳CN-🇯🇵JP_163 |10.08Mb
-      - 中转 🇯🇵 JP 8 TG:@airproxies
-      - Relay_🇨🇳CN-🇭🇰HK_171 |10.49Mb
-      - Relay_🇨🇳CN-🇭🇰HK_170 | 8.73Mb
-      - _11 |29.47Mb
-      - Relay_🇨🇳CN-🇭🇰HK_165 |10.92Mb
-      - US_1029
-      - US_603
-      - Relay_🇨🇳CN-🇹🇼TW_164 |10.80Mb
-      - 中转 🇺🇸 US 4 TG:@airproxies
-      - Relay_🇺🇸 US-🇺🇸US_496
-      - Relay_🇯🇵 JP-🇯🇵JP_244
-      - Relay_🇨🇳CN-🇺🇸US_158 | 9.69Mb
-      - 中转 🇸🇬 SG 4 TG:@airproxies
-      - Relay_🇨🇳CN-🇨🇦CA_162 | 9.22Mb
-      - 中转 🇺🇸 US 2 TG:@airproxies
-      - 中转 🇧🇩 BD 1 TG:@nodpai
-      - Relay_🇨🇳CN-🇺🇸US_169 | 9.30Mb
-      - 未知_1006023
-      - CN_58
-      - CN-111.45.22.152-5224
-      - JP 6 TG:@nodpai
-      - 美国_1006156
-      - 中转 🇨🇴 CO 1 TG:@nodpai
-      - AU_65 | 2.38Mb
-      - US_984 |25.92Mb
-      - 法国_1006002
-      - AU_236
-      - 中转 🇨🇦 CA 1 TG:@nodpai
-      - 法国_1006012
-      - Relay_🇯🇵JP-🇯🇵JP_265
-      - Relay_🇭🇰HK-🇭🇰HK_222
-      - 以色列_1006001
-      - Relay_🇺🇸US-🇭🇰HK_1055
-      - 中转 🇭🇰 HK 29 TG:@nodpai
+      - Relay_🇨🇳CN-🇭🇰HK_65
+      - 中国_1012019
+      - 中国_1012813
+      - 中国_1012866
+      - 中国_1012020
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -192,44 +60,11 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中转 🇸🇬 SG 3 TG:@nodpai
-      - 中转 🇸🇬 SG 2 TG:@nodpai
-      - Relay_🇨🇳CN-🇯🇵JP_172 |10.62Mb
-      - Relay_🇨🇳CN-🇯🇵JP_163 |10.08Mb
-      - 中转 🇯🇵 JP 8 TG:@airproxies
-      - Relay_🇨🇳CN-🇭🇰HK_171 |10.49Mb
-      - Relay_🇨🇳CN-🇭🇰HK_170 | 8.73Mb
-      - _11 |29.47Mb
-      - Relay_🇨🇳CN-🇭🇰HK_165 |10.92Mb
-      - US_1029
-      - US_603
-      - Relay_🇨🇳CN-🇹🇼TW_164 |10.80Mb
-      - 中转 🇺🇸 US 4 TG:@airproxies
-      - Relay_🇺🇸 US-🇺🇸US_496
-      - Relay_🇯🇵 JP-🇯🇵JP_244
-      - Relay_🇨🇳CN-🇺🇸US_158 | 9.69Mb
-      - 中转 🇸🇬 SG 4 TG:@airproxies
-      - Relay_🇨🇳CN-🇨🇦CA_162 | 9.22Mb
-      - 中转 🇺🇸 US 2 TG:@airproxies
-      - 中转 🇧🇩 BD 1 TG:@nodpai
-      - Relay_🇨🇳CN-🇺🇸US_169 | 9.30Mb
-      - 未知_1006023
-      - CN_58
-      - CN-111.45.22.152-5224
-      - JP 6 TG:@nodpai
-      - 美国_1006156
-      - 中转 🇨🇴 CO 1 TG:@nodpai
-      - AU_65 | 2.38Mb
-      - US_984 |25.92Mb
-      - 法国_1006002
-      - AU_236
-      - 中转 🇨🇦 CA 1 TG:@nodpai
-      - 法国_1006012
-      - Relay_🇯🇵JP-🇯🇵JP_265
-      - Relay_🇭🇰HK-🇭🇰HK_222
-      - 以色列_1006001
-      - Relay_🇺🇸US-🇭🇰HK_1055
-      - 中转 🇭🇰 HK 29 TG:@nodpai
+      - Relay_🇨🇳CN-🇭🇰HK_65
+      - 中国_1012019
+      - 中国_1012813
+      - 中国_1012866
+      - 中国_1012020
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -240,131 +75,32 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 中转 🇸🇬 SG 3 TG:@nodpai
-      - 中转 🇸🇬 SG 2 TG:@nodpai
-      - Relay_🇨🇳CN-🇯🇵JP_172 |10.62Mb
-      - Relay_🇨🇳CN-🇯🇵JP_163 |10.08Mb
-      - 中转 🇯🇵 JP 8 TG:@airproxies
-      - Relay_🇨🇳CN-🇭🇰HK_171 |10.49Mb
-      - Relay_🇨🇳CN-🇭🇰HK_170 | 8.73Mb
-      - _11 |29.47Mb
-      - Relay_🇨🇳CN-🇭🇰HK_165 |10.92Mb
-      - US_1029
-      - US_603
-      - Relay_🇨🇳CN-🇹🇼TW_164 |10.80Mb
-      - 中转 🇺🇸 US 4 TG:@airproxies
-      - Relay_🇺🇸 US-🇺🇸US_496
-      - Relay_🇯🇵 JP-🇯🇵JP_244
-      - Relay_🇨🇳CN-🇺🇸US_158 | 9.69Mb
-      - 中转 🇸🇬 SG 4 TG:@airproxies
-      - Relay_🇨🇳CN-🇨🇦CA_162 | 9.22Mb
-      - 中转 🇺🇸 US 2 TG:@airproxies
-      - 中转 🇧🇩 BD 1 TG:@nodpai
-      - Relay_🇨🇳CN-🇺🇸US_169 | 9.30Mb
-      - 未知_1006023
-      - CN_58
-      - CN-111.45.22.152-5224
-      - JP 6 TG:@nodpai
-      - 美国_1006156
-      - 中转 🇨🇴 CO 1 TG:@nodpai
-      - AU_65 | 2.38Mb
-      - US_984 |25.92Mb
-      - 法国_1006002
-      - AU_236
-      - 中转 🇨🇦 CA 1 TG:@nodpai
-      - 法国_1006012
-      - Relay_🇯🇵JP-🇯🇵JP_265
-      - Relay_🇭🇰HK-🇭🇰HK_222
-      - 以色列_1006001
-      - Relay_🇺🇸US-🇭🇰HK_1055
-      - 中转 🇭🇰 HK 29 TG:@nodpai
+      - Relay_🇨🇳CN-🇭🇰HK_65
+      - 中国_1012019
+      - 中国_1012813
+      - 中国_1012866
+      - 中国_1012020
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 中转 🇸🇬 SG 3 TG:@nodpai
-      - 中转 🇸🇬 SG 2 TG:@nodpai
-      - Relay_🇨🇳CN-🇯🇵JP_172 |10.62Mb
-      - Relay_🇨🇳CN-🇯🇵JP_163 |10.08Mb
-      - 中转 🇯🇵 JP 8 TG:@airproxies
-      - Relay_🇨🇳CN-🇭🇰HK_171 |10.49Mb
-      - Relay_🇨🇳CN-🇭🇰HK_170 | 8.73Mb
-      - _11 |29.47Mb
-      - Relay_🇨🇳CN-🇭🇰HK_165 |10.92Mb
-      - US_1029
-      - US_603
-      - Relay_🇨🇳CN-🇹🇼TW_164 |10.80Mb
-      - 中转 🇺🇸 US 4 TG:@airproxies
-      - Relay_🇺🇸 US-🇺🇸US_496
-      - Relay_🇯🇵 JP-🇯🇵JP_244
-      - Relay_🇨🇳CN-🇺🇸US_158 | 9.69Mb
-      - 中转 🇸🇬 SG 4 TG:@airproxies
-      - Relay_🇨🇳CN-🇨🇦CA_162 | 9.22Mb
-      - 中转 🇺🇸 US 2 TG:@airproxies
-      - 中转 🇧🇩 BD 1 TG:@nodpai
-      - Relay_🇨🇳CN-🇺🇸US_169 | 9.30Mb
-      - 未知_1006023
-      - CN_58
-      - CN-111.45.22.152-5224
-      - JP 6 TG:@nodpai
-      - 美国_1006156
-      - 中转 🇨🇴 CO 1 TG:@nodpai
-      - AU_65 | 2.38Mb
-      - US_984 |25.92Mb
-      - 法国_1006002
-      - AU_236
-      - 中转 🇨🇦 CA 1 TG:@nodpai
-      - 法国_1006012
-      - Relay_🇯🇵JP-🇯🇵JP_265
-      - Relay_🇭🇰HK-🇭🇰HK_222
-      - 以色列_1006001
-      - Relay_🇺🇸US-🇭🇰HK_1055
-      - 中转 🇭🇰 HK 29 TG:@nodpai
+      - Relay_🇨🇳CN-🇭🇰HK_65
+      - 中国_1012019
+      - 中国_1012813
+      - 中国_1012866
+      - 中国_1012020
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中转 🇸🇬 SG 3 TG:@nodpai
-      - 中转 🇸🇬 SG 2 TG:@nodpai
-      - Relay_🇨🇳CN-🇯🇵JP_172 |10.62Mb
-      - Relay_🇨🇳CN-🇯🇵JP_163 |10.08Mb
-      - 中转 🇯🇵 JP 8 TG:@airproxies
-      - Relay_🇨🇳CN-🇭🇰HK_171 |10.49Mb
-      - Relay_🇨🇳CN-🇭🇰HK_170 | 8.73Mb
-      - _11 |29.47Mb
-      - Relay_🇨🇳CN-🇭🇰HK_165 |10.92Mb
-      - US_1029
-      - US_603
-      - Relay_🇨🇳CN-🇹🇼TW_164 |10.80Mb
-      - 中转 🇺🇸 US 4 TG:@airproxies
-      - Relay_🇺🇸 US-🇺🇸US_496
-      - Relay_🇯🇵 JP-🇯🇵JP_244
-      - Relay_🇨🇳CN-🇺🇸US_158 | 9.69Mb
-      - 中转 🇸🇬 SG 4 TG:@airproxies
-      - Relay_🇨🇳CN-🇨🇦CA_162 | 9.22Mb
-      - 中转 🇺🇸 US 2 TG:@airproxies
-      - 中转 🇧🇩 BD 1 TG:@nodpai
-      - Relay_🇨🇳CN-🇺🇸US_169 | 9.30Mb
-      - 未知_1006023
-      - CN_58
-      - CN-111.45.22.152-5224
-      - JP 6 TG:@nodpai
-      - 美国_1006156
-      - 中转 🇨🇴 CO 1 TG:@nodpai
-      - AU_65 | 2.38Mb
-      - US_984 |25.92Mb
-      - 法国_1006002
-      - AU_236
-      - 中转 🇨🇦 CA 1 TG:@nodpai
-      - 法国_1006012
-      - Relay_🇯🇵JP-🇯🇵JP_265
-      - Relay_🇭🇰HK-🇭🇰HK_222
-      - 以色列_1006001
-      - Relay_🇺🇸US-🇭🇰HK_1055
-      - 中转 🇭🇰 HK 29 TG:@nodpai
+      - Relay_🇨🇳CN-🇭🇰HK_65
+      - 中国_1012019
+      - 中国_1012813
+      - 中国_1012866
+      - 中国_1012020
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -380,44 +116,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中转 🇸🇬 SG 3 TG:@nodpai
-      - 中转 🇸🇬 SG 2 TG:@nodpai
-      - Relay_🇨🇳CN-🇯🇵JP_172 |10.62Mb
-      - Relay_🇨🇳CN-🇯🇵JP_163 |10.08Mb
-      - 中转 🇯🇵 JP 8 TG:@airproxies
-      - Relay_🇨🇳CN-🇭🇰HK_171 |10.49Mb
-      - Relay_🇨🇳CN-🇭🇰HK_170 | 8.73Mb
-      - _11 |29.47Mb
-      - Relay_🇨🇳CN-🇭🇰HK_165 |10.92Mb
-      - US_1029
-      - US_603
-      - Relay_🇨🇳CN-🇹🇼TW_164 |10.80Mb
-      - 中转 🇺🇸 US 4 TG:@airproxies
-      - Relay_🇺🇸 US-🇺🇸US_496
-      - Relay_🇯🇵 JP-🇯🇵JP_244
-      - Relay_🇨🇳CN-🇺🇸US_158 | 9.69Mb
-      - 中转 🇸🇬 SG 4 TG:@airproxies
-      - Relay_🇨🇳CN-🇨🇦CA_162 | 9.22Mb
-      - 中转 🇺🇸 US 2 TG:@airproxies
-      - 中转 🇧🇩 BD 1 TG:@nodpai
-      - Relay_🇨🇳CN-🇺🇸US_169 | 9.30Mb
-      - 未知_1006023
-      - CN_58
-      - CN-111.45.22.152-5224
-      - JP 6 TG:@nodpai
-      - 美国_1006156
-      - 中转 🇨🇴 CO 1 TG:@nodpai
-      - AU_65 | 2.38Mb
-      - US_984 |25.92Mb
-      - 法国_1006002
-      - AU_236
-      - 中转 🇨🇦 CA 1 TG:@nodpai
-      - 法国_1006012
-      - Relay_🇯🇵JP-🇯🇵JP_265
-      - Relay_🇭🇰HK-🇭🇰HK_222
-      - 以色列_1006001
-      - Relay_🇺🇸US-🇭🇰HK_1055
-      - 中转 🇭🇰 HK 29 TG:@nodpai
+      - Relay_🇨🇳CN-🇭🇰HK_65
+      - 中国_1012019
+      - 中国_1012813
+      - 中国_1012866
+      - 中国_1012020
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
