@@ -5,143 +5,107 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 中国_1122122, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20013, type: trojan, password: 9E1108AC-9E84-849C-6822-8102CDA6C29E, skip-cert-verify: true, udp: true}
-  - {name: 澳门_1122013, server: 45.64.22.55, port: 443, type: trojan, password: ZCRe0IlTyApFDO73qeaSlyDEaXwSOYCZ9B3j6ca3Anxg84CDKF2SxpzuNY58R3, sni: leeihs.freetrade.link, skip-cert-verify: true, udp: true}
-  - {name: US_1594 |26.51Mb, server: 129.146.255.158, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, skip-cert-verify: true, udp: true}
-  - {name: US_1610 |21.02Mb, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, skip-cert-verify: true, udp: true}
+  - {name: 日本_1126486, server: dl-jp4.efpan.one, port: 443, type: trojan, password: 25e9a6e9-b69a-4a15-8869-d329dac73764, sni: data-jp.efpan.one, skip-cert-verify: true, udp: true}
+  - {name: 香港_11261513, server: dl-hk2.efpan.one, port: 443, type: trojan, password: 25e9a6e9-b69a-4a15-8869-d329dac73764, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
+  - {name: KR_481 |12.79Mb, server: 52.141.26.55, port: 443, type: trojan, password: 3dacbaa8-784b-430c-9c1e-57d33648981d, skip-cert-verify: true, udp: true}
+  - {name: 中国_1122245, server: 49.234.84.132, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本_1126459, server: kh.dogcnnode.com, port: 443, type: trojan, password: 2e260cd3-53a7-36d2-b2f4-7046ff428ff9, sni: kh.dogcnnode.com, skip-cert-verify: true, udp: true}
+  - {name: 日本_1126496, server: dl-us2.efpan.one, port: 443, type: trojan, password: 25e9a6e9-b69a-4a15-8869-d329dac73764, sni: data-us.efpan.one, skip-cert-verify: true, udp: true}
+  - {name: 香港_11261417, server: dl-hkcmi1.efpan.one, port: 443, type: trojan, password: 25e9a6e9-b69a-4a15-8869-d329dac73764, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
+  - {name: 日本_1126497, server: dl-us4.efpan.one, port: 443, type: trojan, password: 25e9a6e9-b69a-4a15-8869-d329dac73764, sni: data-us.efpan.one, skip-cert-verify: true, udp: true}
+  - {name: 香港_11261416, server: dl-hkcmi2.efpan.one, port: 443, type: trojan, password: 25e9a6e9-b69a-4a15-8869-d329dac73764, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
+  - {name: 美国_1126024, server: 55.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 55.72img.xyz}}, udp: true}
+  - {name: 香港_11261418, server: core1.efpan.one, port: 443, type: trojan, password: 25e9a6e9-b69a-4a15-8869-d329dac73764, sni: data-ru.efpan.one, skip-cert-verify: true, udp: true}
+  - {name: FR_64, server: 51.77.71.134, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇫🇷FR-🇫🇷FR_62, server: content-provider12.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
+  - {name: NL_741 |22.55Mb, server: 5.255.103.209, port: 443, type: trojan, password: 3dacbaa8-784b-430c-9c1e-57d33648981d, skip-cert-verify: true, udp: true}
   - {name: 中国_1122689, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: CN_91 | 4.31Mb, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 韩国_1122023, server: 138.2.122.225, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}, udp: true}
-  - {name: 新加坡_1122197, server: 8.219.58.58, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}, udp: true}
-  - {name: 新加坡_1122265, server: 8.219.170.170, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}, udp: true}
-  - {name: 中国_1122759, server: 39.103.165.178, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: FR_353, server: content-provider5.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
-  - {name: FR_76, server: 51.77.71.131, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
-  - {name: NL_160, server: 185.212.200.75, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
-  - {name: NL_759 |12.48Mb, server: content-provider23.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
-  - {name: GB_390 |12.12Mb, server: 132.145.51.172, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, skip-cert-verify: true, udp: true}
-  - {name: NL_151, server: content-provider24.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
-  - {name: GB_391 |12.53Mb, server: jgwld1.gaox.ml, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, skip-cert-verify: true, udp: true}
+  - {name: 香港_11261415, server: dl-hk4.efpan.one, port: 443, type: trojan, password: 25e9a6e9-b69a-4a15-8869-d329dac73764, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
+  - {name: 中国_11261416, server: 39.103.165.178, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NL_748 | 9.93Mb, server: content-provider23.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
+  - {name: 新加坡_1126448, server: tgunivstar-138-2-70-213.sslip.io, port: 80, type: vmess, uuid: d7f2b592-2e56-4a12-8f24-20f55b422ef2, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vn3.thanhhaivpn.name.vn}}, udp: true}
   - {name: 中国_1122688, server: 49.232.167.71, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 加拿大_1122022, server: 167.114.67.25, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tgunivstar.168-138-94-194.sslip.io}}, udp: true}
-  - {name: 中国_1122032, server: zfd-moble.gatknqh.cn, port: 16130, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "", server: zfd-moble.gatknqh.cn, port: 16108, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: " 2", server: zfd-moble.gatknqh.cn, port: 16253, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: " 3", server: zfd-moble.gatknqh.cn, port: 16131, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_1122245, server: 49.234.84.132, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_1733 |10.05Mb, server: 51.81.211.171, port: 443, type: trojan, password: 2dab5d78-5c56-4252-850d-c037753a40db, skip-cert-verify: true, udp: true}
-  - {name: CN_195 |11.01Mb, server: 20011.purefast2.com, port: 20011, type: trojan, password: 357827e5-a45d-3f09-9b73-ef4431dfb323, skip-cert-verify: true, udp: true}
-  - {name: 香港_1122585, server: 219.76.13.181, port: 443, type: trojan, password: SyOxpKxC8u5jgNa3DCZ34y3D9CRenFcaABpYATEeqI2RSaXD76zS8YF0Owl3lZ, sni: arbettp.freetrade.link, skip-cert-verify: true, udp: true}
-  - {name: 香港_11221011, server: 219.76.13.181, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tgunivstar.168-138-94-194.sslip.io}}, udp: true}
-  - {name: " 4", server: zfd-moble.gatknqh.cn, port: 16129, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_1122130, server: zfd-moble.gatknqh.cn, port: 16255, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国_1122122
-      - 澳门_1122013
-      - US_1594 |26.51Mb
-      - US_1610 |21.02Mb
+      - 日本_1126486
+      - 香港_11261513
+      - KR_481 |12.79Mb
+      - 中国_1122245
+      - 日本_1126459
+      - 日本_1126496
+      - 香港_11261417
+      - 日本_1126497
+      - 香港_11261416
+      - 美国_1126024
+      - 香港_11261418
+      - FR_64
+      - Relay_🇫🇷FR-🇫🇷FR_62
+      - NL_741 |22.55Mb
       - 中国_1122689
       - CN_91 | 4.31Mb
-      - 韩国_1122023
-      - 新加坡_1122197
-      - 新加坡_1122265
-      - 中国_1122759
-      - FR_353
-      - FR_76
-      - NL_160
-      - NL_759 |12.48Mb
-      - GB_390 |12.12Mb
-      - NL_151
-      - GB_391 |12.53Mb
+      - 香港_11261415
+      - 中国_11261416
+      - NL_748 | 9.93Mb
+      - 新加坡_1126448
       - 中国_1122688
-      - 加拿大_1122022
-      - 中国_1122032
-      - ""
-      - " 2"
-      - " 3"
-      - 中国_1122245
-      - US_1733 |10.05Mb
-      - CN_195 |11.01Mb
-      - 香港_1122585
-      - 香港_11221011
-      - " 4"
-      - 中国_1122130
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 中国_1122122
-      - 澳门_1122013
-      - US_1594 |26.51Mb
-      - US_1610 |21.02Mb
+      - 日本_1126486
+      - 香港_11261513
+      - KR_481 |12.79Mb
+      - 中国_1122245
+      - 日本_1126459
+      - 日本_1126496
+      - 香港_11261417
+      - 日本_1126497
+      - 香港_11261416
+      - 美国_1126024
+      - 香港_11261418
+      - FR_64
+      - Relay_🇫🇷FR-🇫🇷FR_62
+      - NL_741 |22.55Mb
       - 中国_1122689
       - CN_91 | 4.31Mb
-      - 韩国_1122023
-      - 新加坡_1122197
-      - 新加坡_1122265
-      - 中国_1122759
-      - FR_353
-      - FR_76
-      - NL_160
-      - NL_759 |12.48Mb
-      - GB_390 |12.12Mb
-      - NL_151
-      - GB_391 |12.53Mb
+      - 香港_11261415
+      - 中国_11261416
+      - NL_748 | 9.93Mb
+      - 新加坡_1126448
       - 中国_1122688
-      - 加拿大_1122022
-      - 中国_1122032
-      - ""
-      - " 2"
-      - " 3"
-      - 中国_1122245
-      - US_1733 |10.05Mb
-      - CN_195 |11.01Mb
-      - 香港_1122585
-      - 香港_11221011
-      - " 4"
-      - 中国_1122130
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国_1122122
-      - 澳门_1122013
-      - US_1594 |26.51Mb
-      - US_1610 |21.02Mb
+      - 日本_1126486
+      - 香港_11261513
+      - KR_481 |12.79Mb
+      - 中国_1122245
+      - 日本_1126459
+      - 日本_1126496
+      - 香港_11261417
+      - 日本_1126497
+      - 香港_11261416
+      - 美国_1126024
+      - 香港_11261418
+      - FR_64
+      - Relay_🇫🇷FR-🇫🇷FR_62
+      - NL_741 |22.55Mb
       - 中国_1122689
       - CN_91 | 4.31Mb
-      - 韩国_1122023
-      - 新加坡_1122197
-      - 新加坡_1122265
-      - 中国_1122759
-      - FR_353
-      - FR_76
-      - NL_160
-      - NL_759 |12.48Mb
-      - GB_390 |12.12Mb
-      - NL_151
-      - GB_391 |12.53Mb
+      - 香港_11261415
+      - 中国_11261416
+      - NL_748 | 9.93Mb
+      - 新加坡_1126448
       - 中国_1122688
-      - 加拿大_1122022
-      - 中国_1122032
-      - ""
-      - " 2"
-      - " 3"
-      - 中国_1122245
-      - US_1733 |10.05Mb
-      - CN_195 |11.01Mb
-      - 香港_1122585
-      - 香港_11221011
-      - " 4"
-      - 中国_1122130
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -160,149 +124,116 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国_1122122
-      - 澳门_1122013
-      - US_1594 |26.51Mb
-      - US_1610 |21.02Mb
+      - 日本_1126486
+      - 香港_11261513
+      - KR_481 |12.79Mb
+      - 中国_1122245
+      - 日本_1126459
+      - 日本_1126496
+      - 香港_11261417
+      - 日本_1126497
+      - 香港_11261416
+      - 美国_1126024
+      - 香港_11261418
+      - FR_64
+      - Relay_🇫🇷FR-🇫🇷FR_62
+      - NL_741 |22.55Mb
       - 中国_1122689
       - CN_91 | 4.31Mb
-      - 韩国_1122023
-      - 新加坡_1122197
-      - 新加坡_1122265
-      - 中国_1122759
-      - FR_353
-      - FR_76
-      - NL_160
-      - NL_759 |12.48Mb
-      - GB_390 |12.12Mb
-      - NL_151
-      - GB_391 |12.53Mb
+      - 香港_11261415
+      - 中国_11261416
+      - NL_748 | 9.93Mb
+      - 新加坡_1126448
       - 中国_1122688
-      - 加拿大_1122022
-      - 中国_1122032
-      - ""
-      - " 2"
-      - " 3"
-      - 中国_1122245
-      - US_1733 |10.05Mb
-      - CN_195 |11.01Mb
-      - 香港_1122585
-      - 香港_11221011
-      - " 4"
-      - 中国_1122130
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港_1122585
-      - 香港_11221011
+      - 香港_11261513
+      - 香港_11261417
+      - 香港_11261416
+      - 香港_11261418
+      - 香港_11261415
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 中国_1122122
-      - 澳门_1122013
-      - US_1594 |26.51Mb
-      - US_1610 |21.02Mb
+      - 日本_1126486
+      - 香港_11261513
+      - KR_481 |12.79Mb
+      - 中国_1122245
+      - 日本_1126459
+      - 日本_1126496
+      - 香港_11261417
+      - 日本_1126497
+      - 香港_11261416
+      - 美国_1126024
+      - 香港_11261418
+      - FR_64
+      - Relay_🇫🇷FR-🇫🇷FR_62
+      - NL_741 |22.55Mb
       - 中国_1122689
       - CN_91 | 4.31Mb
-      - 韩国_1122023
-      - 新加坡_1122197
-      - 新加坡_1122265
-      - 中国_1122759
-      - FR_353
-      - FR_76
-      - NL_160
-      - NL_759 |12.48Mb
-      - GB_390 |12.12Mb
-      - NL_151
-      - GB_391 |12.53Mb
+      - 香港_11261415
+      - 中国_11261416
+      - NL_748 | 9.93Mb
+      - 新加坡_1126448
       - 中国_1122688
-      - 加拿大_1122022
-      - 中国_1122032
-      - ""
-      - " 2"
-      - " 3"
-      - 中国_1122245
-      - US_1733 |10.05Mb
-      - CN_195 |11.01Mb
-      - 香港_1122585
-      - 香港_11221011
-      - " 4"
-      - 中国_1122130
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 中国_1122122
-      - 澳门_1122013
-      - US_1594 |26.51Mb
-      - US_1610 |21.02Mb
+      - 日本_1126486
+      - 香港_11261513
+      - KR_481 |12.79Mb
+      - 中国_1122245
+      - 日本_1126459
+      - 日本_1126496
+      - 香港_11261417
+      - 日本_1126497
+      - 香港_11261416
+      - 美国_1126024
+      - 香港_11261418
+      - FR_64
+      - Relay_🇫🇷FR-🇫🇷FR_62
+      - NL_741 |22.55Mb
       - 中国_1122689
       - CN_91 | 4.31Mb
-      - 韩国_1122023
-      - 新加坡_1122197
-      - 新加坡_1122265
-      - 中国_1122759
-      - FR_353
-      - FR_76
-      - NL_160
-      - NL_759 |12.48Mb
-      - GB_390 |12.12Mb
-      - NL_151
-      - GB_391 |12.53Mb
+      - 香港_11261415
+      - 中国_11261416
+      - NL_748 | 9.93Mb
+      - 新加坡_1126448
       - 中国_1122688
-      - 加拿大_1122022
-      - 中国_1122032
-      - ""
-      - " 2"
-      - " 3"
-      - 中国_1122245
-      - US_1733 |10.05Mb
-      - CN_195 |11.01Mb
-      - 香港_1122585
-      - 香港_11221011
-      - " 4"
-      - 中国_1122130
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国_1122122
-      - 澳门_1122013
-      - US_1594 |26.51Mb
-      - US_1610 |21.02Mb
+      - 日本_1126486
+      - 香港_11261513
+      - KR_481 |12.79Mb
+      - 中国_1122245
+      - 日本_1126459
+      - 日本_1126496
+      - 香港_11261417
+      - 日本_1126497
+      - 香港_11261416
+      - 美国_1126024
+      - 香港_11261418
+      - FR_64
+      - Relay_🇫🇷FR-🇫🇷FR_62
+      - NL_741 |22.55Mb
       - 中国_1122689
       - CN_91 | 4.31Mb
-      - 韩国_1122023
-      - 新加坡_1122197
-      - 新加坡_1122265
-      - 中国_1122759
-      - FR_353
-      - FR_76
-      - NL_160
-      - NL_759 |12.48Mb
-      - GB_390 |12.12Mb
-      - NL_151
-      - GB_391 |12.53Mb
+      - 香港_11261415
+      - 中国_11261416
+      - NL_748 | 9.93Mb
+      - 新加坡_1126448
       - 中国_1122688
-      - 加拿大_1122022
-      - 中国_1122032
-      - ""
-      - " 2"
-      - " 3"
-      - 中国_1122245
-      - US_1733 |10.05Mb
-      - CN_195 |11.01Mb
-      - 香港_1122585
-      - 香港_11221011
-      - " 4"
-      - 中国_1122130
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -318,36 +249,27 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国_1122122
-      - 澳门_1122013
-      - US_1594 |26.51Mb
-      - US_1610 |21.02Mb
+      - 日本_1126486
+      - 香港_11261513
+      - KR_481 |12.79Mb
+      - 中国_1122245
+      - 日本_1126459
+      - 日本_1126496
+      - 香港_11261417
+      - 日本_1126497
+      - 香港_11261416
+      - 美国_1126024
+      - 香港_11261418
+      - FR_64
+      - Relay_🇫🇷FR-🇫🇷FR_62
+      - NL_741 |22.55Mb
       - 中国_1122689
       - CN_91 | 4.31Mb
-      - 韩国_1122023
-      - 新加坡_1122197
-      - 新加坡_1122265
-      - 中国_1122759
-      - FR_353
-      - FR_76
-      - NL_160
-      - NL_759 |12.48Mb
-      - GB_390 |12.12Mb
-      - NL_151
-      - GB_391 |12.53Mb
+      - 香港_11261415
+      - 中国_11261416
+      - NL_748 | 9.93Mb
+      - 新加坡_1126448
       - 中国_1122688
-      - 加拿大_1122022
-      - 中国_1122032
-      - ""
-      - " 2"
-      - " 3"
-      - 中国_1122245
-      - US_1733 |10.05Mb
-      - CN_195 |11.01Mb
-      - 香港_1122585
-      - 香港_11221011
-      - " 4"
-      - 中国_1122130
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
