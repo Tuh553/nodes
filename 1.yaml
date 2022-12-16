@@ -5,127 +5,79 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 中国_11261416, server: 39.103.165.178, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_11261293, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_11261144, server: 49.234.84.132, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_1124795, server: 39.103.165.178, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_1124726, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_1124725, server: 49.232.167.71, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_1124292, server: 49.234.84.132, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_1122688, server: 49.232.167.71, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 来源：kkzui.com_45, server: initest08.initcloud.pro, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33198:SVIPTIZ8, obfs-param: VFdwT2JWcHRVVE5OVkVWMVlsZHNhbU50T1hwaU1sb3dURzFPZG1KUg, udp: true}
-  - {name: 来源：kkzui.com_28, server: cmaisallin.debugspace.work, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33198:SVIPTIZ8, obfs-param: VFdwT2JWcHRVVE5OVkVWMVlsZHNhbU50T1hwaU1sb3dURzFPZG1KUg, udp: true}
-  - {name: 加拿大_1126021, server: 167.114.67.25, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tgunivstar.168-138-94-194.sslip.io}}, udp: true}
-  - {name: -北京市-hnlt.817777.xyz, server: hnlt.817777.xyz, port: 11011, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22663:naiboob, obfs-param: d62c422663.microsoft.com, udp: true}
-  - {name: Taiwan | 03, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20013, type: trojan, password: 3EB0BB5F-B834-453B-9992-5F9E9B194E24, sni: v12.kwaicdn.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_92 | 5.82Mb, server: 116.162.120.26, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_91 | 5.71Mb, server: 116.162.120.24, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_30, server: 116.162.120.26, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: FR_156🇫🇷FR_147, server: content-provider5.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
-  - {name: CN_91 | 4.31Mb, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_88 |44.45Mb, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_85 |15.98Mb, server: 49.232.167.71, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 90478iwe6g9zuak3iyd, server: 39.103.165.178, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 7869pr8ryd681daw623, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 77789llb3r9bgz3zm81, server: 155.248.230.241, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 2969eqhely7t7q0my2o, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 2277p137zytfqq4hjtm, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "|13.33Mb", server: 49.234.84.132, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US 28, server: v2ray.wefuckgfw.tk, port: 2096, type: vmess, uuid: 2ae9835e-381b-4228-95df-bce39ee1a4eb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ezN9pvil/, headers: {Host: v2ray.wefuckgfw.tk}}, udp: true}
+  - {name: 93 🇨🇳 Shenzhen T SNI 👾 漁師, server: 139.186.198.63, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 47.104.237.32:50002@vmess, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_139.186.198.63_120820222f00-139, server: 139.186.198.63, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: a.gfw.services:54993@ss, server: a.gfw.services, port: 54993, type: ss, cipher: chacha20-ietf-poly1305, password: c34a4436-c854-46e0-b883-a1c5b264c647, udp: true}
+  - {name: UN 25, server: v2ray.wefuckgfw.tk, port: 2096, type: vmess, uuid: ec1af151-9562-4fb2-919f-5506647aa5dc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ezN9pvil/, headers: {Host: v2ray.wefuckgfw.tk}}, udp: true}
+  - {name: CN_39.103.165.178_12122022e712-719, server: 39.103.165.178, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_112.132.215.189_121120226507-140, server: 112.132.215.189, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_1214025, server: 39.103.165.178, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_39.103.165.178_12042022c941-137, server: 39.103.165.178, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 193.149.187.101:41098@vmess, server: 193.149.187.101, port: 41098, type: vmess, uuid: 663c1d4e-6ec6-4798-df5e-85cd8b7d0ee1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: US 29, server: 51fly99.win, port: 443, type: vmess, uuid: fefe2ff7-153c-41a8-aa04-e8d2e641505c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /myblog, headers: {Host: 51fly99.win}}, udp: true}
+  - {name: CN_112.132.215.189_1212202288a2-720, server: 112.132.215.189, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_1214022, server: 139.186.198.63, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国_11261416
-      - 中国_11261293
-      - 中国_11261144
-      - 中国_1124795
-      - 中国_1124726
-      - 中国_1124725
-      - 中国_1124292
-      - 中国_1122688
-      - 来源：kkzui.com_45
-      - 来源：kkzui.com_28
-      - 加拿大_1126021
-      - -北京市-hnlt.817777.xyz
-      - Taiwan | 03
-      - Relay_🇨🇳CN-🇭🇰HK_92 | 5.82Mb
-      - Relay_🇨🇳CN-🇭🇰HK_91 | 5.71Mb
-      - Relay_🇨🇳CN-🇭🇰HK_30
-      - FR_156🇫🇷FR_147
-      - CN_91 | 4.31Mb
-      - CN_88 |44.45Mb
-      - CN_85 |15.98Mb
-      - 90478iwe6g9zuak3iyd
-      - 7869pr8ryd681daw623
-      - 77789llb3r9bgz3zm81
-      - 2969eqhely7t7q0my2o
-      - 2277p137zytfqq4hjtm
-      - "|13.33Mb"
+      - US 28
+      - 93 🇨🇳 Shenzhen T SNI 👾 漁師
+      - 47.104.237.32:50002@vmess
+      - CN_139.186.198.63_120820222f00-139
+      - a.gfw.services:54993@ss
+      - UN 25
+      - CN_39.103.165.178_12122022e712-719
+      - CN_112.132.215.189_121120226507-140
+      - 中国_1214025
+      - CN_39.103.165.178_12042022c941-137
+      - 193.149.187.101:41098@vmess
+      - US 29
+      - CN_112.132.215.189_1212202288a2-720
+      - 中国_1214022
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 中国_11261416
-      - 中国_11261293
-      - 中国_11261144
-      - 中国_1124795
-      - 中国_1124726
-      - 中国_1124725
-      - 中国_1124292
-      - 中国_1122688
-      - 来源：kkzui.com_45
-      - 来源：kkzui.com_28
-      - 加拿大_1126021
-      - -北京市-hnlt.817777.xyz
-      - Taiwan | 03
-      - Relay_🇨🇳CN-🇭🇰HK_92 | 5.82Mb
-      - Relay_🇨🇳CN-🇭🇰HK_91 | 5.71Mb
-      - Relay_🇨🇳CN-🇭🇰HK_30
-      - FR_156🇫🇷FR_147
-      - CN_91 | 4.31Mb
-      - CN_88 |44.45Mb
-      - CN_85 |15.98Mb
-      - 90478iwe6g9zuak3iyd
-      - 7869pr8ryd681daw623
-      - 77789llb3r9bgz3zm81
-      - 2969eqhely7t7q0my2o
-      - 2277p137zytfqq4hjtm
-      - "|13.33Mb"
+      - US 28
+      - 93 🇨🇳 Shenzhen T SNI 👾 漁師
+      - 47.104.237.32:50002@vmess
+      - CN_139.186.198.63_120820222f00-139
+      - a.gfw.services:54993@ss
+      - UN 25
+      - CN_39.103.165.178_12122022e712-719
+      - CN_112.132.215.189_121120226507-140
+      - 中国_1214025
+      - CN_39.103.165.178_12042022c941-137
+      - 193.149.187.101:41098@vmess
+      - US 29
+      - CN_112.132.215.189_1212202288a2-720
+      - 中国_1214022
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国_11261416
-      - 中国_11261293
-      - 中国_11261144
-      - 中国_1124795
-      - 中国_1124726
-      - 中国_1124725
-      - 中国_1124292
-      - 中国_1122688
-      - 来源：kkzui.com_45
-      - 来源：kkzui.com_28
-      - 加拿大_1126021
-      - -北京市-hnlt.817777.xyz
-      - Taiwan | 03
-      - Relay_🇨🇳CN-🇭🇰HK_92 | 5.82Mb
-      - Relay_🇨🇳CN-🇭🇰HK_91 | 5.71Mb
-      - Relay_🇨🇳CN-🇭🇰HK_30
-      - FR_156🇫🇷FR_147
-      - CN_91 | 4.31Mb
-      - CN_88 |44.45Mb
-      - CN_85 |15.98Mb
-      - 90478iwe6g9zuak3iyd
-      - 7869pr8ryd681daw623
-      - 77789llb3r9bgz3zm81
-      - 2969eqhely7t7q0my2o
-      - 2277p137zytfqq4hjtm
-      - "|13.33Mb"
+      - US 28
+      - 93 🇨🇳 Shenzhen T SNI 👾 漁師
+      - 47.104.237.32:50002@vmess
+      - CN_139.186.198.63_120820222f00-139
+      - a.gfw.services:54993@ss
+      - UN 25
+      - CN_39.103.165.178_12122022e712-719
+      - CN_112.132.215.189_121120226507-140
+      - 中国_1214025
+      - CN_39.103.165.178_12042022c941-137
+      - 193.149.187.101:41098@vmess
+      - US 29
+      - CN_112.132.215.189_1212202288a2-720
+      - 中国_1214022
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -144,32 +96,20 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国_11261416
-      - 中国_11261293
-      - 中国_11261144
-      - 中国_1124795
-      - 中国_1124726
-      - 中国_1124725
-      - 中国_1124292
-      - 中国_1122688
-      - 来源：kkzui.com_45
-      - 来源：kkzui.com_28
-      - 加拿大_1126021
-      - -北京市-hnlt.817777.xyz
-      - Taiwan | 03
-      - Relay_🇨🇳CN-🇭🇰HK_92 | 5.82Mb
-      - Relay_🇨🇳CN-🇭🇰HK_91 | 5.71Mb
-      - Relay_🇨🇳CN-🇭🇰HK_30
-      - FR_156🇫🇷FR_147
-      - CN_91 | 4.31Mb
-      - CN_88 |44.45Mb
-      - CN_85 |15.98Mb
-      - 90478iwe6g9zuak3iyd
-      - 7869pr8ryd681daw623
-      - 77789llb3r9bgz3zm81
-      - 2969eqhely7t7q0my2o
-      - 2277p137zytfqq4hjtm
-      - "|13.33Mb"
+      - US 28
+      - 93 🇨🇳 Shenzhen T SNI 👾 漁師
+      - 47.104.237.32:50002@vmess
+      - CN_139.186.198.63_120820222f00-139
+      - a.gfw.services:54993@ss
+      - UN 25
+      - CN_39.103.165.178_12122022e712-719
+      - CN_112.132.215.189_121120226507-140
+      - 中国_1214025
+      - CN_39.103.165.178_12042022c941-137
+      - 193.149.187.101:41098@vmess
+      - US 29
+      - CN_112.132.215.189_1212202288a2-720
+      - 中国_1214022
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -180,95 +120,59 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 中国_11261416
-      - 中国_11261293
-      - 中国_11261144
-      - 中国_1124795
-      - 中国_1124726
-      - 中国_1124725
-      - 中国_1124292
-      - 中国_1122688
-      - 来源：kkzui.com_45
-      - 来源：kkzui.com_28
-      - 加拿大_1126021
-      - -北京市-hnlt.817777.xyz
-      - Taiwan | 03
-      - Relay_🇨🇳CN-🇭🇰HK_92 | 5.82Mb
-      - Relay_🇨🇳CN-🇭🇰HK_91 | 5.71Mb
-      - Relay_🇨🇳CN-🇭🇰HK_30
-      - FR_156🇫🇷FR_147
-      - CN_91 | 4.31Mb
-      - CN_88 |44.45Mb
-      - CN_85 |15.98Mb
-      - 90478iwe6g9zuak3iyd
-      - 7869pr8ryd681daw623
-      - 77789llb3r9bgz3zm81
-      - 2969eqhely7t7q0my2o
-      - 2277p137zytfqq4hjtm
-      - "|13.33Mb"
+      - US 28
+      - 93 🇨🇳 Shenzhen T SNI 👾 漁師
+      - 47.104.237.32:50002@vmess
+      - CN_139.186.198.63_120820222f00-139
+      - a.gfw.services:54993@ss
+      - UN 25
+      - CN_39.103.165.178_12122022e712-719
+      - CN_112.132.215.189_121120226507-140
+      - 中国_1214025
+      - CN_39.103.165.178_12042022c941-137
+      - 193.149.187.101:41098@vmess
+      - US 29
+      - CN_112.132.215.189_1212202288a2-720
+      - 中国_1214022
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 中国_11261416
-      - 中国_11261293
-      - 中国_11261144
-      - 中国_1124795
-      - 中国_1124726
-      - 中国_1124725
-      - 中国_1124292
-      - 中国_1122688
-      - 来源：kkzui.com_45
-      - 来源：kkzui.com_28
-      - 加拿大_1126021
-      - -北京市-hnlt.817777.xyz
-      - Taiwan | 03
-      - Relay_🇨🇳CN-🇭🇰HK_92 | 5.82Mb
-      - Relay_🇨🇳CN-🇭🇰HK_91 | 5.71Mb
-      - Relay_🇨🇳CN-🇭🇰HK_30
-      - FR_156🇫🇷FR_147
-      - CN_91 | 4.31Mb
-      - CN_88 |44.45Mb
-      - CN_85 |15.98Mb
-      - 90478iwe6g9zuak3iyd
-      - 7869pr8ryd681daw623
-      - 77789llb3r9bgz3zm81
-      - 2969eqhely7t7q0my2o
-      - 2277p137zytfqq4hjtm
-      - "|13.33Mb"
+      - US 28
+      - 93 🇨🇳 Shenzhen T SNI 👾 漁師
+      - 47.104.237.32:50002@vmess
+      - CN_139.186.198.63_120820222f00-139
+      - a.gfw.services:54993@ss
+      - UN 25
+      - CN_39.103.165.178_12122022e712-719
+      - CN_112.132.215.189_121120226507-140
+      - 中国_1214025
+      - CN_39.103.165.178_12042022c941-137
+      - 193.149.187.101:41098@vmess
+      - US 29
+      - CN_112.132.215.189_1212202288a2-720
+      - 中国_1214022
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国_11261416
-      - 中国_11261293
-      - 中国_11261144
-      - 中国_1124795
-      - 中国_1124726
-      - 中国_1124725
-      - 中国_1124292
-      - 中国_1122688
-      - 来源：kkzui.com_45
-      - 来源：kkzui.com_28
-      - 加拿大_1126021
-      - -北京市-hnlt.817777.xyz
-      - Taiwan | 03
-      - Relay_🇨🇳CN-🇭🇰HK_92 | 5.82Mb
-      - Relay_🇨🇳CN-🇭🇰HK_91 | 5.71Mb
-      - Relay_🇨🇳CN-🇭🇰HK_30
-      - FR_156🇫🇷FR_147
-      - CN_91 | 4.31Mb
-      - CN_88 |44.45Mb
-      - CN_85 |15.98Mb
-      - 90478iwe6g9zuak3iyd
-      - 7869pr8ryd681daw623
-      - 77789llb3r9bgz3zm81
-      - 2969eqhely7t7q0my2o
-      - 2277p137zytfqq4hjtm
-      - "|13.33Mb"
+      - US 28
+      - 93 🇨🇳 Shenzhen T SNI 👾 漁師
+      - 47.104.237.32:50002@vmess
+      - CN_139.186.198.63_120820222f00-139
+      - a.gfw.services:54993@ss
+      - UN 25
+      - CN_39.103.165.178_12122022e712-719
+      - CN_112.132.215.189_121120226507-140
+      - 中国_1214025
+      - CN_39.103.165.178_12042022c941-137
+      - 193.149.187.101:41098@vmess
+      - US 29
+      - CN_112.132.215.189_1212202288a2-720
+      - 中国_1214022
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -284,32 +188,20 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国_11261416
-      - 中国_11261293
-      - 中国_11261144
-      - 中国_1124795
-      - 中国_1124726
-      - 中国_1124725
-      - 中国_1124292
-      - 中国_1122688
-      - 来源：kkzui.com_45
-      - 来源：kkzui.com_28
-      - 加拿大_1126021
-      - -北京市-hnlt.817777.xyz
-      - Taiwan | 03
-      - Relay_🇨🇳CN-🇭🇰HK_92 | 5.82Mb
-      - Relay_🇨🇳CN-🇭🇰HK_91 | 5.71Mb
-      - Relay_🇨🇳CN-🇭🇰HK_30
-      - FR_156🇫🇷FR_147
-      - CN_91 | 4.31Mb
-      - CN_88 |44.45Mb
-      - CN_85 |15.98Mb
-      - 90478iwe6g9zuak3iyd
-      - 7869pr8ryd681daw623
-      - 77789llb3r9bgz3zm81
-      - 2969eqhely7t7q0my2o
-      - 2277p137zytfqq4hjtm
-      - "|13.33Mb"
+      - US 28
+      - 93 🇨🇳 Shenzhen T SNI 👾 漁師
+      - 47.104.237.32:50002@vmess
+      - CN_139.186.198.63_120820222f00-139
+      - a.gfw.services:54993@ss
+      - UN 25
+      - CN_39.103.165.178_12122022e712-719
+      - CN_112.132.215.189_121120226507-140
+      - 中国_1214025
+      - CN_39.103.165.178_12042022c941-137
+      - 193.149.187.101:41098@vmess
+      - US 29
+      - CN_112.132.215.189_1212202288a2-720
+      - 中国_1214022
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
