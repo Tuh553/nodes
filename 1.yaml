@@ -5,79 +5,139 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: US 28, server: v2ray.wefuckgfw.tk, port: 2096, type: vmess, uuid: 2ae9835e-381b-4228-95df-bce39ee1a4eb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ezN9pvil/, headers: {Host: v2ray.wefuckgfw.tk}}, udp: true}
-  - {name: 93 🇨🇳 Shenzhen T SNI 👾 漁師, server: 139.186.198.63, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 47.104.237.32:50002@vmess, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_139.186.198.63_120820222f00-139, server: 139.186.198.63, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: a.gfw.services:54993@ss, server: a.gfw.services, port: 54993, type: ss, cipher: chacha20-ietf-poly1305, password: c34a4436-c854-46e0-b883-a1c5b264c647, udp: true}
-  - {name: UN 25, server: v2ray.wefuckgfw.tk, port: 2096, type: vmess, uuid: ec1af151-9562-4fb2-919f-5506647aa5dc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ezN9pvil/, headers: {Host: v2ray.wefuckgfw.tk}}, udp: true}
-  - {name: CN_39.103.165.178_12122022e712-719, server: 39.103.165.178, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_112.132.215.189_121120226507-140, server: 112.132.215.189, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_1214025, server: 39.103.165.178, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港_1216450, server: 203.218.128.236, port: 15555, type: vmess, uuid: bab71532-b7d2-4b1a-bc66-4276640dc189, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwe123321ewq}, udp: true}
+  - {name: 中国_1216805, server: 153.101.64.222, port: 40013, type: vmess, uuid: bab71532-b7d2-4b1a-bc66-4276640dc189, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwe123321ewq}, udp: true}
+  - {name: 澳门_1216003, server: 45.64.22.55, port: 443, type: trojan, password: Ty33ylFA4u6A5e0NE3wRFp3DIa8lZOzC87CeKnxYgpSOSa2ZaXBjDDSY9qCcxR, sni: flowery.meijireform.com, skip-cert-verify: true, udp: true}
+  - {name: 韩国_1216176, server: kr01.170203.xyz, port: 45453, type: vmess, uuid: 3b9c492a-8d71-494c-8e45-393909d73a8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kr01.170203.xyz}}, udp: true}
+  - {name: 中国_1216803, server: 153.101.64.222, port: 40012, type: vmess, uuid: bab71532-b7d2-4b1a-bc66-4276640dc189, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwe123321ewq}, udp: true}
+  - {name: 中国_1216804, server: 153.101.64.222, port: 40023, type: vmess, uuid: bab71532-b7d2-4b1a-bc66-4276640dc189, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwe123321ewq}, udp: true}
+  - {name: 中国_1216792, server: 223.111.183.70, port: 40031, type: vmess, uuid: bab71532-b7d2-4b1a-bc66-4276640dc189, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwe123321ewq}, udp: true}
+  - {name: 中国_1216799, server: 153.101.64.222, port: 40011, type: vmess, uuid: bab71532-b7d2-4b1a-bc66-4276640dc189, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwe123321ewq}, udp: true}
+  - {name: 加拿大_1216017, server: 23.227.38.39, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
+  - {name: 中国_1216802, server: 153.101.64.222, port: 40025, type: vmess, uuid: bab71532-b7d2-4b1a-bc66-4276640dc189, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwe123321ewq}, udp: true}
+  - {name: 美国_1216221, server: 172.67.127.75, port: 8880, type: vmess, uuid: a5c804aa-8a4d-4fd2-97a1-4f0cc1384953, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hkaa0, headers: {Host: sg1021.hkaa0.tk}}, udp: true}
+  - {name: 中国_1216800, server: 118.212.143.2, port: 40022, type: vmess, uuid: bab71532-b7d2-4b1a-bc66-4276640dc189, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwe123321ewq}, udp: true}
+  - {name: 塞浦路斯_1216009, server: 203.24.108.10, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
+  - {name: 中国_1216806, server: 118.212.143.2, port: 40021, type: vmess, uuid: bab71532-b7d2-4b1a-bc66-4276640dc189, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwe123321ewq}, udp: true}
   - {name: CN_39.103.165.178_12042022c941-137, server: 39.103.165.178, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 193.149.187.101:41098@vmess, server: 193.149.187.101, port: 41098, type: vmess, uuid: 663c1d4e-6ec6-4798-df5e-85cd8b7d0ee1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: US 29, server: 51fly99.win, port: 443, type: vmess, uuid: fefe2ff7-153c-41a8-aa04-e8d2e641505c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /myblog, headers: {Host: 51fly99.win}}, udp: true}
+  - {name: 伯利兹_1216020, server: 203.30.189.191, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
+  - {name: 中国_1214025, server: 39.103.165.178, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: CN_112.132.215.189_1212202288a2-720, server: 112.132.215.189, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_112.132.215.189_121120226507-140, server: 112.132.215.189, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_1060, server: vus5.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vus5.0bad.com}}, udp: true}
   - {name: 中国_1214022, server: 139.186.198.63, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯联邦_1216002, server: 45.136.244.23, port: 443, type: vmess, uuid: 794a6a61-b225-45fc-fb31-7dee188b1bbb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /wweedw}, udp: true}
+  - {name: 伯利兹_1216022, server: 203.30.188.190, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
+  - {name: CN_139.186.198.63_120820222f00-139, server: 139.186.198.63, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_39.103.165.178_12122022e712-719, server: 39.103.165.178, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港_1216453, server: 116.49.241.137, port: 40044, type: vmess, uuid: bab71532-b7d2-4b1a-bc66-4276640dc189, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwe123321ewq}, udp: true}
+  - {name: 中国_1216793, server: 223.111.183.70, port: 40041, type: vmess, uuid: bab71532-b7d2-4b1a-bc66-4276640dc189, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwe123321ewq}, udp: true}
+  - {name: 中国_1216025, server: 139.186.198.63, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 93 🇨🇳 Shenzhen T SNI 👾 漁師, server: 139.186.198.63, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US 28
-      - 93 🇨🇳 Shenzhen T SNI 👾 漁師
-      - 47.104.237.32:50002@vmess
-      - CN_139.186.198.63_120820222f00-139
-      - a.gfw.services:54993@ss
-      - UN 25
-      - CN_39.103.165.178_12122022e712-719
-      - CN_112.132.215.189_121120226507-140
-      - 中国_1214025
+      - 香港_1216450
+      - 中国_1216805
+      - 澳门_1216003
+      - 韩国_1216176
+      - 中国_1216803
+      - 中国_1216804
+      - 中国_1216792
+      - 中国_1216799
+      - 加拿大_1216017
+      - 中国_1216802
+      - 美国_1216221
+      - 中国_1216800
+      - 塞浦路斯_1216009
+      - 中国_1216806
       - CN_39.103.165.178_12042022c941-137
-      - 193.149.187.101:41098@vmess
-      - US 29
+      - 伯利兹_1216020
+      - 中国_1214025
       - CN_112.132.215.189_1212202288a2-720
+      - CN_112.132.215.189_121120226507-140
+      - US_1060
       - 中国_1214022
+      - 俄罗斯联邦_1216002
+      - 伯利兹_1216022
+      - CN_139.186.198.63_120820222f00-139
+      - CN_39.103.165.178_12122022e712-719
+      - 香港_1216453
+      - 中国_1216793
+      - 中国_1216025
+      - 93 🇨🇳 Shenzhen T SNI 👾 漁師
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - US 28
-      - 93 🇨🇳 Shenzhen T SNI 👾 漁師
-      - 47.104.237.32:50002@vmess
-      - CN_139.186.198.63_120820222f00-139
-      - a.gfw.services:54993@ss
-      - UN 25
-      - CN_39.103.165.178_12122022e712-719
-      - CN_112.132.215.189_121120226507-140
-      - 中国_1214025
+      - 香港_1216450
+      - 中国_1216805
+      - 澳门_1216003
+      - 韩国_1216176
+      - 中国_1216803
+      - 中国_1216804
+      - 中国_1216792
+      - 中国_1216799
+      - 加拿大_1216017
+      - 中国_1216802
+      - 美国_1216221
+      - 中国_1216800
+      - 塞浦路斯_1216009
+      - 中国_1216806
       - CN_39.103.165.178_12042022c941-137
-      - 193.149.187.101:41098@vmess
-      - US 29
+      - 伯利兹_1216020
+      - 中国_1214025
       - CN_112.132.215.189_1212202288a2-720
+      - CN_112.132.215.189_121120226507-140
+      - US_1060
       - 中国_1214022
+      - 俄罗斯联邦_1216002
+      - 伯利兹_1216022
+      - CN_139.186.198.63_120820222f00-139
+      - CN_39.103.165.178_12122022e712-719
+      - 香港_1216453
+      - 中国_1216793
+      - 中国_1216025
+      - 93 🇨🇳 Shenzhen T SNI 👾 漁師
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US 28
-      - 93 🇨🇳 Shenzhen T SNI 👾 漁師
-      - 47.104.237.32:50002@vmess
-      - CN_139.186.198.63_120820222f00-139
-      - a.gfw.services:54993@ss
-      - UN 25
-      - CN_39.103.165.178_12122022e712-719
-      - CN_112.132.215.189_121120226507-140
-      - 中国_1214025
+      - 香港_1216450
+      - 中国_1216805
+      - 澳门_1216003
+      - 韩国_1216176
+      - 中国_1216803
+      - 中国_1216804
+      - 中国_1216792
+      - 中国_1216799
+      - 加拿大_1216017
+      - 中国_1216802
+      - 美国_1216221
+      - 中国_1216800
+      - 塞浦路斯_1216009
+      - 中国_1216806
       - CN_39.103.165.178_12042022c941-137
-      - 193.149.187.101:41098@vmess
-      - US 29
+      - 伯利兹_1216020
+      - 中国_1214025
       - CN_112.132.215.189_1212202288a2-720
+      - CN_112.132.215.189_121120226507-140
+      - US_1060
       - 中国_1214022
+      - 俄罗斯联邦_1216002
+      - 伯利兹_1216022
+      - CN_139.186.198.63_120820222f00-139
+      - CN_39.103.165.178_12122022e712-719
+      - 香港_1216453
+      - 中国_1216793
+      - 中国_1216025
+      - 93 🇨🇳 Shenzhen T SNI 👾 漁師
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -96,83 +156,145 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US 28
-      - 93 🇨🇳 Shenzhen T SNI 👾 漁師
-      - 47.104.237.32:50002@vmess
-      - CN_139.186.198.63_120820222f00-139
-      - a.gfw.services:54993@ss
-      - UN 25
-      - CN_39.103.165.178_12122022e712-719
-      - CN_112.132.215.189_121120226507-140
-      - 中国_1214025
+      - 香港_1216450
+      - 中国_1216805
+      - 澳门_1216003
+      - 韩国_1216176
+      - 中国_1216803
+      - 中国_1216804
+      - 中国_1216792
+      - 中国_1216799
+      - 加拿大_1216017
+      - 中国_1216802
+      - 美国_1216221
+      - 中国_1216800
+      - 塞浦路斯_1216009
+      - 中国_1216806
       - CN_39.103.165.178_12042022c941-137
-      - 193.149.187.101:41098@vmess
-      - US 29
+      - 伯利兹_1216020
+      - 中国_1214025
       - CN_112.132.215.189_1212202288a2-720
+      - CN_112.132.215.189_121120226507-140
+      - US_1060
       - 中国_1214022
+      - 俄罗斯联邦_1216002
+      - 伯利兹_1216022
+      - CN_139.186.198.63_120820222f00-139
+      - CN_39.103.165.178_12122022e712-719
+      - 香港_1216453
+      - 中国_1216793
+      - 中国_1216025
+      - 93 🇨🇳 Shenzhen T SNI 👾 漁師
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港_1216450
+      - 香港_1216453
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - US 28
-      - 93 🇨🇳 Shenzhen T SNI 👾 漁師
-      - 47.104.237.32:50002@vmess
-      - CN_139.186.198.63_120820222f00-139
-      - a.gfw.services:54993@ss
-      - UN 25
-      - CN_39.103.165.178_12122022e712-719
-      - CN_112.132.215.189_121120226507-140
-      - 中国_1214025
+      - 香港_1216450
+      - 中国_1216805
+      - 澳门_1216003
+      - 韩国_1216176
+      - 中国_1216803
+      - 中国_1216804
+      - 中国_1216792
+      - 中国_1216799
+      - 加拿大_1216017
+      - 中国_1216802
+      - 美国_1216221
+      - 中国_1216800
+      - 塞浦路斯_1216009
+      - 中国_1216806
       - CN_39.103.165.178_12042022c941-137
-      - 193.149.187.101:41098@vmess
-      - US 29
+      - 伯利兹_1216020
+      - 中国_1214025
       - CN_112.132.215.189_1212202288a2-720
+      - CN_112.132.215.189_121120226507-140
+      - US_1060
       - 中国_1214022
+      - 俄罗斯联邦_1216002
+      - 伯利兹_1216022
+      - CN_139.186.198.63_120820222f00-139
+      - CN_39.103.165.178_12122022e712-719
+      - 香港_1216453
+      - 中国_1216793
+      - 中国_1216025
+      - 93 🇨🇳 Shenzhen T SNI 👾 漁師
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - US 28
-      - 93 🇨🇳 Shenzhen T SNI 👾 漁師
-      - 47.104.237.32:50002@vmess
-      - CN_139.186.198.63_120820222f00-139
-      - a.gfw.services:54993@ss
-      - UN 25
-      - CN_39.103.165.178_12122022e712-719
-      - CN_112.132.215.189_121120226507-140
-      - 中国_1214025
+      - 香港_1216450
+      - 中国_1216805
+      - 澳门_1216003
+      - 韩国_1216176
+      - 中国_1216803
+      - 中国_1216804
+      - 中国_1216792
+      - 中国_1216799
+      - 加拿大_1216017
+      - 中国_1216802
+      - 美国_1216221
+      - 中国_1216800
+      - 塞浦路斯_1216009
+      - 中国_1216806
       - CN_39.103.165.178_12042022c941-137
-      - 193.149.187.101:41098@vmess
-      - US 29
+      - 伯利兹_1216020
+      - 中国_1214025
       - CN_112.132.215.189_1212202288a2-720
+      - CN_112.132.215.189_121120226507-140
+      - US_1060
       - 中国_1214022
+      - 俄罗斯联邦_1216002
+      - 伯利兹_1216022
+      - CN_139.186.198.63_120820222f00-139
+      - CN_39.103.165.178_12122022e712-719
+      - 香港_1216453
+      - 中国_1216793
+      - 中国_1216025
+      - 93 🇨🇳 Shenzhen T SNI 👾 漁師
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US 28
-      - 93 🇨🇳 Shenzhen T SNI 👾 漁師
-      - 47.104.237.32:50002@vmess
-      - CN_139.186.198.63_120820222f00-139
-      - a.gfw.services:54993@ss
-      - UN 25
-      - CN_39.103.165.178_12122022e712-719
-      - CN_112.132.215.189_121120226507-140
-      - 中国_1214025
+      - 香港_1216450
+      - 中国_1216805
+      - 澳门_1216003
+      - 韩国_1216176
+      - 中国_1216803
+      - 中国_1216804
+      - 中国_1216792
+      - 中国_1216799
+      - 加拿大_1216017
+      - 中国_1216802
+      - 美国_1216221
+      - 中国_1216800
+      - 塞浦路斯_1216009
+      - 中国_1216806
       - CN_39.103.165.178_12042022c941-137
-      - 193.149.187.101:41098@vmess
-      - US 29
+      - 伯利兹_1216020
+      - 中国_1214025
       - CN_112.132.215.189_1212202288a2-720
+      - CN_112.132.215.189_121120226507-140
+      - US_1060
       - 中国_1214022
+      - 俄罗斯联邦_1216002
+      - 伯利兹_1216022
+      - CN_139.186.198.63_120820222f00-139
+      - CN_39.103.165.178_12122022e712-719
+      - 香港_1216453
+      - 中国_1216793
+      - 中国_1216025
+      - 93 🇨🇳 Shenzhen T SNI 👾 漁師
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -188,20 +310,35 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US 28
-      - 93 🇨🇳 Shenzhen T SNI 👾 漁師
-      - 47.104.237.32:50002@vmess
-      - CN_139.186.198.63_120820222f00-139
-      - a.gfw.services:54993@ss
-      - UN 25
-      - CN_39.103.165.178_12122022e712-719
-      - CN_112.132.215.189_121120226507-140
-      - 中国_1214025
+      - 香港_1216450
+      - 中国_1216805
+      - 澳门_1216003
+      - 韩国_1216176
+      - 中国_1216803
+      - 中国_1216804
+      - 中国_1216792
+      - 中国_1216799
+      - 加拿大_1216017
+      - 中国_1216802
+      - 美国_1216221
+      - 中国_1216800
+      - 塞浦路斯_1216009
+      - 中国_1216806
       - CN_39.103.165.178_12042022c941-137
-      - 193.149.187.101:41098@vmess
-      - US 29
+      - 伯利兹_1216020
+      - 中国_1214025
       - CN_112.132.215.189_1212202288a2-720
+      - CN_112.132.215.189_121120226507-140
+      - US_1060
       - 中国_1214022
+      - 俄罗斯联邦_1216002
+      - 伯利兹_1216022
+      - CN_139.186.198.63_120820222f00-139
+      - CN_39.103.165.178_12122022e712-719
+      - 香港_1216453
+      - 中国_1216793
+      - 中国_1216025
+      - 93 🇨🇳 Shenzhen T SNI 👾 漁師
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
