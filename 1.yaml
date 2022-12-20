@@ -5,123 +5,31 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK_295 | 2.51Mb, server: 20.187.97.0, port: 48008, type: vmess, uuid: 2f0415a4-9acd-3435-a780-e447a2ce79fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny}, udp: true}
-  - {name: NL_697 | 9.61Mb, server: 85.208.108.60, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: NL_648 |10.50Mb, server: 85.208.108.60, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: NL_659 | 9.55Mb, server: 85.208.108.60, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: NL_675 |13.49Mb, server: 85.208.108.60, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: NL_650 | 7.56Mb, server: 85.208.108.60, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: NL_653 |12.79Mb, server: 85.208.108.60, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: NL_690 | 5.60Mb, server: 85.208.108.60, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: NL_705 |10.90Mb, server: 85.208.108.60, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: NL_678 | 5.60Mb, server: 85.208.108.60, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: NL_682 |21.93Mb, server: 85.208.108.60, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: NL_651 | 7.17Mb, server: 85.208.108.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: NL_616 |11.19Mb, server: 85.208.108.60, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: NL_712 | 6.27Mb, server: 85.208.108.60, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: NL_674 |11.95Mb, server: 85.208.108.60, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: NL_691 | 6.80Mb, server: 85.208.108.60, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: NL_667 |14.90Mb, server: 85.208.108.60, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: NL_677 | 6.06Mb, server: 85.208.108.60, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: NL_655 | 3.97Mb, server: 85.208.108.60, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 中国_1216028, server: 39.103.165.178, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: NL_607 | 7.36Mb, server: 85.208.108.60, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 中国_1216025, server: 139.186.198.63, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: NL_693 | 6.21Mb, server: 85.208.108.60, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 中国_1216027, server: 112.132.215.189, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_1595 |115.19Mb, server: 20.24.69.83, port: 8082, type: vmess, uuid: 2f0415a4-9acd-3435-a780-e447a2ce79fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny}, udp: true}
+  - {name: DE_138 |18.92Mb, server: 193.176.86.190, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: ZZ_1651 |16.99Mb, server: 169.197.142.48, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK_295 | 2.51Mb
-      - NL_697 | 9.61Mb
-      - NL_648 |10.50Mb
-      - NL_659 | 9.55Mb
-      - NL_675 |13.49Mb
-      - NL_650 | 7.56Mb
-      - NL_653 |12.79Mb
-      - NL_690 | 5.60Mb
-      - NL_705 |10.90Mb
-      - NL_678 | 5.60Mb
-      - NL_682 |21.93Mb
-      - NL_651 | 7.17Mb
-      - NL_616 |11.19Mb
-      - NL_712 | 6.27Mb
-      - NL_674 |11.95Mb
-      - NL_691 | 6.80Mb
-      - NL_667 |14.90Mb
-      - NL_677 | 6.06Mb
-      - NL_655 | 3.97Mb
-      - 中国_1216028
-      - NL_607 | 7.36Mb
-      - 中国_1216025
-      - NL_693 | 6.21Mb
-      - 中国_1216027
-      - US_1595 |115.19Mb
+      - DE_138 |18.92Mb
+      - ZZ_1651 |16.99Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HK_295 | 2.51Mb
-      - NL_697 | 9.61Mb
-      - NL_648 |10.50Mb
-      - NL_659 | 9.55Mb
-      - NL_675 |13.49Mb
-      - NL_650 | 7.56Mb
-      - NL_653 |12.79Mb
-      - NL_690 | 5.60Mb
-      - NL_705 |10.90Mb
-      - NL_678 | 5.60Mb
-      - NL_682 |21.93Mb
-      - NL_651 | 7.17Mb
-      - NL_616 |11.19Mb
-      - NL_712 | 6.27Mb
-      - NL_674 |11.95Mb
-      - NL_691 | 6.80Mb
-      - NL_667 |14.90Mb
-      - NL_677 | 6.06Mb
-      - NL_655 | 3.97Mb
-      - 中国_1216028
-      - NL_607 | 7.36Mb
-      - 中国_1216025
-      - NL_693 | 6.21Mb
-      - 中国_1216027
-      - US_1595 |115.19Mb
+      - DE_138 |18.92Mb
+      - ZZ_1651 |16.99Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK_295 | 2.51Mb
-      - NL_697 | 9.61Mb
-      - NL_648 |10.50Mb
-      - NL_659 | 9.55Mb
-      - NL_675 |13.49Mb
-      - NL_650 | 7.56Mb
-      - NL_653 |12.79Mb
-      - NL_690 | 5.60Mb
-      - NL_705 |10.90Mb
-      - NL_678 | 5.60Mb
-      - NL_682 |21.93Mb
-      - NL_651 | 7.17Mb
-      - NL_616 |11.19Mb
-      - NL_712 | 6.27Mb
-      - NL_674 |11.95Mb
-      - NL_691 | 6.80Mb
-      - NL_667 |14.90Mb
-      - NL_677 | 6.06Mb
-      - NL_655 | 3.97Mb
-      - 中国_1216028
-      - NL_607 | 7.36Mb
-      - 中国_1216025
-      - NL_693 | 6.21Mb
-      - 中国_1216027
-      - US_1595 |115.19Mb
+      - DE_138 |18.92Mb
+      - ZZ_1651 |16.99Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -140,31 +48,8 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK_295 | 2.51Mb
-      - NL_697 | 9.61Mb
-      - NL_648 |10.50Mb
-      - NL_659 | 9.55Mb
-      - NL_675 |13.49Mb
-      - NL_650 | 7.56Mb
-      - NL_653 |12.79Mb
-      - NL_690 | 5.60Mb
-      - NL_705 |10.90Mb
-      - NL_678 | 5.60Mb
-      - NL_682 |21.93Mb
-      - NL_651 | 7.17Mb
-      - NL_616 |11.19Mb
-      - NL_712 | 6.27Mb
-      - NL_674 |11.95Mb
-      - NL_691 | 6.80Mb
-      - NL_667 |14.90Mb
-      - NL_677 | 6.06Mb
-      - NL_655 | 3.97Mb
-      - 中国_1216028
-      - NL_607 | 7.36Mb
-      - 中国_1216025
-      - NL_693 | 6.21Mb
-      - 中国_1216027
-      - US_1595 |115.19Mb
+      - DE_138 |18.92Mb
+      - ZZ_1651 |16.99Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -175,92 +60,23 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HK_295 | 2.51Mb
-      - NL_697 | 9.61Mb
-      - NL_648 |10.50Mb
-      - NL_659 | 9.55Mb
-      - NL_675 |13.49Mb
-      - NL_650 | 7.56Mb
-      - NL_653 |12.79Mb
-      - NL_690 | 5.60Mb
-      - NL_705 |10.90Mb
-      - NL_678 | 5.60Mb
-      - NL_682 |21.93Mb
-      - NL_651 | 7.17Mb
-      - NL_616 |11.19Mb
-      - NL_712 | 6.27Mb
-      - NL_674 |11.95Mb
-      - NL_691 | 6.80Mb
-      - NL_667 |14.90Mb
-      - NL_677 | 6.06Mb
-      - NL_655 | 3.97Mb
-      - 中国_1216028
-      - NL_607 | 7.36Mb
-      - 中国_1216025
-      - NL_693 | 6.21Mb
-      - 中国_1216027
-      - US_1595 |115.19Mb
+      - DE_138 |18.92Mb
+      - ZZ_1651 |16.99Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HK_295 | 2.51Mb
-      - NL_697 | 9.61Mb
-      - NL_648 |10.50Mb
-      - NL_659 | 9.55Mb
-      - NL_675 |13.49Mb
-      - NL_650 | 7.56Mb
-      - NL_653 |12.79Mb
-      - NL_690 | 5.60Mb
-      - NL_705 |10.90Mb
-      - NL_678 | 5.60Mb
-      - NL_682 |21.93Mb
-      - NL_651 | 7.17Mb
-      - NL_616 |11.19Mb
-      - NL_712 | 6.27Mb
-      - NL_674 |11.95Mb
-      - NL_691 | 6.80Mb
-      - NL_667 |14.90Mb
-      - NL_677 | 6.06Mb
-      - NL_655 | 3.97Mb
-      - 中国_1216028
-      - NL_607 | 7.36Mb
-      - 中国_1216025
-      - NL_693 | 6.21Mb
-      - 中国_1216027
-      - US_1595 |115.19Mb
+      - DE_138 |18.92Mb
+      - ZZ_1651 |16.99Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK_295 | 2.51Mb
-      - NL_697 | 9.61Mb
-      - NL_648 |10.50Mb
-      - NL_659 | 9.55Mb
-      - NL_675 |13.49Mb
-      - NL_650 | 7.56Mb
-      - NL_653 |12.79Mb
-      - NL_690 | 5.60Mb
-      - NL_705 |10.90Mb
-      - NL_678 | 5.60Mb
-      - NL_682 |21.93Mb
-      - NL_651 | 7.17Mb
-      - NL_616 |11.19Mb
-      - NL_712 | 6.27Mb
-      - NL_674 |11.95Mb
-      - NL_691 | 6.80Mb
-      - NL_667 |14.90Mb
-      - NL_677 | 6.06Mb
-      - NL_655 | 3.97Mb
-      - 中国_1216028
-      - NL_607 | 7.36Mb
-      - 中国_1216025
-      - NL_693 | 6.21Mb
-      - 中国_1216027
-      - US_1595 |115.19Mb
+      - DE_138 |18.92Mb
+      - ZZ_1651 |16.99Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -276,31 +92,8 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK_295 | 2.51Mb
-      - NL_697 | 9.61Mb
-      - NL_648 |10.50Mb
-      - NL_659 | 9.55Mb
-      - NL_675 |13.49Mb
-      - NL_650 | 7.56Mb
-      - NL_653 |12.79Mb
-      - NL_690 | 5.60Mb
-      - NL_705 |10.90Mb
-      - NL_678 | 5.60Mb
-      - NL_682 |21.93Mb
-      - NL_651 | 7.17Mb
-      - NL_616 |11.19Mb
-      - NL_712 | 6.27Mb
-      - NL_674 |11.95Mb
-      - NL_691 | 6.80Mb
-      - NL_667 |14.90Mb
-      - NL_677 | 6.06Mb
-      - NL_655 | 3.97Mb
-      - 中国_1216028
-      - NL_607 | 7.36Mb
-      - 中国_1216025
-      - NL_693 | 6.21Mb
-      - 中国_1216027
-      - US_1595 |115.19Mb
+      - DE_138 |18.92Mb
+      - ZZ_1651 |16.99Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
