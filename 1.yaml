@@ -5,31 +5,175 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: DE_138 |18.92Mb, server: 193.176.86.190, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: ZZ_1651 |16.99Mb, server: 169.197.142.48, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 台湾 69号 (南方移动线路), server: 111.6.86.74, port: 9094, type: vmess, uuid: cb4489c7-a966-320c-9120-f17a7dfb4999, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /game, headers: {Host: www.bing.com}}, udp: true}
+  - {name: 新加坡 103号（disney+专用）, server: 111.6.86.74, port: 6789, type: vmess, uuid: cb4489c7-a966-320c-9120-f17a7dfb4999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /game, headers: {Host: www.bing.com}}, udp: true}
+  - {name: 新加坡 62号(非自制解锁Netflix|), server: 120.240.236.34, port: 10003, type: vmess, uuid: cb4489c7-a966-320c-9120-f17a7dfb4999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /game, headers: {Host: www.bing.com}}, udp: true}
+  - {name: 日本 95号（日区netflix）, server: 120.240.236.34, port: 10008, type: vmess, uuid: cb4489c7-a966-320c-9120-f17a7dfb4999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /game, headers: {Host: www.bing.com}}, udp: true}
+  - {name: 日本 97号, server: 111.6.86.74, port: 10001, type: vmess, uuid: cb4489c7-a966-320c-9120-f17a7dfb4999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /game, headers: {Host: www.bing.com}}, udp: true}
+  - {name: 香港 78号, server: 111.6.86.74, port: 6666, type: vmess, uuid: cb4489c7-a966-320c-9120-f17a7dfb4999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /game, headers: {Host: www.bing.com}}, udp: true}
+  - {name: CN-124.225.24.162-0324, server: azsh01.1aba.cn, port: 18254, type: vmess, uuid: ef8e6bda-f3d8-43e8-a3cc-3acde792ae77, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: CN-14.215.162.7-0325, server: gddx.fosi.hk, port: 35499, type: vmess, uuid: ef8e6bda-f3d8-43e8-a3cc-3acde792ae77, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: CN-124.225.24.162-0328, server: azsh01.1aba.cn, port: 37663, type: vmess, uuid: ef8e6bda-f3d8-43e8-a3cc-3acde792ae77, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: CN-14.215.162.7-0329, server: gddx.fosi.hk, port: 41173, type: vmess, uuid: ef8e6bda-f3d8-43e8-a3cc-3acde792ae77, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: CN-14.215.162.7-0330, server: gddx.fosi.hk, port: 43592, type: vmess, uuid: ef8e6bda-f3d8-43e8-a3cc-3acde792ae77, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: CN-124.225.24.162-0337, server: azsh01.1aba.cn, port: 18254, type: vmess, uuid: 9618aef3-6d04-43cf-afac-b031802bc55c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: CN-14.215.163.108-0338, server: gddx.fosi.hk, port: 35499, type: vmess, uuid: 9618aef3-6d04-43cf-afac-b031802bc55c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: CN-124.225.24.162-0341, server: azsh01.1aba.cn, port: 37663, type: vmess, uuid: 9618aef3-6d04-43cf-afac-b031802bc55c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: CN-14.215.162.7-0342, server: gddx.fosi.hk, port: 41173, type: vmess, uuid: 9618aef3-6d04-43cf-afac-b031802bc55c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: CN-14.215.162.7-0343, server: gddx.fosi.hk, port: 43592, type: vmess, uuid: 9618aef3-6d04-43cf-afac-b031802bc55c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: CN-116.129.253.62-0356, server: sinagz.dghjkjhertyuihgfddfghjasdertyuudfghjaxcvbj.com, port: 20220, type: trojan, password: 324a6a37-a0b1-46c6-abbc-0661c7b80931, sni: v2jp01.fuqiangren.com, skip-cert-verify: true, udp: true}
+  - {name: CN-116.129.253.62-0357, server: sinagz.dghjkjhertyuihgfddfghjasdertyuudfghjaxcvbj.com, port: 20221, type: trojan, password: 324a6a37-a0b1-46c6-abbc-0661c7b80931, sni: v2jp01.fuqiangren.com, skip-cert-verify: true, udp: true}
+  - {name: CN-116.129.253.62-0369, server: sinagz.dghjkjhertyuihgfddfghjasdertyuudfghjaxcvbj.com, port: 30023, type: vmess, uuid: 324a6a37-a0b1-46c6-abbc-0661c7b80931, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aceamedv, headers: {Host: gz.fastcloud.club}}, udp: true}
+  - {name: CN-116.129.253.62-0370, server: sinagz.dghjkjhertyuihgfddfghjasdertyuudfghjaxcvbj.com, port: 30024, type: vmess, uuid: 324a6a37-a0b1-46c6-abbc-0661c7b80931, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aceamedv, headers: {Host: gz.fastcloud.club}}, udp: true}
+  - {name: KR-15.164.214.191-0460, server: 00000000000000000000000000000000000000000000000000000000000038a.node-for-bigairport.win, port: 12356, type: vmess, uuid: 46851ea7-e4bc-4f34-b28a-3b3bd0925bbb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-124.225.24.162-0492, server: azsh01.1aba.cn, port: 18254, type: vmess, uuid: 21a1541b-2798-465b-9dd6-3c7cb49703d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: CN-14.215.162.7-0493, server: gddx.fosi.hk, port: 35499, type: vmess, uuid: 21a1541b-2798-465b-9dd6-3c7cb49703d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: CN-124.225.24.162-0496, server: azsh01.1aba.cn, port: 37663, type: vmess, uuid: 21a1541b-2798-465b-9dd6-3c7cb49703d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: CN-14.215.163.108-0497, server: gddx.fosi.hk, port: 41173, type: vmess, uuid: 21a1541b-2798-465b-9dd6-3c7cb49703d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: CN-124.225.24.162-0525, server: azsh01.1aba.cn, port: 18254, type: vmess, uuid: 894a0d7d-fbfe-461e-9a19-d443cad03dce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: CN-14.215.163.108-0526, server: gddx.fosi.hk, port: 35499, type: vmess, uuid: 894a0d7d-fbfe-461e-9a19-d443cad03dce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: CN-124.225.24.162-0529, server: azsh01.1aba.cn, port: 37663, type: vmess, uuid: 894a0d7d-fbfe-461e-9a19-d443cad03dce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: CN-14.215.163.108-0531, server: gddx.fosi.hk, port: 43592, type: vmess, uuid: 894a0d7d-fbfe-461e-9a19-d443cad03dce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: CN-111.6.86.74-0667, server: 111.6.86.74, port: 7777, type: vmess, uuid: cb4489c7-a966-320c-9120-f17a7dfb4999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /game, headers: {Host: www.bing.com}}, udp: true}
+  - {name: CN-210.13.85.167-0676, server: 210.13.85.167, port: 10002, type: vmess, uuid: cb4489c7-a966-320c-9120-f17a7dfb4999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /game, headers: {Host: www.bing.com}}, udp: true}
+  - {name: CN-124.225.24.162-0851, server: azsh01.1aba.cn, port: 18254, type: vmess, uuid: 8689856b-29b4-4ffc-877f-1eebe915fa40, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: CN-14.215.162.7-0852, server: gddx.fosi.hk, port: 35499, type: vmess, uuid: 8689856b-29b4-4ffc-877f-1eebe915fa40, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: CN-124.225.24.162-0855, server: azsh01.1aba.cn, port: 37663, type: vmess, uuid: 8689856b-29b4-4ffc-877f-1eebe915fa40, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: CN-14.215.162.7-0856, server: gddx.fosi.hk, port: 41173, type: vmess, uuid: 8689856b-29b4-4ffc-877f-1eebe915fa40, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: CN-14.215.163.108-0857, server: gddx.fosi.hk, port: 43592, type: vmess, uuid: 8689856b-29b4-4ffc-877f-1eebe915fa40, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: CN-120.240.163.164-0902, server: layercm05.initcloud.pro, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 64348:SVIPTIZ8, obfs-param: 23ffd711.microsoft.com, udp: true}
+  - {name: KR-15.164.214.191-0959, server: 00000000000000000000000000000000000000000000000000000000000038a.node-for-bigairport.win, port: 12356, type: vmess, uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - DE_138 |18.92Mb
-      - ZZ_1651 |16.99Mb
+      - 台湾 69号 (南方移动线路)
+      - 新加坡 103号（disney+专用）
+      - 新加坡 62号(非自制解锁Netflix|)
+      - 日本 95号（日区netflix）
+      - 日本 97号
+      - 香港 78号
+      - CN-124.225.24.162-0324
+      - CN-14.215.162.7-0325
+      - CN-124.225.24.162-0328
+      - CN-14.215.162.7-0329
+      - CN-14.215.162.7-0330
+      - CN-124.225.24.162-0337
+      - CN-14.215.163.108-0338
+      - CN-124.225.24.162-0341
+      - CN-14.215.162.7-0342
+      - CN-14.215.162.7-0343
+      - CN-116.129.253.62-0356
+      - CN-116.129.253.62-0357
+      - CN-116.129.253.62-0369
+      - CN-116.129.253.62-0370
+      - KR-15.164.214.191-0460
+      - CN-124.225.24.162-0492
+      - CN-14.215.162.7-0493
+      - CN-124.225.24.162-0496
+      - CN-14.215.163.108-0497
+      - CN-124.225.24.162-0525
+      - CN-14.215.163.108-0526
+      - CN-124.225.24.162-0529
+      - CN-14.215.163.108-0531
+      - CN-111.6.86.74-0667
+      - CN-210.13.85.167-0676
+      - CN-124.225.24.162-0851
+      - CN-14.215.162.7-0852
+      - CN-124.225.24.162-0855
+      - CN-14.215.162.7-0856
+      - CN-14.215.163.108-0857
+      - CN-120.240.163.164-0902
+      - KR-15.164.214.191-0959
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - DE_138 |18.92Mb
-      - ZZ_1651 |16.99Mb
+      - 台湾 69号 (南方移动线路)
+      - 新加坡 103号（disney+专用）
+      - 新加坡 62号(非自制解锁Netflix|)
+      - 日本 95号（日区netflix）
+      - 日本 97号
+      - 香港 78号
+      - CN-124.225.24.162-0324
+      - CN-14.215.162.7-0325
+      - CN-124.225.24.162-0328
+      - CN-14.215.162.7-0329
+      - CN-14.215.162.7-0330
+      - CN-124.225.24.162-0337
+      - CN-14.215.163.108-0338
+      - CN-124.225.24.162-0341
+      - CN-14.215.162.7-0342
+      - CN-14.215.162.7-0343
+      - CN-116.129.253.62-0356
+      - CN-116.129.253.62-0357
+      - CN-116.129.253.62-0369
+      - CN-116.129.253.62-0370
+      - KR-15.164.214.191-0460
+      - CN-124.225.24.162-0492
+      - CN-14.215.162.7-0493
+      - CN-124.225.24.162-0496
+      - CN-14.215.163.108-0497
+      - CN-124.225.24.162-0525
+      - CN-14.215.163.108-0526
+      - CN-124.225.24.162-0529
+      - CN-14.215.163.108-0531
+      - CN-111.6.86.74-0667
+      - CN-210.13.85.167-0676
+      - CN-124.225.24.162-0851
+      - CN-14.215.162.7-0852
+      - CN-124.225.24.162-0855
+      - CN-14.215.162.7-0856
+      - CN-14.215.163.108-0857
+      - CN-120.240.163.164-0902
+      - KR-15.164.214.191-0959
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - DE_138 |18.92Mb
-      - ZZ_1651 |16.99Mb
+      - 台湾 69号 (南方移动线路)
+      - 新加坡 103号（disney+专用）
+      - 新加坡 62号(非自制解锁Netflix|)
+      - 日本 95号（日区netflix）
+      - 日本 97号
+      - 香港 78号
+      - CN-124.225.24.162-0324
+      - CN-14.215.162.7-0325
+      - CN-124.225.24.162-0328
+      - CN-14.215.162.7-0329
+      - CN-14.215.162.7-0330
+      - CN-124.225.24.162-0337
+      - CN-14.215.163.108-0338
+      - CN-124.225.24.162-0341
+      - CN-14.215.162.7-0342
+      - CN-14.215.162.7-0343
+      - CN-116.129.253.62-0356
+      - CN-116.129.253.62-0357
+      - CN-116.129.253.62-0369
+      - CN-116.129.253.62-0370
+      - KR-15.164.214.191-0460
+      - CN-124.225.24.162-0492
+      - CN-14.215.162.7-0493
+      - CN-124.225.24.162-0496
+      - CN-14.215.163.108-0497
+      - CN-124.225.24.162-0525
+      - CN-14.215.163.108-0526
+      - CN-124.225.24.162-0529
+      - CN-14.215.163.108-0531
+      - CN-111.6.86.74-0667
+      - CN-210.13.85.167-0676
+      - CN-124.225.24.162-0851
+      - CN-14.215.162.7-0852
+      - CN-124.225.24.162-0855
+      - CN-14.215.162.7-0856
+      - CN-14.215.163.108-0857
+      - CN-120.240.163.164-0902
+      - KR-15.164.214.191-0959
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -48,35 +192,181 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - DE_138 |18.92Mb
-      - ZZ_1651 |16.99Mb
+      - 台湾 69号 (南方移动线路)
+      - 新加坡 103号（disney+专用）
+      - 新加坡 62号(非自制解锁Netflix|)
+      - 日本 95号（日区netflix）
+      - 日本 97号
+      - 香港 78号
+      - CN-124.225.24.162-0324
+      - CN-14.215.162.7-0325
+      - CN-124.225.24.162-0328
+      - CN-14.215.162.7-0329
+      - CN-14.215.162.7-0330
+      - CN-124.225.24.162-0337
+      - CN-14.215.163.108-0338
+      - CN-124.225.24.162-0341
+      - CN-14.215.162.7-0342
+      - CN-14.215.162.7-0343
+      - CN-116.129.253.62-0356
+      - CN-116.129.253.62-0357
+      - CN-116.129.253.62-0369
+      - CN-116.129.253.62-0370
+      - KR-15.164.214.191-0460
+      - CN-124.225.24.162-0492
+      - CN-14.215.162.7-0493
+      - CN-124.225.24.162-0496
+      - CN-14.215.163.108-0497
+      - CN-124.225.24.162-0525
+      - CN-14.215.163.108-0526
+      - CN-124.225.24.162-0529
+      - CN-14.215.163.108-0531
+      - CN-111.6.86.74-0667
+      - CN-210.13.85.167-0676
+      - CN-124.225.24.162-0851
+      - CN-14.215.162.7-0852
+      - CN-124.225.24.162-0855
+      - CN-14.215.162.7-0856
+      - CN-14.215.163.108-0857
+      - CN-120.240.163.164-0902
+      - KR-15.164.214.191-0959
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 台湾 69号 (南方移动线路)
+      - 香港 78号
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - DE_138 |18.92Mb
-      - ZZ_1651 |16.99Mb
+      - 台湾 69号 (南方移动线路)
+      - 新加坡 103号（disney+专用）
+      - 新加坡 62号(非自制解锁Netflix|)
+      - 日本 95号（日区netflix）
+      - 日本 97号
+      - 香港 78号
+      - CN-124.225.24.162-0324
+      - CN-14.215.162.7-0325
+      - CN-124.225.24.162-0328
+      - CN-14.215.162.7-0329
+      - CN-14.215.162.7-0330
+      - CN-124.225.24.162-0337
+      - CN-14.215.163.108-0338
+      - CN-124.225.24.162-0341
+      - CN-14.215.162.7-0342
+      - CN-14.215.162.7-0343
+      - CN-116.129.253.62-0356
+      - CN-116.129.253.62-0357
+      - CN-116.129.253.62-0369
+      - CN-116.129.253.62-0370
+      - KR-15.164.214.191-0460
+      - CN-124.225.24.162-0492
+      - CN-14.215.162.7-0493
+      - CN-124.225.24.162-0496
+      - CN-14.215.163.108-0497
+      - CN-124.225.24.162-0525
+      - CN-14.215.163.108-0526
+      - CN-124.225.24.162-0529
+      - CN-14.215.163.108-0531
+      - CN-111.6.86.74-0667
+      - CN-210.13.85.167-0676
+      - CN-124.225.24.162-0851
+      - CN-14.215.162.7-0852
+      - CN-124.225.24.162-0855
+      - CN-14.215.162.7-0856
+      - CN-14.215.163.108-0857
+      - CN-120.240.163.164-0902
+      - KR-15.164.214.191-0959
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - DE_138 |18.92Mb
-      - ZZ_1651 |16.99Mb
+      - 台湾 69号 (南方移动线路)
+      - 新加坡 103号（disney+专用）
+      - 新加坡 62号(非自制解锁Netflix|)
+      - 日本 95号（日区netflix）
+      - 日本 97号
+      - 香港 78号
+      - CN-124.225.24.162-0324
+      - CN-14.215.162.7-0325
+      - CN-124.225.24.162-0328
+      - CN-14.215.162.7-0329
+      - CN-14.215.162.7-0330
+      - CN-124.225.24.162-0337
+      - CN-14.215.163.108-0338
+      - CN-124.225.24.162-0341
+      - CN-14.215.162.7-0342
+      - CN-14.215.162.7-0343
+      - CN-116.129.253.62-0356
+      - CN-116.129.253.62-0357
+      - CN-116.129.253.62-0369
+      - CN-116.129.253.62-0370
+      - KR-15.164.214.191-0460
+      - CN-124.225.24.162-0492
+      - CN-14.215.162.7-0493
+      - CN-124.225.24.162-0496
+      - CN-14.215.163.108-0497
+      - CN-124.225.24.162-0525
+      - CN-14.215.163.108-0526
+      - CN-124.225.24.162-0529
+      - CN-14.215.163.108-0531
+      - CN-111.6.86.74-0667
+      - CN-210.13.85.167-0676
+      - CN-124.225.24.162-0851
+      - CN-14.215.162.7-0852
+      - CN-124.225.24.162-0855
+      - CN-14.215.162.7-0856
+      - CN-14.215.163.108-0857
+      - CN-120.240.163.164-0902
+      - KR-15.164.214.191-0959
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_138 |18.92Mb
-      - ZZ_1651 |16.99Mb
+      - 台湾 69号 (南方移动线路)
+      - 新加坡 103号（disney+专用）
+      - 新加坡 62号(非自制解锁Netflix|)
+      - 日本 95号（日区netflix）
+      - 日本 97号
+      - 香港 78号
+      - CN-124.225.24.162-0324
+      - CN-14.215.162.7-0325
+      - CN-124.225.24.162-0328
+      - CN-14.215.162.7-0329
+      - CN-14.215.162.7-0330
+      - CN-124.225.24.162-0337
+      - CN-14.215.163.108-0338
+      - CN-124.225.24.162-0341
+      - CN-14.215.162.7-0342
+      - CN-14.215.162.7-0343
+      - CN-116.129.253.62-0356
+      - CN-116.129.253.62-0357
+      - CN-116.129.253.62-0369
+      - CN-116.129.253.62-0370
+      - KR-15.164.214.191-0460
+      - CN-124.225.24.162-0492
+      - CN-14.215.162.7-0493
+      - CN-124.225.24.162-0496
+      - CN-14.215.163.108-0497
+      - CN-124.225.24.162-0525
+      - CN-14.215.163.108-0526
+      - CN-124.225.24.162-0529
+      - CN-14.215.163.108-0531
+      - CN-111.6.86.74-0667
+      - CN-210.13.85.167-0676
+      - CN-124.225.24.162-0851
+      - CN-14.215.162.7-0852
+      - CN-124.225.24.162-0855
+      - CN-14.215.162.7-0856
+      - CN-14.215.163.108-0857
+      - CN-120.240.163.164-0902
+      - KR-15.164.214.191-0959
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -92,8 +382,44 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_138 |18.92Mb
-      - ZZ_1651 |16.99Mb
+      - 台湾 69号 (南方移动线路)
+      - 新加坡 103号（disney+专用）
+      - 新加坡 62号(非自制解锁Netflix|)
+      - 日本 95号（日区netflix）
+      - 日本 97号
+      - 香港 78号
+      - CN-124.225.24.162-0324
+      - CN-14.215.162.7-0325
+      - CN-124.225.24.162-0328
+      - CN-14.215.162.7-0329
+      - CN-14.215.162.7-0330
+      - CN-124.225.24.162-0337
+      - CN-14.215.163.108-0338
+      - CN-124.225.24.162-0341
+      - CN-14.215.162.7-0342
+      - CN-14.215.162.7-0343
+      - CN-116.129.253.62-0356
+      - CN-116.129.253.62-0357
+      - CN-116.129.253.62-0369
+      - CN-116.129.253.62-0370
+      - KR-15.164.214.191-0460
+      - CN-124.225.24.162-0492
+      - CN-14.215.162.7-0493
+      - CN-124.225.24.162-0496
+      - CN-14.215.163.108-0497
+      - CN-124.225.24.162-0525
+      - CN-14.215.163.108-0526
+      - CN-124.225.24.162-0529
+      - CN-14.215.163.108-0531
+      - CN-111.6.86.74-0667
+      - CN-210.13.85.167-0676
+      - CN-124.225.24.162-0851
+      - CN-14.215.162.7-0852
+      - CN-124.225.24.162-0855
+      - CN-14.215.162.7-0856
+      - CN-14.215.163.108-0857
+      - CN-120.240.163.164-0902
+      - KR-15.164.214.191-0959
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
